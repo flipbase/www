@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1!= page.title
+  != page.html
+
+block contact
+  form
+    input(type="text" placeholder="name" name="naam")  
+    input(type="email" placeholder="email" name="_replyto")
+    input(type="text" name="_gotcha" id="gotchaInput")
+    button send
