@@ -1,0 +1,41 @@
+@import "susy";
+@import "breakpoint";
+
+$grid-columns: 12;
+$total-columns: 12;
+$column-width: 4.25em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+$breakpoint: 35em;
+
+
+.page {
+  position: relative;
+  @include container(70em);
+}
+
+.row {
+  @include container(70em);
+  position: relative;
+  clear: both;
+}
+
+// Create grid for desktop
+// @for $i from 1 through $grid-columns {
+//   .large#{$i} {
+//     @include breakpoint($breakpoint) {
+//       @include span($i of 12);
+//     }
+//   }
+// }
+
+// Create grid for mobiel devices
+@for $i from 1 through $grid-columns {
+  .small#{$i} {
+    @include span($i of 12);
+  }
+}
+
+.last {
+  margin-right:0;
+}

@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          require: 'susy',
+          require: ['susy', 'breakpoint'],
           style: 'expanded'
         },
         files: [{

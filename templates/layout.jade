@@ -25,19 +25,32 @@ html(lang='en')
 
   body
 
-    //- header#nav
-      //- include nav
+    //- include cover
+    div.page
 
-    //- section(style="position: relative;")
-    include cover
+      div#content.row
+        block content
 
-    div#content
-      block content
+      //-   div#contact
+      //-     block contact
+      
+      div.row
+      include clients
 
-    div#contact
-      block contact
-
-    footer#footer
-      p footer
+      div.row.footer
+        div.contact-details
+          h5 Contact
+          p
+            | Leidsegracht 16E
+            br
+            | 1016 CK Amsterdam +31 (0) 20 893 26 47
+            br
+            | support@flipbase.com
+        div.sitemap
+          h5 Sitemap
+          ul
+            li Home
+            li Partners
+            li Contact
 
     script(src='/assets/js/form.js')

@@ -1,5 +1,5 @@
-div(class="cover-video")
-  video(poster="http://flipbase.com/wp-content/uploads/2014/08/cover.jpg" muted="muted" preload="auto" loop="true" autoplay="true")
+div(class="cover-wrapper")
+  video(poster="http://flipbase.com/wp-content/uploads/2014/08/cover.jpg" class="cover-video" muted="muted" preload="auto" loop="true" autoplay="true")
     source(type="video/mp4" src="http://flipbase.com/wp-content/uploads/2014/08/upload_76bcee3efc73e68ea4e24307e2dbcea2640x480_h264_aac_high.mp4")
     source(type="video/webm" src="http://flipbase.com/wp-content/uploads/2014/08/introduction-video-web.webm")
     source(type="video/ogg" src="http://flipbase.com/wp-content/uploads/2014/08/covervideo-v4.ogv")
@@ -10,4 +10,5 @@ div(class="cover-video")
     h2(class="subtitle") Direct beschikbaar in je eigen recruitment omgeving
 
 script.
-  $('.cover-video video').coverVid(1280, 720);
+  //- $('.cover-video').coverVid(1280, 720);
+  coverVid(document.querySelector('.cover-video'), 1280, 720);
