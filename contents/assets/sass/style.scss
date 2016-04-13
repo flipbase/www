@@ -1,12 +1,17 @@
 @import "susy";
 @import "breakpoint";
 
+$primary-color: #A62651;
+$padding: 20px;
+
+@import "_nav";
 @import "_grid";
 @import "_typo";
 @import "_cover";
+@import "_footer";
 
+@import "blog/style";
 
-$padding: 20px;
 
 #gotchaInput {
   display: none;
@@ -16,28 +21,11 @@ $padding: 20px;
 
 }
 
-.clients {
+.clients, .partners {
   text-align: center;
   img {
     max-width: 100%;
     height: auto;
+    max-height: 120px;
   }
-}
-
-.footer {
-  position: relative;
-
-  padding: $padding;
-  background-color: #303036;
-
-  h5 {
-    color: #FFF;
-  }
-
-  p, ul li {
-    color: #808080;
-    font-size: 0.8em;
-  }
-  // Bleed is a negative margin to compensate for the padding
-  // @include bleed($grid-padding);
 }

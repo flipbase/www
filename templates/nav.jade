@@ -1,3 +1,29 @@
-nav
-  a(href="index.html") home
-  a(href="boe.html") hoi
+header
+  div.nav-wrapper
+    div.nav-inner
+      nav.nav
+        ul
+          li
+            a(href="flipbase.com") Home
+          li
+            a(href="/blog") Blog
+          li
+            a(href="/contact") Contact
+          li
+            a(href="/en") English
+
+      div.logo
+        a(href="flipbase.com")
+          img(src="/assets/images/logo_white_small.png" style="max-width: 170px;")
+
+      div.sticky-logo
+        a(href="flipbase.com")
+          img(src="/assets/images/logo_small.png" style="max-width: 170px;")
+
+    script.
+      $(document).ready(function() {
+        $(window).on('scroll', function() {
+          var fromTop = $('body').scrollTop();
+          $('.nav-wrapper').toggleClass('sticky', (fromTop > 100));
+        });
+      });

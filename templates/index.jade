@@ -1,9 +1,22 @@
 extends layout
 
-block content
-  h1!= page.title
-  != page.html
+block append head
+  link(href="/assets/components/bxslider-4/dist/jquery.bxslider.css" rel="stylesheet" type="text/css")
+  script(src='/assets/components/covervid/covervid.min.js')
+  script(src='/assets/components/bxslider-4/dist/jquery.bxslider.min.js')
 
+  include nav
+
+  include cover
+
+  include partners
+
+  include testimonials
+
+  include partials/_footer
+  
+  block javascripts
+    script(src='/assets/js/form.js')
 
 //- block contact
 //-   form

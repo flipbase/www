@@ -1,7 +1,33 @@
-h1, h2, h3, h4, h5, .subtitle {
+@import "susy";
+@import "breakpoint";
+
+$medium: 800px;
+
+h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   font-family: "freight-sans-pro";
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.1em;
 }
 
 h2.subtitle {
   font-weight: 200;
+}
+
+
+h1 {
+  @include breakpoint($medium) {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  @include breakpoint($medium) {
+    font-size: 1.7em;
+  }
 }

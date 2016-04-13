@@ -1,0 +1,35 @@
+extends layout
+
+block body
+  include nav
+  
+  div.blog
+    div.header
+      h1 Blog
+
+    div.content
+      //- Iterate over blog/articles directory
+      //- The `articles` variables is provided the paginator plugin
+      each article in articles
+        - var date = moment.utc(article.date).format('DD MMMM YYYY')
+        div.article-summary
+          h2
+            a(href=article.url)= article.title
+          span.metadata Gescrheven door #{article.metadata.author} op #{date}
+
+          //- Wintersmith searches for <span class="more"></span>, <hr/> or first <h2> element, if one of those is present a `hasMore` and a `intro` property are available
+          if article.hasMore
+            p!= article.intro
+            span.more
+              a(href=article.url) Lees verder....
+          else
+            p!= article.html
+          div.summary-divider
+
+    div.row
+      if prevPage
+        a(href=prevPage.url) « Nieuwere posts
+      if nextPage
+        a(href=nextPage.url) Oudere posts »
+
+  include partials/_footer

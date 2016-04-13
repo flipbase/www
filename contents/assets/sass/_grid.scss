@@ -29,10 +29,10 @@ $breakpoint: 35em;
 //   }
 // }
 
-// Create grid for mobiel devices
+// Create grid for mobile devices
 @for $i from 1 through $grid-columns {
   .small#{$i} {
-    @include span($i of 12);
+    @include span($i of $grid-columns);
   }
 }
 

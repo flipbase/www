@@ -15,13 +15,12 @@ script.
 
   fullscreen();
   $(window).resize(fullscreen);
-  //- $(window).scroll(headerParallax);
 
   function fullscreen() {
-    var masthead = $('.cover-wrapper');
+    var videoWrapper = $('.cover-wrapper');
     var windowH = $(window).height();
     var windowW = $(window).width();
 
-    masthead.width(windowW);
-    masthead.height(windowH);
+    videoWrapper.width(windowW);
+    videoWrapper.height(windowH);
   }

@@ -1,7 +1,12 @@
+Keuzes:
+
+- Maak page responsive per sectie met susy, voeg breakpoints toe waar nodig.
+
 # To do
 
-- Create Sass grid
-
+- navigatie
+- contact formulieren
+- testimonials slider plugin
 
 # Voor oplevering
 

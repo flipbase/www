@@ -3,6 +3,7 @@ html(lang='en')
   head
     block head
       meta(charset='utf-8')
+      | !{ livereloadScript }
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width')
       
@@ -13,44 +14,15 @@ html(lang='en')
       script(src='/assets/components/html5shiv/dist/html5shiv.min.js')
       <![endif]-->
 
-      link(href="/assets/components/normalize.css/normalize.css" rel="stylesheet" type="text/css")
-      link(href="/assets/css/style.css" rel="stylesheet" type="text/css")
+      block stylesheets
+        link(href="/assets/components/normalize.css/normalize.css" rel="stylesheet" type="text/css")
+        link(href="/assets/css/style.css" rel="stylesheet" type="text/css")
 
-      script(src='/assets/components/jquery/dist/jquery.min.js')
-      script(src='/assets/components/covervid/covervid.min.js')
-
-      script(src="//use.typekit.net/uvu0omm.js")
-      script.
-        try{Typekit.load({ async: true });}catch(e){}
-
+      block scripts
+        script(src="//use.typekit.net/uvu0omm.js")
+        script.
+          try{Typekit.load({ async: true });}catch(e){}
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
   body
 
-    include cover
-    
-    div.page
-
-      div.row
-        block content
-
-      //-   div#contact
-      //-     block contact
-      
-      include clients
-
-      div.row.footer
-        div.contact-details
-          h5 Contact
-          p
-            | Leidsegracht 16E
-            br
-            | 1016 CK Amsterdam +31 (0) 20 893 26 47
-            br
-            | support@flipbase.com
-        div.sitemap
-          h5 Sitemap
-          ul
-            li Home
-            li Partners
-            li Contact
-
-    script(src='/assets/js/form.js')
+  block body
