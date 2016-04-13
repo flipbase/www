@@ -8,6 +8,32 @@ $gutter-width: 1em;
 $grid-padding: $gutter-width;
 $breakpoint: 35em;
 
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 4,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
 
 .page {
   position: relative;
@@ -30,12 +56,51 @@ $breakpoint: 35em;
 // }
 
 // Create grid for mobile devices
-@for $i from 1 through $grid-columns {
-  .small#{$i} {
-    @include span($i of $grid-columns);
-  }
-}
+// @for $i from 1 through $grid-columns {
+//   .small#{$i} {
+//     @include span($i of $grid-columns);
+//   }
+// }
 
-.last {
-  margin-right:0;
+// .last {
+//   margin-right:0;
+// }
+
+
+$partners: (
+  gutters: 0
+);
+
+.partners {
+  @include layout($partners);
+  @include container(50em);
+
+  position: relative;
+  clear: both;
+  text-align: center;
+
+  img {
+    max-height: 100px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include breakpoint((max-width 499px)) {
+    .partner {
+      @include span(50%)
+    }
+  }
+  @include breakpoint((min-width 500px) (max-width 800px)) {
+    .partner {
+      @include span(33%)
+    }
+  }
+  @include breakpoint((min-width 801px)) {
+    .partner {
+      @include span(25%)
+    }
+    img {
+      max-height: 140px;
+    }
+  }
 }
