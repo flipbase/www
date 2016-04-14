@@ -1,13 +1,6 @@
 @import "susy";
 @import "breakpoint";
 
-$grid-columns: 12;
-$total-columns: 12;
-$column-width: 4.25em;
-$gutter-width: 1em;
-$grid-padding: $gutter-width;
-$breakpoint: 35em;
-
 $susy: (
   flow: ltr,
   math: fluid,
@@ -46,61 +39,157 @@ $susy: (
   clear: both;
 }
 
-// Create grid for desktop
-// @for $i from 1 through $grid-columns {
-//   .large#{$i} {
-//     @include breakpoint($breakpoint) {
-//       @include span($i of 12);
-//     }
-//   }
-// }
 
-// Create grid for mobile devices
-// @for $i from 1 through $grid-columns {
-//   .small#{$i} {
-//     @include span($i of $grid-columns);
-//   }
-// }
-
-// .last {
-//   margin-right:0;
-// }
-
-
+/**
+ * Partner logo's
+ */
 $partners: (
-  gutters: 0
+  gutters: 0.1
 );
 
 .partners {
   @include layout($partners);
-  @include container(50em);
+  @include container(55em);
+
+  .introduction {
+    margin-top: 60px;
+    @include container(42em);    
+  }
 
   position: relative;
   clear: both;
   text-align: center;
+  margin-bottom: 40px;
 
-  img {
-    max-height: 100px;
-    max-width: 100%;
-    height: auto;
+  .partner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    max-height: 150px;
   }
 
   @include breakpoint((max-width 499px)) {
     .partner {
-      @include span(50%)
+      max-height: 110px;
+    }
+    .wrap {
+      @include span(1 of 2);
+      // Remove the gutter from the last column
+      &:nth-child(2n) {
+        @include last;
+      }
     }
   }
   @include breakpoint((min-width 500px) (max-width 800px)) {
-    .partner {
-      @include span(33%)
+    .wrap {
+      @include span(1 of 3);
+      &:nth-child(3n) {
+        @include last;
+      }
     }
   }
   @include breakpoint((min-width 801px)) {
-    .partner {
-      @include span(25%)
+    .wrap {
+      @include span(1 of 4);
+      &:nth-child(4n) {
+        @include last;
+      }
     }
-    img {
-      max-height: 140px;
+  }
+}
+
+/**
+ * Footer
+ */
+.footer {
+  background-color: #303036;
+
+  & .content {
+    @include layout($susy);
+    @include container(60em);
+    padding: 60px 0;
+  }
+
+  & .logo img {
+    max-width: 90%;
+    margin-top: 18px;
+  }
+
+  & .logo, & .sitemap, & .contact {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  // Make social media icons smaller
+  & .rrssb-buttons li a .rrssb-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+  & .rrssb-buttons {
+    height: 30px;
+  }
+
+  h5 {
+    color: #FFF;
+  }
+
+  a, p, ul li {
+    color: #808080;
+    font-size: 0.9em;
+    text-decoration: none;
+    line-height: 20px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // Link underlining/hover effect
+  & .sitemap ul li {
+    a {
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(192, 192, 192, 0);
+      
+      -webkit-transition: border 300ms ease, color 300ms ease;
+      -moz-transition: border 300ms ease, color 300ms ease;
+      -ms-transition: border 300ms ease, color 300ms ease;
+      -o-transition: border 300ms ease, color 300ms ease;
+      transition: border 300ms ease, color 300ms ease;
+    } 
+    a:hover {
+      color: #FFF;
+      border-bottom: 1px solid rgba(192, 192, 192, 1);
+    }
+  }
+
+  @include breakpoint((max-width 500px)) {
+    & .content {
+      padding: 30px 0;
+    }
+
+    & .logo {
+      max-width: 50%;
+    }
+    & .sitemap, & .contact {
+      @include span(1 of 2);
+    }
+    & .sitemap {
+      @include last;
+    }
+  }
+  @include breakpoint((min-width 501px) (max-width 619px)) {
+    & .logo, & .sitemap, & .contact {
+      @include span(1 of 3);
+    }
+    & .sitemap {
+      @include last;
+    }
+  }
+  @include breakpoint((min-width 620px)) {
+    & .logo, & .sitemap, & .contact {
+      @include span(1 of 4);
     }
   }
 }

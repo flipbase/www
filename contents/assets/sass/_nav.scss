@@ -1,3 +1,7 @@
+
+@import "susy";
+@import "breakpoint";
+
 $height: 90px;
 $sticky: 60px;
 $grey: #444444;
@@ -17,12 +21,12 @@ $pink: #a72552;
   position: relative;
   height: $height;
   @include container(70em);
-}
 
-.logo {
-  display: block;
-  padding: 30px 0;
-  float: left;
+  & .logo {
+    display: block;
+    padding: 30px;
+    float: left;
+  }
 }
 
 .sticky-logo {
