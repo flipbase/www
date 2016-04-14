@@ -11,7 +11,13 @@ div.cover-wrapper
       h2.subtitle Direct beschikbaar in je eigen recruitment omgeving
 
 script.
-  coverVid(document.querySelector('.cover-video'), 1280, 720);
+  var vid = document.querySelector('.cover-video');
+
+  vid.addEventListener('canplay', function() { 
+    console.log('video ready');
+  }, true);
+
+  coverVid(vid, 1280, 720);
 
   fullscreen();
   $(window).resize(fullscreen);

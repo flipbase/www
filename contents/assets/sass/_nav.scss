@@ -7,6 +7,10 @@ $sticky: 60px;
 $grey: #444444;
 $pink: #a72552;
 
+/**
+ * Navigation menu
+ */
+
 // Position it on top of the cover
 .nav-wrapper {
   position: fixed;
@@ -18,23 +22,11 @@ $pink: #a72552;
 }
 
 .nav-inner {
-  position: relative;
-  height: $height;
   @include container(70em);
-
-  & .logo {
-    display: block;
-    padding: 30px;
-    float: left;
-  }
+  height: $height;
 }
 
-.sticky-logo {
-  float: left;
-  padding: 10px 0;
-  display: none;
-}
-
+// Menu links
 .nav {
   display: inline-block;
   float: right;
@@ -57,7 +49,11 @@ $pink: #a72552;
       position: relative;
     }
 
-    // Fake unerlining effect
+    img {
+      width: 20px;
+    }
+
+    // Fake underlining effect
     a:after {
       display: block;
       position: absolute;
@@ -73,6 +69,27 @@ $pink: #a72552;
     a:hover:after {
       width: 100%;
     }
+  }
+}
+
+/**
+ * Logo
+ */
+
+.nav-inner {
+  .logo, .sticky-logo {
+    float: left;
+  }
+
+  & .logo {
+    display: block;
+    padding: 25px;
+    max-width: 170px;
+  }
+
+  & .sticky-logo {
+    padding: 15px;
+    display: none;
   }
 }
 
@@ -97,7 +114,7 @@ $pink: #a72552;
 
   & .sticky-logo {
     display: block;
-    line-height: $sticky;
+    line-height: $sticky * .75;
   }
 
   & .nav {
@@ -114,6 +131,43 @@ $pink: #a72552;
 
     a:after {
       background-color: $pink;
+    }
+  }
+}
+
+/**
+ * Media queries
+ */
+@include breakpoint((max-width 499px)) {
+  .nav-wrapper {
+    height: 50px;
+  }
+  
+  // Logo
+  .nav-inner {
+    & .logo img, & .sticky-logo img {
+      max-width: 120px;
+    }
+
+    & .sticky-logo {
+      padding: 10px;
+      line-height: $height / 2;
+    }
+
+    & .logo {
+      padding: 15px;
+    }
+
+  }
+
+  // Menu links
+  .nav, .sticky .nav {
+    ul li a {
+    font-size: 12px;
+    }
+    ul li {
+      line-height: $height / 2;
+      padding: 0 5px;
     }
   }
 }

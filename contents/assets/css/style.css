@@ -1,3 +1,6 @@
+/**
+ * Navigation menu
+ */
 .nav-wrapper {
   position: fixed;
   z-index: 1;
@@ -8,27 +11,15 @@
 }
 
 .nav-inner {
-  position: relative;
-  height: 90px;
   max-width: 70em;
   margin-left: auto;
   margin-right: auto;
+  height: 90px;
 }
 .nav-inner:after {
   content: " ";
   display: block;
   clear: both;
-}
-.nav-inner .logo {
-  display: block;
-  padding: 30px;
-  float: left;
-}
-
-.sticky-logo {
-  float: left;
-  padding: 10px 0;
-  display: none;
 }
 
 .nav {
@@ -51,6 +42,9 @@
   text-decoration: none;
   position: relative;
 }
+.nav ul li img {
+  width: 20px;
+}
 .nav ul li a:after {
   display: block;
   position: absolute;
@@ -64,6 +58,22 @@
 }
 .nav ul li a:hover:after {
   width: 100%;
+}
+
+/**
+ * Logo
+ */
+.nav-inner .logo, .nav-inner .sticky-logo {
+  float: left;
+}
+.nav-inner .logo {
+  display: block;
+  padding: 25px;
+  max-width: 170px;
+}
+.nav-inner .sticky-logo {
+  padding: 15px;
+  display: none;
 }
 
 .sticky {
@@ -84,7 +94,7 @@
 }
 .sticky .sticky-logo {
   display: block;
-  line-height: 60px;
+  line-height: 45px;
 }
 .sticky .nav {
   color: #444444;
@@ -100,6 +110,33 @@
   background-color: #a72552;
 }
 
+/**
+ * Media queries
+ */
+@media (max-width: 499px) {
+  .nav-wrapper {
+    height: 50px;
+  }
+
+  .nav-inner .logo img, .nav-inner .sticky-logo img {
+    max-width: 120px;
+  }
+  .nav-inner .sticky-logo {
+    padding: 10px;
+    line-height: 45px;
+  }
+  .nav-inner .logo {
+    padding: 15px;
+  }
+
+  .nav ul li a, .sticky .nav ul li a {
+    font-size: 12px;
+  }
+  .nav ul li, .sticky .nav ul li {
+    line-height: 45px;
+    padding: 0 5px;
+  }
+}
 .page {
   position: relative;
   max-width: 70em;
