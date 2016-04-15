@@ -4,29 +4,20 @@ header
       nav.nav
         ul
           li
-            a(href="/") Home
+            a(href="/" data-type="page-transition") Home
           li
-            a(href="/blog") Blog
+            a(href="/blog" data-type="page-transition") Blog
           li
-            a(href="/contact") Contact
+            a(href="/#contact") Contact
           li(style="padding:4px; margin-right: 5px;")
-            a(href="/en")
+            a(href="/en" data-type="page-transition")
               img(src="/assets/images/flag_uk.png")
 
       div.logo
-        a(href="flipbase.com")
+        a(href="/" data-type="page-transition")
           block logo
             img(src="/assets/images/logo_white_small.png")
 
       div.sticky-logo
-        a(href="flipbase.com")
+        a(href="/" data-type="page-transition")
           img(src="/assets/images/logo_small.png")
-
-
-  script.
-    $(document).ready(function() {
-      $(window).on('scroll', function() {
-        var fromTop = $('body').scrollTop();
-        $('.nav-wrapper').toggleClass('sticky', (fromTop > 80));
-      });
-    });

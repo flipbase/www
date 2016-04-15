@@ -1,8 +1,5 @@
 extends layout
 
-block append scripts
-  script(src="/assets/components/rrssb/js/rrssb.min.js")
-
 block body
   
   div.blog
@@ -34,16 +31,3 @@ block body
               span.rrssb-text Twitter
 
       p!= page.html
-
-  block append footer-scripts
-    script.
-      jQuery(document).ready(function ($) {
-
-        $('.rrssb-buttons').rrssb({
-          // required:
-          title: '#{page.title}',
-          url: 'http://kurtnoble.com/labs/rrssb/',
-          // optional:
-          description: ''
-        });
-      });

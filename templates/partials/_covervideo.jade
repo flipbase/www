@@ -1,27 +1,24 @@
 div.cover-wrapper
   div.cover-container
-    video(poster="http://flipbase.com/wp-content/uploads/2014/08/cover.jpg" class="cover-video" muted="muted" preload="auto" loop="true" autoplay="true")
-      source(type="video/mp4" src="http://flipbase.com/wp-content/uploads/2014/08/upload_76bcee3efc73e68ea4e24307e2dbcea2640x480_h264_aac_high.mp4")
-      source(type="video/webm" src="http://flipbase.com/wp-content/uploads/2014/08/introduction-video-web.webm")
-      source(type="video/ogg" src="http://flipbase.com/wp-content/uploads/2014/08/covervideo-v4.ogv")
-      img(src="http://flipbase.com/wp-content/uploads/2014/08/cover.jpg")
+    video(poster="/assets/images/cover.jpg" class="cover-video" muted="muted" preload="auto" loop="true" autoplay="true")
+      source(type="video/mp4" src="/assets/images/video/rick.mp4")
+      source(type="video/webm" src="/assets/images/video/rick.webm")
+      source(type="video/ogg" src="/assets/images/video/rick.ogv")
+      img(src="/assets/images/cover.jpg")
     div.cover-overlay
     div.cover-titles
       h1 In 30 seconden een beeld van de persoon achter het C.V.
       h2.subtitle Direct beschikbaar in je eigen recruitment omgeving
 
-  script.
-    var vid = document.querySelector('.cover-video');
-
-    vid.addEventListener('canplay', function() { 
-      console.log('video ready');
-    }, true);
-
+script(src='/assets/components/covervid/covervid.min.js')
+script.
+  // Init cover video first
+  var vid = document.querySelector('.cover-video');
+  if (vid) {
     coverVid(vid, 1280, 720);
 
     fullscreen();
-    $(window).resize(fullscreen);
-
+    window.onresize(fullscreen);
     function fullscreen() {
       var videoWrapper = $('.cover-wrapper');
       var windowH = $(window).height();
@@ -30,3 +27,4 @@ div.cover-wrapper
       videoWrapper.width(windowW);
       videoWrapper.height(windowH);
     }
+  }

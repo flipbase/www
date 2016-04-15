@@ -22,7 +22,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           require: ['susy', 'breakpoint'],
-          style: 'expanded'
+          style: 'expanded',
+          compass: true
         },
         files: [{
           expand: true, // Recursive

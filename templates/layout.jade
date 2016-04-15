@@ -16,11 +16,12 @@ html(lang='en')
         script(src="//use.typekit.net/uvu0omm.js")
         script.
           try{Typekit.load({ async: true });}catch(e){}
-        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
         <!--[if lt IE 9]>
         script(src='/assets/components/html5shiv/dist/html5shiv.min.js')
         <![endif]-->
-      
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+        script(src="/assets/components/rrssb/js/rrssb.min.js")
+
       block stylesheets
         link(href="/assets/components/normalize.css/normalize.css" rel="stylesheet" type="text/css")
         link(rel="stylesheet" href="/assets/components/rrssb/css/rrssb.css" type="text/css")
@@ -28,22 +29,54 @@ html(lang='en')
 
   body
 
-  include partials/_nav
+    //- div.loader
+    #main.main
+      include partials/_nav
 
-  block body
+      block body
 
-  include partials/_footer
+      include partials/_footer
+      //- These scripts needs to be executed on every page request
+      script(src='/assets/js/page.js')
 
-  block footer-scripts
-    script.
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-45440989-1']);
-      _gaq.push(['_setDomainName', 'flipbase.com']);
-      _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
+    block footer-scripts
+      script(src='/assets/components/smoothstate/jquery.smoothState.min.js')
+      script.
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-45440989-1']);
+        _gaq.push(['_setDomainName', 'flipbase.com']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        ;(function ($) {
+          var $body = $('html, body');
+          var content = $('#main').smoothState({
+            debug:true,
+            prefetch: true,
+            // Runs when a link has been activated
+            onStart: {
+              duration: 200, // Duration of our animation
+              render: function ($container) {
+                // for restarting css animations with a class
+                $container.addClass('is-exiting');
+                content.restartCSSAnimations();
+              }
+            },
+            onReady: {
+          duration: 200,
+          render: function ($container, $newContent) {
+            // Remove your CSS animation reversing class
+            $container.removeClass('is-exiting');
+            // Inject the new content
+            $container.html($newContent);
+          }
+        }
+          }).data('smoothState');
+
+        })(jQuery);

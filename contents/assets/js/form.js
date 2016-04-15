@@ -2,10 +2,6 @@
 // create our API endpoint on the server
 $(document).ready(function() {
 
-  $("*").dblclick(function(e){
-    e.preventDefault();
-  });
-
   // http://formspree.io/
   // Als mailgun niet compliant is, dan gewoon een API endpoint op de server
   // aanmaken om via mandrill de mail te versturen; dat is het meest veilige

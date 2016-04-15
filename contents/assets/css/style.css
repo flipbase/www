@@ -140,6 +140,16 @@
     padding: 0 5px;
   }
 }
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #A62651;
+  z-index: 100;
+}
+
 .page {
   position: relative;
   max-width: 70em;
@@ -791,6 +801,58 @@ h2.subtitle {
 .blog .content .metadata {
   font-size: 0.9em;
   color: #aaa;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.main {
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.main.is-exiting {
+  -webkit-animation-duration: .2s;
+  animation-duration: .2s;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 
 /*# sourceMappingURL=style.css.map */
