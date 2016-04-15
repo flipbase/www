@@ -9,6 +9,8 @@ div.cover-wrapper
     div.cover-titles
       h1 In 30 seconden een beeld van de persoon achter het C.V.
       h2.subtitle Direct beschikbaar in je eigen recruitment omgeving
+    #arrow.arrow
+      i(class="fa fa-angle-down" aria-hidden="true")
 
 script(src='/assets/components/covervid/covervid.min.js')
 script.
@@ -28,3 +30,9 @@ script.
       videoWrapper.height(windowH);
     }
   }
+
+  $( "#arrow" ).click(function() {
+    $('html, body').animate({
+        scrollTop: $("#partners").offset().top - 100
+    }, 500);
+  });

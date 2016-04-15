@@ -14,7 +14,7 @@ $pink: #a72552;
 // Position it on top of the cover
 .nav-wrapper {
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   height: $height;
   width: 100%;
   top: 0;
@@ -26,7 +26,7 @@ $pink: #a72552;
   height: $height;
 
   img {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 

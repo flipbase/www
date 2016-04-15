@@ -15,6 +15,12 @@
 
   & .article {
     margin-bottom: 60px;
+
+    & .metadata {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
   }
 
   & .summary-divider {
@@ -27,6 +33,7 @@
 
   & .social-icons {
     width: 30%;
+    margin-bottom: 20px;
   }
 
   & .content {
@@ -53,5 +60,35 @@
       font-size: 0.9em;
       color: #aaa;
     }
+  }
+
+  & .paginate {
+    padding: 20px 0;
+    margin-bottom: 80px;
+
+    & .paginator {
+      border: 2px solid #333;
+      border-radius: 2px;
+      color: #333;
+      background-color: #FFF;
+
+      padding: 10px 30px;
+      webkit-transition: color 500ms ease, background-color 500ms ease;
+      -moz-transition: color 500ms ease, background-color 500ms ease;
+      -ms-transition: color 500ms ease, background-color 500ms ease;
+      -o-transition: color 500ms ease, background-color 500ms ease;
+      transition: color 500ms ease, background-color 500ms ease;
+
+      & .fa {
+        font-size: 12px;
+      }
+
+      &:hover {
+        background-color: #333;
+        color: #FFF;
+      }
+
+    }
+
   }
 }

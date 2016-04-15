@@ -3,7 +3,7 @@
  */
 .nav-wrapper {
   position: fixed;
-  z-index: 1;
+  z-index: 4;
   height: 90px;
   width: 100%;
   top: 0;
@@ -22,7 +22,7 @@
   clear: both;
 }
 .nav-inner img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .nav {
@@ -202,6 +202,37 @@
   margin: auto;
   color: #fff;
 }
+.cover-container .cover-titles h1 {
+  opacity: 0;
+  -moz-animation: fadeIntro 0.7s 1s forwards;
+  -webkit-animation: fadeIntro 0.7s 1s forwards;
+  animation: fadeIntro 0.7s 1s forwards;
+}
+.cover-container .cover-titles h2 {
+  opacity: 0;
+  -moz-animation: fadeIntro 0.7s 1.2s forwards;
+  -webkit-animation: fadeIntro 0.7s 1.2s forwards;
+  animation: fadeIntro 0.7s 1.2s forwards;
+}
+.cover-container .arrow {
+  opacity: 0;
+  -moz-animation: fadeIntro 0.7s 1.5s forwards;
+  -webkit-animation: fadeIntro 0.7s 1.5s forwards;
+  animation: fadeIntro 0.7s 1.5s forwards;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  margin: -24px 0 0 -24px;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  color: #FFF;
+  display: block;
+  cursor: pointer;
+}
 .cover-container .cover-overlay {
   background-color: #272630;
   opacity: 0.8;
@@ -212,6 +243,30 @@
   left: 0;
 }
 
+@-moz-keyframes fadeIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIntro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /**
  * Client & Partner logo's
  */
@@ -456,7 +511,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 2;
   padding: 100px 0;
 }
 
@@ -771,6 +826,10 @@ h2.subtitle {
 .blog .article {
   margin-bottom: 60px;
 }
+.blog .article .metadata {
+  font-size: 0.9em;
+  color: #aaa;
+}
 .blog .summary-divider {
   border-bottom: 1px solid #efefef;
   width: 70%;
@@ -780,6 +839,7 @@ h2.subtitle {
 }
 .blog .social-icons {
   width: 30%;
+  margin-bottom: 20px;
 }
 .blog .content h2 {
   margin-bottom: 5px;
@@ -801,6 +861,29 @@ h2.subtitle {
 .blog .content .metadata {
   font-size: 0.9em;
   color: #aaa;
+}
+.blog .paginate {
+  padding: 20px 0;
+  margin-bottom: 80px;
+}
+.blog .paginate .paginator {
+  border: 2px solid #333;
+  border-radius: 2px;
+  color: #333;
+  background-color: #FFF;
+  padding: 10px 30px;
+  webkit-transition: color 500ms ease, background-color 500ms ease;
+  -moz-transition: color 500ms ease, background-color 500ms ease;
+  -ms-transition: color 500ms ease, background-color 500ms ease;
+  -o-transition: color 500ms ease, background-color 500ms ease;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+.blog .paginate .paginator .fa {
+  font-size: 12px;
+}
+.blog .paginate .paginator:hover {
+  background-color: #333;
+  color: #FFF;
 }
 
 @-moz-keyframes fadeIn {
@@ -856,7 +939,6 @@ h2.subtitle {
   animation-duration: .1s;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
@@ -866,7 +948,6 @@ h2.subtitle {
   animation-duration: .1s;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }

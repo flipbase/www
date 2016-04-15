@@ -9,7 +9,8 @@ $(document).ready(function() {
   // Testimonial slider
   if ($('.bxslider').length) {
     var slider = $('.bxslider').bxSlider({
-      controls: false
+      controls: false,
+      speed: 200
     });
 
     $('#next').click(function(){
