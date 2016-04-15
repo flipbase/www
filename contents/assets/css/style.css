@@ -803,6 +803,14 @@ h2.subtitle {
   color: #aaa;
 }
 
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -817,6 +825,14 @@ h2.subtitle {
   }
   100% {
     opacity: 1;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-webkit-keyframes fadeOut {
@@ -836,8 +852,8 @@ h2.subtitle {
   }
 }
 .main {
-  -webkit-animation-duration: .2s;
-  animation-duration: .2s;
+  -webkit-animation-duration: .1s;
+  animation-duration: .1s;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -846,8 +862,8 @@ h2.subtitle {
 }
 
 .main.is-exiting {
-  -webkit-animation-duration: .2s;
-  animation-duration: .2s;
+  -webkit-animation-duration: .1s;
+  animation-duration: .1s;
   transition-timing-function: ease-in;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;

@@ -23,13 +23,4 @@ $(document).ready(function() {
     });
   }
 
-  if ($('.article .rrssb-buttons').length) {
-    $('.rrssb-buttons').rrssb({
-      // required:
-      title: '#{page.title}',
-      url: 'http://kurtnoble.com/labs/rrssb/',
-      // optional:
-      description: ''
-    });
-  }
 });

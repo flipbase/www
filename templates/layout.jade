@@ -21,11 +21,14 @@ html(lang='en')
         <![endif]-->
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
         script(src="/assets/components/rrssb/js/rrssb.min.js")
+        script(src="/assets/components/bxslider-4/dist/jquery.bxslider.min.js")
 
       block stylesheets
         link(href="/assets/components/normalize.css/normalize.css" rel="stylesheet" type="text/css")
+        link(href="/assets/components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet")
         link(rel="stylesheet" href="/assets/components/rrssb/css/rrssb.css" type="text/css")
         link(href="/assets/css/style.css" rel="stylesheet" type="text/css")
+        link(href="/assets/components/bxslider-4/dist/jquery.bxslider.min.css" rel="stylesheet")
 
   body
 
@@ -38,45 +41,48 @@ html(lang='en')
       include partials/_footer
       //- These scripts needs to be executed on every page request
       script(src='/assets/js/page.js')
+      script(src='/assets/js/form.js')
 
     block footer-scripts
       script(src='/assets/components/smoothstate/jquery.smoothState.min.js')
       script.
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-45440989-1']);
-        _gaq.push(['_setDomainName', 'flipbase.com']);
-        _gaq.push(['_setAllowLinker', true]);
-        _gaq.push(['_trackPageview']);
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+        ga('create', 'UA-45440989-1', 'auto');
+        ga('send', 'pageview');
 
         ;(function ($) {
           var $body = $('html, body');
-          var content = $('#main').smoothState({
-            debug:true,
+          var smoothState = $('#main').smoothState({
+            debug: true,
+            anchors: 'a',
             prefetch: true,
             // Runs when a link has been activated
             onStart: {
-              duration: 200, // Duration of our animation
+              duration: 100, // Duration of our animation
               render: function ($container) {
                 // for restarting css animations with a class
                 $container.addClass('is-exiting');
-                content.restartCSSAnimations();
+                smoothState.restartCSSAnimations();
               }
             },
             onReady: {
-          duration: 200,
-          render: function ($container, $newContent) {
-            // Remove your CSS animation reversing class
-            $container.removeClass('is-exiting');
-            // Inject the new content
-            $container.html($newContent);
-          }
-        }
+              duration: 100,
+              render: function ($container, $newContent) {
+                // Remove your CSS animation reversing class
+                $container.removeClass('is-exiting');
+                // Inject the new content
+                $container.html($newContent);
+              }
+            },
+            onAfter: function() {
+              if (window.ga) {
+                window.ga('send', 'pageview', window.location.pathname || smoothState.href);
+              }
+            }
           }).data('smoothState');
 
         })(jQuery);

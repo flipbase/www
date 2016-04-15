@@ -1,14 +1,5 @@
 extends layout
 
-block prepend stylesheets
-  link(href="/assets/components/bxslider-4/dist/jquery.bxslider.min.css" rel="stylesheet")
-
-block append stylesheets
-  link(href="/assets/components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet")
-
-block append footer-scripts
-  script(src="/assets/components/bxslider-4/dist/jquery.bxslider.min.js")
-
 block body
   include partials/_covervideo
 
@@ -25,7 +16,3 @@ block body
   include partials/_clients
 
   include partials/_contact
-
-
-block append footer-scripts
-  script(src='/assets/js/form.js')

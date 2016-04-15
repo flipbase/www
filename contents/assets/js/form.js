@@ -5,7 +5,7 @@ $(document).ready(function() {
   // http://formspree.io/
   // Als mailgun niet compliant is, dan gewoon een API endpoint op de server
   // aanmaken om via mandrill de mail te versturen; dat is het meest veilige
-  $('#contactform').on('submit', function(e) {
+  $('form button').on('click', function(e) {
     e.preventDefault();
 
     // prevent dubbel click
