@@ -1,0 +1,17 @@
+{
+  "name": "flipbase-www",
+  "version": "0.0.0",
+  "homepage": "https://github.com/flipbase/www",
+  "authors": [
+    "Ron Jansen <ron@flipbase.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "components-font-awesome": "~4.5.0",
+    "bxslider-4": "~4.2.5",
+    "covervid": "*",
+    "rrssb": "~1.10.0",
+    "html5shiv": "~3.7.3",
+    "jquery": "~1.11.3"
+  }
+}

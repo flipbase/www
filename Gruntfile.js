@@ -32,6 +32,50 @@ module.exports = function(grunt) {
           ext: ".css" // File extension 
         }]
       }
+    },
+
+    modernizr: {
+      dist: {
+        "crawl": false,
+        "customTests": [],
+        "dest": "contents/assets/js/modernizr.custom.min.js",
+        "tests": [
+          "video",
+          "cssanimations",
+          "bgpositionshorthand",
+          [
+            "bgrepeatspace",
+            "bgrepeatround"
+          ],
+          "backgroundsize",
+          "bgsizecover",
+          "borderradius",
+          "boxshadow",
+          "boxsizing",
+          "fontface",
+          "cssgradients",
+          "lastchild",
+          "mediaqueries",
+          "nthchild",
+          "opacity",
+          "overflowscrolling",
+          "csspositionsticky",
+          "rgba",
+          "siblinggeneral",
+          "target",
+          "textshadow",
+          "csstransforms",
+          "csstransitions",
+          "localstorage",
+          "inlinesvg",
+          "videoautoplay",
+          "videoloop",
+          "videopreload",
+          "getusermedia"
+        ],
+        "options": [],
+        "uglify": true
+      }
     }
 
   });

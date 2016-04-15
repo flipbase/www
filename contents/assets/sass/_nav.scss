@@ -24,6 +24,10 @@ $pink: #a72552;
 .nav-inner {
   @include container(70em);
   height: $height;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 // Menu links

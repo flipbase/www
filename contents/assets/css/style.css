@@ -21,6 +21,9 @@
   display: block;
   clear: both;
 }
+.nav-inner img {
+  max-width: 100%;
+}
 
 .nav {
   display: inline-block;
@@ -234,6 +237,99 @@
 }
 
 /**
+ * Testimonials
+ */
+.testimonials {
+  color: #FFF;
+  padding-top: 60px;
+  background-color: #A62651;
+  position: relative;
+}
+.testimonials .bx-wrapper {
+  background-color: #A62651;
+  border: none;
+  margin: 0;
+  box-shadow: none;
+}
+.testimonials .bx-pager {
+  position: relative;
+  bottom: 0;
+  background-color: #A62651;
+  padding: 0 0 40px 0;
+}
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a.active, .testimonials .bx-wrapper .bx-pager.bx-default-pager a:focus, .testimonials .bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background-color: #FFF;
+}
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a {
+  background-color: #7d1d3d;
+}
+.testimonials:hover .prev, .testimonials:hover .next {
+  opacity: 1;
+}
+.testimonials .prev, .testimonials .next {
+  -webkit-transition: opacity 500ms ease, background 500ms ease;
+  -moz-transition: opacity 500ms ease, background 500ms ease;
+  -ms-transition: opacity 500ms ease, background 500ms ease;
+  -o-transition: opacity 500ms ease, background 500ms ease;
+  transition: opacity 500ms ease, background 500ms ease;
+  opacity: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  z-index: 9999;
+  font-size: 24px;
+  padding: 10px;
+  background: none;
+}
+.testimonials .prev:hover, .testimonials .next:hover {
+  background-color: #d03065;
+}
+.testimonials .prev a, .testimonials .next a {
+  color: #FFF;
+}
+.testimonials .prev {
+  left: 10px;
+}
+.testimonials .next {
+  right: 10px;
+}
+@media (max-width: 800px) {
+  .testimonials .prev, .testimonials .next {
+    display: none;
+  }
+}
+.testimonials .quote-wrap {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+.testimonials .quote-wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.testimonials .quote {
+  font-family: "freight-text-pro";
+  font-weight: 400;
+  line-height: 1.6em;
+  font-size: 1.2em;
+}
+.testimonials h4.quotee {
+  font-size: 1em;
+}
+
+/**
  * Footer
  */
 .footer {
@@ -442,10 +538,6 @@ h2.subtitle {
 .blog .content .metadata {
   font-size: 0.9em;
   color: #aaa;
-}
-
-#gotchaInput {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,6 @@ block append scripts
   script(src="/assets/components/rrssb/js/rrssb.min.js")
 
 block body
-  include nav
   
   div.blog
     div.header
@@ -36,16 +35,15 @@ block body
 
       p!= page.html
 
-  include partials/_footer
+  block append footer-scripts
+    script.
+      jQuery(document).ready(function ($) {
 
-  script.
-    jQuery(document).ready(function ($) {
-
-      $('.rrssb-buttons').rrssb({
-        // required:
-        title: '#{page.title}',
-        url: 'http://kurtnoble.com/labs/rrssb/',
-        // optional:
-        description: ''
+        $('.rrssb-buttons').rrssb({
+          // required:
+          title: '#{page.title}',
+          url: 'http://kurtnoble.com/labs/rrssb/',
+          // optional:
+          description: ''
+        });
       });
-    });
