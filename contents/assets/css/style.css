@@ -203,9 +203,9 @@
 }
 
 /**
- * Partner logo's
+ * Client & Partner logo's
  */
-.partners {
+.partners, .clients {
   max-width: 55em;
   margin-left: auto;
   margin-right: auto;
@@ -214,60 +214,60 @@
   text-align: center;
   margin-bottom: 40px;
 }
-.partners:after {
+.partners:after, .clients:after {
   content: " ";
   display: block;
   clear: both;
 }
-.partners .introduction {
+.partners .introduction, .clients .introduction {
   margin-top: 60px;
   max-width: 42em;
   margin-left: auto;
   margin-right: auto;
 }
-.partners .introduction:after {
+.partners .introduction:after, .clients .introduction:after {
   content: " ";
   display: block;
   clear: both;
 }
-.partners .partner {
+.partners .partner, .clients .partner {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.8;
   max-height: 150px;
 }
 @media (max-width: 499px) {
-  .partners .partner {
+  .partners .partner, .clients .partner {
     max-height: 110px;
   }
-  .partners .wrap {
+  .partners .wrap, .clients .wrap {
     width: 47.61905%;
     float: left;
     margin-right: 4.7619%;
   }
-  .partners .wrap:nth-child(2n) {
+  .partners .wrap:nth-child(2n), .clients .wrap:nth-child(2n) {
     float: right;
     margin-right: 0;
   }
 }
 @media (min-width: 500px) and (max-width: 800px) {
-  .partners .wrap {
+  .partners .wrap, .clients .wrap {
     width: 31.25%;
     float: left;
     margin-right: 3.125%;
   }
-  .partners .wrap:nth-child(3n) {
+  .partners .wrap:nth-child(3n), .clients .wrap:nth-child(3n) {
     float: right;
     margin-right: 0;
   }
 }
 @media (min-width: 801px) {
-  .partners .wrap {
+  .partners .wrap, .clients .wrap {
     width: 23.25581%;
     float: left;
     margin-right: 2.32558%;
   }
-  .partners .wrap:nth-child(4n) {
+  .partners .wrap:nth-child(4n), .clients .wrap:nth-child(4n) {
     float: right;
     margin-right: 0;
   }
@@ -335,6 +335,40 @@
 }
 .why .reasoning p {
   margin: 8px 0;
+}
+
+/**
+ * How
+ */
+.how {
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+.how:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.how .header {
+  text-align: center;
+}
+.how h2 {
+  color: #333;
+}
+.how .form, .how .profile, .how .enrich, .how .share {
+  width: 23.25581%;
+  float: left;
+  margin-right: 2.32558%;
+}
+.how .enrich {
+  float: right;
+  margin-right: 0;
+}
+.how .container span {
+  color: #A62651;
 }
 
 /**
@@ -507,6 +541,19 @@
 }
 .testimonials h4.quotee {
   font-size: 1em;
+}
+
+/**
+ * Clients - extends partner section
+ */
+.clients {
+  padding: 40px;
+}
+.clients .divider {
+  margin: 0 auto;
+  border-bottom: 4px solid #000;
+  width: 10%;
+  margin-bottom: 20px;
 }
 
 /**

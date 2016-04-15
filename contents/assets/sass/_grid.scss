@@ -81,7 +81,7 @@ $susy: (
 }
 
 /**
- * Partner logo's
+ * Client & Partner logo's
  */
 $partners: (
   gutters: 0.1
@@ -197,6 +197,37 @@ $partners: (
     }
   }
 
+}
+
+/**
+ * How
+ */
+.how {
+  @include layout((gutters: 0.1));
+  @include container(55em);
+  padding: 40px 0;
+  margin-bottom: 20px;
+
+  & .header {
+    text-align: center;
+  }
+  h2 {
+    color: #333;
+  }
+
+  & .form, & .profile, & .enrich, & .share {
+    @include span(1 of 4);
+  }
+
+  & .enrich {
+    @include last;
+  }
+
+  & .container {
+    span {
+      color: $primary-color;
+    }
+  }
 }
 
 
@@ -387,6 +418,20 @@ $partners: (
     font-size: 1em;
   }
 
+}
+
+/**
+ * Clients - extends partner section
+ */
+.clients {
+  @extend .partners;
+  padding: 40px;
+  & .divider {
+    margin: 0 auto;
+    border-bottom: 4px solid #000;
+    width: 10%;
+    margin-bottom: 20px;
+  }
 }
 
 
