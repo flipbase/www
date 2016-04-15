@@ -557,6 +557,65 @@
 }
 
 /**
+ * Contact form
+ */
+.contactform {
+  background: #ededed;
+}
+.contactform .form {
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+.contactform .form:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contactform .form .success, .contactform .form .error {
+  display: none;
+  font-weight: bold;
+}
+.contactform .form .success {
+  color: #4bd117;
+}
+.contactform .form .error {
+  color: #e03c3c;
+}
+.contactform input[type=email], .contactform input[type=password], .contactform input[type=text], .contactform textarea {
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #e3e3e3;
+  outline: 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-family: "freight-sans-pro";
+}
+.contactform button {
+  margin: 10px 0;
+  border: 1px solid #000;
+  border-radius: 2px;
+  background: none;
+  color: #000;
+  text-align: center;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 0.8em;
+  webkit-transition: color 500ms ease, background-color 500ms ease;
+  -moz-transition: color 500ms ease, background-color 500ms ease;
+  -ms-transition: color 500ms ease, background-color 500ms ease;
+  -o-transition: color 500ms ease, background-color 500ms ease;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+.contactform button:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+/**
  * Footer
  */
 .footer {
@@ -580,6 +639,7 @@
 .footer .logo, .footer .sitemap, .footer .contact {
   padding: 15px;
   box-sizing: border-box;
+  background: none;
 }
 .footer .rrssb-buttons li a .rrssb-icon svg {
   width: 12px;

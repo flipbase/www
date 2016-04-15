@@ -1,0 +1,15 @@
+#contact.contactform
+  div.form
+    h3 Contact
+    form#contactform
+      div.field
+        input(placeholder="Naam *" id="name" type="text")
+      div.field
+        input(placeholder="E-mail *" id="email" type="email")
+      div.field
+        textarea(placeholder="Bericht *" rows="4" id="message")
+      button(type="submit") Versturen
+      #successMessage.success
+        span All good! Je hoort zo snel mogelijk van ons!
+      #errorMessage.error
+        span Whoops! Niet alle velden ingevuld!
