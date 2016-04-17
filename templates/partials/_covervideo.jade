@@ -12,27 +12,30 @@ div.cover-wrapper
     #arrow.arrow
       i(class="fa fa-angle-down" aria-hidden="true")
 
-script(src='/assets/components/covervid/covervid.min.js')
 script.
-  // Init cover video first
-  var vid = document.querySelector('.cover-video');
-  if (vid) {
-    coverVid(vid, 1280, 720);
+  function setupCoverVideo () {
+    // Init cover video first
+    var vid = document.querySelector('.cover-video');
+    if (vid) {
+      coverVid(vid, 1280, 720);
 
-    fullscreen();
-    window.onresize(fullscreen);
-    function fullscreen() {
-      var videoWrapper = $('.cover-wrapper');
-      var windowH = $(window).height();
-      var windowW = $(window).width();
+      fullscreen();
+      window.onresize(fullscreen);
+      function fullscreen() {
+        var videoWrapper = $('.cover-wrapper');
+        var windowH = $(window).height();
+        var windowW = $(window).width();
 
-      videoWrapper.width(windowW);
-      videoWrapper.height(windowH);
+        videoWrapper.width(windowW);
+        videoWrapper.height(windowH);
+      }
     }
+
+    $( "#arrow" ).click(function() {
+      $('html, body').animate({
+        scrollTop: $("#partners").offset().top - 100
+      }, 500);
+    });
   }
 
-  $( "#arrow" ).click(function() {
-    $('html, body').animate({
-        scrollTop: $("#partners").offset().top - 100
-    }, 500);
-  });
+  invoker.push(setupCoverVideo);

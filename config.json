@@ -1,9 +1,8 @@
 {
   "locals": {
-    "url": "http://localhost:4747",
     "name": "Flipbase",
     "owner": "Ron Jansen <ron@flipbase.com>",
-    "description": "Ramblings of an immor(t)al demigod"
+    "description": "Flipbase"
   },
   "plugins": [
     "wintersmith-livereload",
@@ -12,8 +11,7 @@
   ],
   "require": {
     "moment": "moment",
-    "_": "underscore",
-    "typogr": "typogr"
+    "_": "underscore"
   },
   "jade": {
     "pretty": true
@@ -21,8 +19,5 @@
   "markdown": {
     "smartLists": true,
     "smartypants": true
-  },
-  "paginator": {
-    "perPage": 5
   }
 }

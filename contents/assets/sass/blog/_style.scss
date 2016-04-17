@@ -1,4 +1,23 @@
 .blog {
+
+  /**
+   * Typo
+   */
+  .header h1 {
+    color: #FFF;
+  }
+
+  h1, h2, h3, h4, h5, p {
+    color: #333;
+  }
+
+  .article-summary p, .article p {
+    font-family: "freight-text-pro";
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+
+
   & .header {
     background-color: $primary-color;
     text-align: center;
