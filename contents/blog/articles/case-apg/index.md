@@ -1,7 +1,7 @@
 ---
 title: Case studie APG
 author: Bram
-date: 2012-10-01 15:00
+date: 2016-10-01 15:00
 ---
 
 De inzet van Flipbase heeft bevestigd dat geschreven tekst niet altijd overeenkomt met de werkelijkheid. Enkele kandidaten die op basis van hun cv niet geschikt leken, nodigden wij na het bekijken van de video toch uit. Andersom werkt dit ook: iemand die op zijn cv de perfecte kandidaat leek, maar niet uit de verf kwam in de video. 

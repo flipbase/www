@@ -21,7 +21,7 @@ block body
           if article.hasMore
             p!= article.intro
             span.more
-              a(href=article.url) Lees verder....
+              a(href=article.url data-type="page-transition") Lees verder....
           else
             p!= article.html
           div.summary-divider

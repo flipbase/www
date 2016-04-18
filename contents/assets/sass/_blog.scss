@@ -1,5 +1,10 @@
 .blog {
 
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
   /**
    * Typo
    */
@@ -30,6 +35,8 @@
     position: relative;
     clear: both;
     margin-top: 60px;
+    padding: 0 20px;
+
   }
 
   & .article {
@@ -51,7 +58,7 @@
   }
 
   & .social-icons {
-    width: 30%;
+    width: 35%;
     margin-bottom: 20px;
   }
 
