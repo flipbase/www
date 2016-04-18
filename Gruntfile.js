@@ -41,20 +41,17 @@ module.exports = function(grunt) {
         "customTests": [],
         "dest": "contents/assets/js/modernizr.custom.min.js",
         "tests": [
-          "video",
+          "cssall",
+          // "video",
           "cssanimations",
-          "bgpositionshorthand",
-          [
-            "bgrepeatspace",
-            "bgrepeatround"
-          ],
+          "bgpositionxy",
           "backgroundsize",
           "bgsizecover",
           "borderradius",
           "boxshadow",
           "boxsizing",
           "fontface",
-          "cssgradients",
+          // "cssgradients",
           "lastchild",
           "mediaqueries",
           "nthchild",
@@ -63,18 +60,16 @@ module.exports = function(grunt) {
           "csspositionsticky",
           "rgba",
           "siblinggeneral",
-          "target",
-          "textshadow",
+          // "target",
+          // "textshadow",
           "csstransforms",
           "csstransitions",
-          "localstorage",
-          "inlinesvg",
-          "videoautoplay",
-          "videoloop",
-          "videopreload",
-          "getusermedia"
+          // "localstorage",
+          "inlinesvg"
         ],
-        "options": [],
+        "options": [
+          "setClasses"
+        ],
         "uglify": true
       }
     }

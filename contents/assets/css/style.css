@@ -156,6 +156,8 @@
   left: 50%;
   margin-top: -100px;
   margin-left: -100px;
+}
+.cssanimations.csstransforms .loader img {
   -moz-animation: flipper 1.5s infinite;
   -webkit-animation: flipper 1.5s infinite;
   animation: flipper 1.5s infinite;
@@ -261,29 +263,28 @@
   margin: auto;
   color: #fff;
 }
-.cover-container .cover-titles h1 {
+.opacity .cover-container .cover-titles h1 {
   opacity: 0;
+}
+.cssanimations.opacity .cover-container .cover-titles h1 {
   -moz-animation: fadeIntro 0.7s 1s forwards;
   -webkit-animation: fadeIntro 0.7s 1s forwards;
   animation: fadeIntro 0.7s 1s forwards;
 }
-.cover-container .cover-titles h2 {
+.opacity .cover-container .cover-titles h2 {
   opacity: 0;
+}
+.cssanimations.opacity .cover-container .cover-titles h2 {
   -moz-animation: fadeIntro 0.7s 1.2s forwards;
   -webkit-animation: fadeIntro 0.7s 1.2s forwards;
   animation: fadeIntro 0.7s 1.2s forwards;
 }
 .cover-container .arrow {
-  opacity: 0;
-  -moz-animation: fadeIntro 0.7s 1.5s forwards;
-  -webkit-animation: fadeIntro 0.7s 1.5s forwards;
-  animation: fadeIntro 0.7s 1.5s forwards;
   position: absolute;
   left: 50%;
   bottom: 8%;
   margin: -24px 0 0 -24px;
   border: 1px solid #FFF;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
   font-size: 40px;
@@ -292,14 +293,30 @@
   display: block;
   cursor: pointer;
 }
+.borderradius .cover-container .arrow {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.opacity .cover-container .arrow {
+  opacity: 0;
+}
+.cssanimations.opacity .cover-container .arrow {
+  -moz-animation: fadeIntro 0.7s 1.5s forwards;
+  -webkit-animation: fadeIntro 0.7s 1.5s forwards;
+  animation: fadeIntro 0.7s 1.5s forwards;
+}
 .cover-container .cover-overlay {
   background-color: #272630;
-  opacity: 0.8;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+.opacity .cover-container .cover-overlay {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 
 @-moz-keyframes fadeIntro {
@@ -357,8 +374,11 @@
 .partners .partner, .clients .partner {
   background-position: center center;
   background-repeat: no-repeat;
-  opacity: 0.8;
   max-height: 150px;
+}
+.opacity .partners .partner, .opacity .clients .partner {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
 }
 @media (max-width: 499px) {
   .partners .partner, .clients .partner {
@@ -369,7 +389,7 @@
     float: left;
     margin-right: 4.7619%;
   }
-  .partners .wrap:nth-child(2n), .clients .wrap:nth-child(2n) {
+  .nthchild .partners .wrap:nth-child(2n), .nthchild .clients .wrap:nth-child(2n) {
     float: right;
     margin-right: 0;
   }
@@ -380,7 +400,7 @@
     float: left;
     margin-right: 3.125%;
   }
-  .partners .wrap:nth-child(3n), .clients .wrap:nth-child(3n) {
+  .nthchild .partners .wrap:nth-child(3n), .nthchild .clients .wrap:nth-child(3n) {
     float: right;
     margin-right: 0;
   }
@@ -391,7 +411,7 @@
     float: left;
     margin-right: 2.32558%;
   }
-  .partners .wrap:nth-child(4n), .clients .wrap:nth-child(4n) {
+  .nthchild .partners .wrap:nth-child(4n), .nthchild .clients .wrap:nth-child(4n) {
     float: right;
     margin-right: 0;
   }
@@ -547,24 +567,30 @@
 .talkingfaces {
   min-height: 100px;
   background-image: url(/assets/images/talkingfaces.jpg);
-  background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   margin: 0px;
   position: relative;
   text-align: center;
   color: #FFF;
 }
+.bgpositionxy .talkingfaces {
+  background-attachment: scroll;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.backgroundsize.bgsizecover .talkingfaces {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .talkingfaces .mask {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(39, 38, 48, 0.5);
   z-index: 1;
+}
+.rgba .talkingfaces .mask {
+  background: rgba(39, 38, 48, 0.5);
 }
 .talkingfaces .teaser {
   position: relative;
@@ -589,6 +615,9 @@
   margin: 0;
   box-shadow: none;
 }
+.testimonials .bx-wrapper .bx-pager {
+  padding-top: 0px;
+}
 .testimonials .bx-pager {
   position: relative;
   bottom: 0;
@@ -601,18 +630,11 @@
 .testimonials .bx-wrapper .bx-pager.bx-default-pager a {
   background-color: #7d1d3d;
 }
-.testimonials:hover .prev, .testimonials:hover .next {
+.opacity .testimonials:hover .prev, .opacity .testimonials:hover .next {
   opacity: 1;
 }
 .testimonials .prev, .testimonials .next {
-  -webkit-transition: opacity 500ms ease, background 500ms ease;
-  -moz-transition: opacity 500ms ease, background 500ms ease;
-  -ms-transition: opacity 500ms ease, background 500ms ease;
-  -o-transition: opacity 500ms ease, background 500ms ease;
-  transition: opacity 500ms ease, background 500ms ease;
-  opacity: 0;
   border: 1px solid #fff;
-  border-radius: 50%;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -628,6 +650,20 @@
   font-size: 24px;
   padding: 10px;
   background: none;
+}
+.borderradius .testimonials .prev, .borderradius .testimonials .next {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.csstransitions .testimonials .prev, .csstransitions .testimonials .next {
+  -moz-transition: opacity 500ms ease, background 500ms ease;
+  -o-transition: opacity 500ms ease, background 500ms ease;
+  -webkit-transition: opacity 500ms ease, background 500ms ease;
+  transition: opacity 500ms ease, background 500ms ease;
+}
+.opacity .testimonials .prev, .opacity .testimonials .next {
+  opacity: 0;
 }
 .testimonials .prev:hover, .testimonials .next:hover {
   background-color: #d03065;
@@ -721,17 +757,23 @@
 .contactform button {
   margin: 10px 0;
   border: 1px solid #000;
-  border-radius: 2px;
   background: none;
   color: #000;
   text-align: center;
   padding: 10px 30px;
   font-weight: bold;
   font-size: 0.8em;
-  webkit-transition: color 500ms ease, background-color 500ms ease;
+  cursor: pointer;
+}
+.borderradius .contactform button {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.csstransitions .contactform button {
   -moz-transition: color 500ms ease, background-color 500ms ease;
-  -ms-transition: color 500ms ease, background-color 500ms ease;
   -o-transition: color 500ms ease, background-color 500ms ease;
+  -webkit-transition: color 500ms ease, background-color 500ms ease;
   transition: color 500ms ease, background-color 500ms ease;
 }
 .contactform button:hover {
@@ -762,8 +804,12 @@
 }
 .footer .logo, .footer .sitemap, .footer .contact {
   padding: 15px;
-  box-sizing: border-box;
   background: none;
+}
+.boxsizing .footer .logo, .boxsizing .footer .sitemap, .boxsizing .footer .contact {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .footer .rrssb-buttons li a .rrssb-icon svg {
   width: 12px;
@@ -788,15 +834,20 @@
 }
 .footer .sitemap ul li a {
   padding-bottom: 2px;
+}
+.rgba .footer .sitemap ul li a {
   border-bottom: 1px solid rgba(192, 192, 192, 0);
-  -webkit-transition: border 300ms ease, color 300ms ease;
+}
+.csstransitions .footer .sitemap ul li a {
   -moz-transition: border 300ms ease, color 300ms ease;
-  -ms-transition: border 300ms ease, color 300ms ease;
   -o-transition: border 300ms ease, color 300ms ease;
+  -webkit-transition: border 300ms ease, color 300ms ease;
   transition: border 300ms ease, color 300ms ease;
 }
 .footer .sitemap ul li a:hover {
   color: #FFF;
+}
+.rgba .footer .sitemap ul li a:hover {
   border-bottom: 1px solid silver;
 }
 @media (max-width: 500px) {
@@ -943,14 +994,19 @@ h2.subtitle {
 }
 .blog .paginate .paginator {
   border: 2px solid #333;
-  border-radius: 2px;
   color: #333;
   background-color: #FFF;
   padding: 10px 30px;
-  webkit-transition: color 500ms ease, background-color 500ms ease;
+}
+.borderradius .blog .paginate .paginator {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.csstransitions .blog .paginate .paginator {
   -moz-transition: color 500ms ease, background-color 500ms ease;
-  -ms-transition: color 500ms ease, background-color 500ms ease;
   -o-transition: color 500ms ease, background-color 500ms ease;
+  -webkit-transition: color 500ms ease, background-color 500ms ease;
   transition: color 500ms ease, background-color 500ms ease;
 }
 .blog .paginate .paginator .fa {
@@ -1009,7 +1065,7 @@ h2.subtitle {
     opacity: 0;
   }
 }
-.main {
+.cssanimations.opacity .main {
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
   transition-timing-function: ease-in;
@@ -1018,7 +1074,7 @@ h2.subtitle {
   animation-name: fadeIn;
 }
 
-.main.is-exiting {
+.cssanimations.opacity .main.is-exiting {
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
   transition-timing-function: ease-in;

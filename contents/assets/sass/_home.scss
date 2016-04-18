@@ -2,6 +2,10 @@
 @import "breakpoint";
 @import "compass/css3/animation";
 @import "compass/css3/transform";
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-sizing";
+@import "compass/css3/opacity";
 
 $susy: (
   flow: ltr,
@@ -46,7 +50,9 @@ $susy: (
     left: 50%;
     margin-top: -100px;
     margin-left: -100px;
-    @include animation(flipper 1.5s infinite);
+    .cssanimations.csstransforms & {
+      @include animation(flipper 1.5s infinite);
+    }
   }
 }
 
@@ -103,24 +109,28 @@ $susy: (
     color: #fff;
 
     & h1 {
-      opacity: 0;
-      @include animation(fadeIntro 0.7s 1s forwards);
+      .opacity & {
+        opacity: 0;
+      }
+      .cssanimations.opacity & {
+        @include animation(fadeIntro 0.7s 1s forwards);
+      }
     }
     & h2 {
-      opacity: 0;
-      @include animation(fadeIntro 0.7s 1.2s forwards);
+      .opacity & {
+        opacity: 0;
+      }
+      .cssanimations.opacity & {
+        @include animation(fadeIntro 0.7s 1.2s forwards);
+      }
     }    
-
   }
   .arrow {
-    opacity: 0;
-    @include animation(fadeIntro 0.7s 1.5s forwards);
     position: absolute;
     left: 50%;
     bottom: 8%;
     margin: -24px 0 0 -24px;
     border: 1px solid #FFF;
-    border-radius: 50%;
     width: 50px;
     height: 50px;
     font-size: 40px;
@@ -128,10 +138,22 @@ $susy: (
     color: #FFF;
     display: block;
     cursor: pointer;
+    
+    .borderradius & {
+      @include border-radius(50%);
+    }
+    .opacity & {
+      opacity: 0;
+    }
+    .cssanimations.opacity & {
+      @include animation(fadeIntro 0.7s 1.5s forwards);
+    }
   }
   .cover-overlay {
     background-color: #272630; 
-    opacity: 0.8;
+    .opacity & {
+      @include opacity(0.8);
+    }
     position: absolute;
     width: 100%;
     height: 100%;
@@ -143,10 +165,10 @@ $susy: (
 
 @include keyframes(fadeIntro) {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -174,7 +196,9 @@ $partners: (
   .partner {
     background-position: center center;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    .opacity & {
+      @include opacity(0.8);
+    }
     max-height: 150px;
   }
 
@@ -185,7 +209,7 @@ $partners: (
     .wrap {
       @include span(1 of 2);
       // Remove the gutter from the last column
-      &:nth-child(2n) {
+      .nthchild &:nth-child(2n) {
         @include last;
       }
     }
@@ -193,7 +217,7 @@ $partners: (
   @include breakpoint((min-width 500px) (max-width 800px)) {
     .wrap {
       @include span(1 of 3);
-      &:nth-child(3n) {
+      .nthchild &:nth-child(3n) {
         @include last;
       }
     }
@@ -201,7 +225,7 @@ $partners: (
   @include breakpoint((min-width 801px)) {
     .wrap {
       @include span(1 of 4);
-      &:nth-child(4n) {
+      .nthchild &:nth-child(4n) {
         @include last;
       }
     }
@@ -349,17 +373,22 @@ $partners: (
 .talkingfaces {
   min-height: 100px;
   background-image: url(/assets/images/talkingfaces.jpg);
-  background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+  .bgpositionxy & {
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .backgroundsize.bgsizecover & {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   margin: 0px;
   position: relative;
-
   text-align: center;
   color: #FFF;
 
@@ -367,7 +396,9 @@ $partners: (
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(39,38,48,0.5);
+    .rgba & {
+      background: rgba(39,38,48,0.5);
+    }
     z-index: 1;
   }
 
@@ -397,6 +428,10 @@ $partners: (
     border: none;
     margin: 0;
     box-shadow: none;
+
+    & .bx-pager {
+      padding-top: 0px;
+    }
   }
 
   & .bx-pager {
@@ -418,19 +453,14 @@ $partners: (
 
   &:hover {
     & .prev, & .next {
-      opacity: 1;
+      .opacity & {
+        opacity: 1;
+      }
     }
   }
   // slider controls 
   & .prev, & .next {
-    -webkit-transition: opacity 500ms ease, background 500ms ease;
-    -moz-transition: opacity 500ms ease, background 500ms ease;
-    -ms-transition: opacity 500ms ease, background 500ms ease;
-    -o-transition: opacity 500ms ease, background 500ms ease;
-    transition: opacity 500ms ease, background 500ms ease;
-    opacity: 0;
     border: 1px solid #fff;
-    border-radius: 50%;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -446,6 +476,16 @@ $partners: (
     font-size: 24px;
     padding: 10px;
     background: none;
+
+    .borderradius & {
+      @include border-radius(50%);
+    }
+    .csstransitions & {
+      @include transition(opacity 500ms ease, background 500ms ease);
+    }
+    .opacity & {
+      opacity: 0;
+    }
     
     &:hover {
       background-color: lighten($primary-color, 10%);
@@ -543,20 +583,20 @@ $partners: (
   & button {
     margin: 10px 0;
     border: 1px solid #000;
-    border-radius: 2px;
     background: none;
     color: #000;
     text-align: center;
     padding: 10px 30px;
     font-weight: bold;
     font-size: 0.8em;
+    cursor: pointer;
 
-    webkit-transition: color 500ms ease, background-color 500ms ease;
-    -moz-transition: color 500ms ease, background-color 500ms ease;
-    -ms-transition: color 500ms ease, background-color 500ms ease;
-    -o-transition: color 500ms ease, background-color 500ms ease;
-    transition: color 500ms ease, background-color 500ms ease;
-
+    .borderradius & {
+      @include border-radius(2px);
+    }
+    .csstransitions & {
+      @include transition(color 500ms ease, background-color 500ms ease);
+    }
     &:hover {
       background-color: #333;
       color: #FFF;
@@ -586,8 +626,11 @@ $partners: (
 
   & .logo, & .sitemap, & .contact {
     padding: 15px;
-    box-sizing: border-box;
     background: none;
+
+    .boxsizing & {
+      @include box-sizing(border-box);
+    }
   }
 
   // Make social media icons smaller
@@ -620,17 +663,21 @@ $partners: (
   & .sitemap ul li {
     a {
       padding-bottom: 2px;
-      border-bottom: 1px solid rgba(192, 192, 192, 0);
+
+      .rgba & {
+        border-bottom: 1px solid rgba(192, 192, 192, 0);
+      }
       
-      -webkit-transition: border 300ms ease, color 300ms ease;
-      -moz-transition: border 300ms ease, color 300ms ease;
-      -ms-transition: border 300ms ease, color 300ms ease;
-      -o-transition: border 300ms ease, color 300ms ease;
-      transition: border 300ms ease, color 300ms ease;
+      .csstransitions & {
+        @include transition(border 300ms ease, color 300ms ease);
+      }
     } 
     a:hover {
       color: #FFF;
-      border-bottom: 1px solid rgba(192, 192, 192, 1);
+
+      .rgba & {
+        border-bottom: 1px solid rgba(192, 192, 192, 1);
+      }
     }
   }
 

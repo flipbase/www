@@ -18,7 +18,7 @@
     }
 }
 
-.main {
+.cssanimations.opacity .main {
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
   transition-timing-function: ease-in;
@@ -29,7 +29,7 @@
   animation-name: fadeIn;
 }
 
-.main.is-exiting {
+.cssanimations.opacity .main.is-exiting {
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
   transition-timing-function: ease-in;

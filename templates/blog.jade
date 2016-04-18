@@ -10,7 +10,6 @@ block body
 
     div.content
       //- Iterate over blog/articles directory
-      //- The `articles` variables is provided the paginator plugin
       each article in articles
         - var date = moment.utc(article.date).format('DD MMMM YYYY')
         div.article-summary
