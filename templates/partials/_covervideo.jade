@@ -1,10 +1,10 @@
 div.cover-wrapper
   div.cover-container
-    video(poster="/assets/images/cover.jpg" class="cover-video" muted="muted" preload="auto" loop="true" autoplay="true")
-      source(type="video/mp4" src="/assets/images/video/rick.mp4")
-      source(type="video/webm" src="/assets/images/video/rick.webm")
-      source(type="video/ogg" src="/assets/images/video/rick.ogv")
-      img(src="/assets/images/cover.jpg")
+    video(poster="#{locals.path}/assets/images/cover.jpg" class="cover-video" muted="muted" preload="auto" loop="true" autoplay="true")
+      source(type="video/mp4" src="#{locals.path}/assets/images/video/rick.mp4")
+      source(type="video/webm" src="#{locals.path}/assets/images/video/rick.webm")
+      source(type="video/ogg" src="#{locals.path}/assets/images/video/rick.ogv")
+      img(src="#{locals.path}/assets/images/cover.jpg")
     div.cover-overlay
     div.cover-titles
       h1 In 30 seconden een beeld van de persoon achter het C.V.

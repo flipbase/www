@@ -2,7 +2,8 @@
   "locals": {
     "name": "Flipbase",
     "owner": "Ron Jansen <ron@flipbase.com>",
-    "description": "Flipbase"
+    "description": "Flipbase",
+    "path": "http://flipbase.com/newsite/build"
   },
   "plugins": [
     "wintersmith-livereload",

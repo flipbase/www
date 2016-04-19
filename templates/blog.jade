@@ -1,7 +1,7 @@
 extends layout
 
 block logo
-  img(src="/assets/images/logo_whitedark_small.png")
+  img(src="#{locals.path}/assets/images/logo_whitedark_small.png")
 
 block body
   div.blog
@@ -14,14 +14,14 @@ block body
         - var date = moment.utc(article.date).format('DD MMMM YYYY')
         div.article-summary
           h2
-            a(href=article.url data-type="page-transition")= article.title
+            a(href=locals.path + article.url data-type="page-transition")= article.title
           span.metadata Geschreven door #{article.metadata.author} op #{date}
 
           //- Wintersmith searches for <span class="more"></span>, <hr/> or first <h2> element, if one of those is present a `hasMore` and a `intro` property are available
           if article.hasMore
             p!= article.intro
             span.more
-              a(href=article.url data-type="page-transition") Lees verder....
+              a(href=locals.path + article.url data-type="page-transition") Lees verder....
           else
             p!= article.html
           div.summary-divider

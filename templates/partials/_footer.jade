@@ -2,7 +2,7 @@ div.footer
   div.content
     div.logo
       a(href="/" data-type="page-transition")
-        img(src="/assets/images/logo_white_small.png")
+        img(src="#{locals.path}/assets/images/logo_white_small.png")
 
     div.contact
       h5 Contact
@@ -36,10 +36,10 @@ div.footer
       h5 Sitemap
       ul
         li 
-          a(href="/" data-type="page-transition") Home
+          a(href="#{locals.path}/" data-type="page-transition") Home
         li 
-          a(href="/blog" data-type="page-transition") Blog
+          a(href="#{locals.path}/blog" data-type="page-transition") Blog
         li  
-          a(href="/#contact" data-type="page-transition") Contact
+          a(href="#{locals.path}/#contact" data-type="page-transition") Contact
         li  
-          a(href="/en" data-type="page-transition") English
+          a(href="#{locals.path}/en" data-type="page-transition") English
