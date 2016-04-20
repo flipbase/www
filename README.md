@@ -1,13 +1,16 @@
-Keuzes:
+# WWW
 
-- Maak page responsive per sectie met susy, voeg breakpoints toe waar nodig.
+Flipbase.com website and blog template, based on [Wintersmith.io](http://wintersmith.io). 
 
-# To do
+## Setup & depedencies
 
-- navigatie
-- contact formulieren
-- testimonials slider plugin
+Repo uses wintersmith, bower, npm and the Ruby gems SASS, susy, compass and Breakpoint
+  
+  npm wintersmith install -g
+  npm bower install -g
+  gem install sass, compass, breakpoint // Required for compiling SASS to CSS
 
-# Voor oplevering
-
-- Test if in IE8 the cover background is centralized
+## Build
+  
+  npm run setup // Install all local packages and dependencies
+  npm run build // Build the website

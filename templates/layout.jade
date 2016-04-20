@@ -6,7 +6,7 @@ html(lang='en')
       | !{ livereloadScript }
       meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
       meta(name='viewport', content='width=device-width')
-      link(rel="shortcut icon" href="/assets/images/favicon.ico")
+      link(rel="shortcut icon" href="#{locals.path}/assets/images/favicon.ico")
 
       block title 
         title #{locals.name}
@@ -49,8 +49,21 @@ html(lang='en')
         <!--[if lt IE 9]>
         script(src='#{locals.path}/assets/components/html5shiv/dist/html5shiv.min.js')
         <![endif]-->
-
   body
+
+    <!--[if lt IE 9 ]>
+    div(class="ie-warning")
+      div(class="ie-warning-wrapper") 
+        h3 The browser you're currently using is outdated
+        p We no longer support this browser. Please use any of the following more modern alternatives
+        div(class="browser-choice")
+          div(class="browser chrome-icon" style="background: url(#{locals.path}/assets/images/chrome.png) no-repeat top;") 
+            button(class="download-browser" onclick="location.href='https://www.google.com/chrome/browser/desktop/'") Download Chrome 
+          div(class="browser firefox-icon" style="background: url(#{locals.path}/assets/images/firefox.png) no-repeat top;")
+            button(class="download-browser" onclick="location.href='https://www.mozilla.org/en-US/firefox/new/'") Download Firefox
+          div(class="browser ie-icon" style="background: url(#{locals.path}/assets/images/ie.png) no-repeat top;")
+            button(class="download-browser" onclick="location.href='http://windows.microsoft.com/en-us/internet-explorer/download-ie'") Download IE 11
+    <![endif]-->
 
     div.loader
       img(src="#{locals.path}/assets/images/logo_whitedark_small.png")
