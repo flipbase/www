@@ -70,6 +70,7 @@ module.exports = function(grunt) {
           cwd: '<%= yeoman.assets %>/components',
           dest: '<%= yeoman.dist %>/components',
           src: [
+            'jquery-placeholder/jquery.placeholder.min.{js,map}',
             'bxslider-4/dist/jquery.bxslider.min.*',
             'bxslider-4/dist/images/bx_loader.*',
             'covervid/covervid.min.js',
