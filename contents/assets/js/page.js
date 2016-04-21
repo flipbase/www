@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
   // Setup sticky header
-  $(window).on('scroll', function() {
-    var fromTop = $('body').scrollTop();
+  $(window).scroll(function() {
+    var fromTop = $(document).scrollTop();
+    console.log(fromTop);
     $('.nav-wrapper').toggleClass('sticky', (fromTop > 80));
   });
 
