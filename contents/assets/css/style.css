@@ -247,6 +247,10 @@ h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   position: relative;
 }
 
+video::-webkit-media-controls {
+  display: none !important;
+}
+
 .cover-container {
   position: absolute;
   top: 0;
@@ -272,9 +276,12 @@ h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   font-size: 1.8em;
 }
 .opacity .cover-container .cover-titles h1 {
-  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
 }
 .cssanimations.opacity .cover-container .cover-titles h1 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   -moz-animation: fadeIntro 0.7s 0.7s forwards;
   -webkit-animation: fadeIntro 0.7s 0.7s forwards;
   animation: fadeIntro 0.7s 0.7s forwards;
@@ -285,9 +292,12 @@ h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   padding: 0 20px;
 }
 .opacity .cover-container .cover-titles h2 {
-  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
 }
 .cssanimations.opacity .cover-container .cover-titles h2 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   -moz-animation: fadeIntro 0.7s 0.9s forwards;
   -webkit-animation: fadeIntro 0.7s 0.9s forwards;
   animation: fadeIntro 0.7s 0.9s forwards;
@@ -314,15 +324,18 @@ h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   display: block;
   cursor: pointer;
 }
+.opacity .cover-container .arrow {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
 .borderradius .cover-container .arrow {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-.opacity .cover-container .arrow {
-  opacity: 0;
-}
 .cssanimations.opacity .cover-container .arrow {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   -moz-animation: fadeIntro 0.7s 1.1s forwards;
   -webkit-animation: fadeIntro 0.7s 1.1s forwards;
   animation: fadeIntro 0.7s 1.1s forwards;
@@ -664,6 +677,7 @@ h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   background-color: #7d1d3d;
 }
 .opacity .testimonials:hover .prev, .opacity .testimonials:hover .next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
 }
 .testimonials .prev, .testimonials .next {
@@ -696,6 +710,7 @@ h1, h2, h3, h4, h5, .subtitle, span, p, a, ul, ul li {
   transition: opacity 500ms ease, background 500ms ease;
 }
 .opacity .testimonials .prev, .opacity .testimonials .next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
 .testimonials .prev:hover, .testimonials .next:hover {
