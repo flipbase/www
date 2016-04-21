@@ -3,7 +3,7 @@
     "name": "Flipbase",
     "owner": "Ron Jansen <ron@flipbase.com>",
     "description": "Flipbase",
-    "path": ""
+    "path": "http://localhost:8080"
   },
   "plugins": [
     "wintersmith-livereload",

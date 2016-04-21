@@ -1,9 +1,6 @@
 div.cover-wrapper
   div.cover-container
     video(poster="#{locals.path}/assets/images/cover.jpg" class="cover-video" muted="muted" preload="auto" loop="true" autoplay="true")
-      source(type="video/mp4" src="#{locals.path}/assets/images/video/rick.mp4")
-      source(type="video/webm" src="#{locals.path}/assets/images/video/rick.webm")
-      source(type="video/ogg" src="#{locals.path}/assets/images/video/rick.ogv")
       img(src="#{locals.path}/assets/images/cover.jpg")
     div.cover-overlay
     div.cover-titles
@@ -13,6 +10,20 @@ div.cover-wrapper
       i(class="fa fa-angle-down" aria-hidden="true")
 
 script.
+  //- Do not show video on pages when autoplay is not supported!
+  var tests = ['videoautoplay', 'videopreload', 'videoloop'];
+  var showVideo = 0;
+  for (var i = 0; tests.length > i; i++) {
+    Modernizr.on(tests[i], function (bool) {
+      if (bool) {
+        showVideo++;
+        if (showVideo === 3) {
+          $('video').html('<source type="video/mp4" src="#{locals.path}/assets/images/video/rick.mp4" /><source type="video/webm" src="#{locals.path}/assets/images/video/rick.webm" /><source type="video/ogv" src="#{locals.path}/assets/images/video/rick.ogv" />');
+        }
+      }
+    });
+  }
+
   function setupCoverVideo () {
     // Init cover video first
     var vid = document.querySelector('.cover-video');

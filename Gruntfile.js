@@ -111,12 +111,13 @@ module.exports = function(grunt) {
           "overflowscrolling",
           "csspositionsticky",
           "rgba",
+          "videoautoplay",
+          "videoloop",
+          "videopreload",
+
           "siblinggeneral",
-          // "target",
-          // "textshadow",
           "csstransforms",
           "csstransitions",
-          // "localstorage",
           "inlinesvg"
         ],
         "options": [
