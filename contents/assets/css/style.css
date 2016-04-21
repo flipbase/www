@@ -21,8 +21,11 @@
   display: block;
   clear: both;
 }
-.nav-inner img {
+.nav-inner .logo {
   max-width: 90%;
+}
+.nav-inner .logo img {
+  max-width: 100%;
 }
 
 .nav {
@@ -46,7 +49,11 @@
   position: relative;
 }
 .nav ul li img {
-  width: 20px;
+  width: 18px;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .nav ul li a:after {
   display: block;
@@ -1013,6 +1020,11 @@ video::-webkit-media-controls {
   font-family: "freight-text-pro";
   line-height: 1.5em;
   font-size: 1.3em;
+}
+@media (max-width: 600px) {
+  .blog {
+    font-size: 85%;
+  }
 }
 .blog .header {
   background-color: #A62651;

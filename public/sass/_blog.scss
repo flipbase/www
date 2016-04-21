@@ -1,3 +1,6 @@
+@import "susy";
+@import "breakpoint";
+
 .blog {
 
   a {
@@ -22,6 +25,9 @@
     font-size: 1.3em;
   }
 
+  @include breakpoint((max-width 600px)) {
+    font-size: 85%;
+  }
 
   & .header {
     background-color: $primary-color;

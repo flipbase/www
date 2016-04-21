@@ -28,7 +28,10 @@ html(lang='en')
         script.
           $(window).load(function() {
             $('.loader').fadeOut('slow');
-          })
+          });
+          setTimeout(function () {
+            $('.loader').fadeOut('slow');
+          }, 10000);
         script.
           (function(d) {
             var tkTimeout=3000;

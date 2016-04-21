@@ -25,8 +25,13 @@ $pink: #a72552;
   @include container(70em);
   height: $height;
 
-  img {
+  .logo {
     max-width: 90%;
+    
+    & img {
+      max-width: 100%;
+    }
+
   }
 }
 
@@ -53,8 +58,12 @@ $pink: #a72552;
       position: relative;
     }
 
-    img {
-      width: 20px;
+    & img {
+      width: 18px;
+      position: relative;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
     }
 
     // Fake underlining effect
