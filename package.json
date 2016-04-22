@@ -13,6 +13,8 @@
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-cssmin": "*",
     "grunt-modernizr": "^1.0.2"
   },
   "devDependencies": {

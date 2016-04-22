@@ -16,6 +16,10 @@ module.exports = function(grunt) {
       sass: {
         files: ['<%= yeoman.assets %>/sass/{,*/}*.scss'],
         tasks:  ['sass']
+      },
+      js: {
+        files: ['<%= yeoman.assets %>/js/{,*/}*.js'],
+        tasks:  ['uglify']        
       }
     },
 
@@ -40,6 +44,50 @@ module.exports = function(grunt) {
       dist: ['<%= yeoman.dist %>/*']
     },
 
+    uglify: {  
+      options: {  
+        compress: true  
+      },
+      deps: {
+        src: [  
+          '<%= yeoman.assets %>/components/jquery/dist/jquery.min.js',
+          '<%= yeoman.assets %>/components/jquery-placeholder/jquery.placeholder.min.js',
+          '<%= yeoman.assets %>/components/covervid/covervid.min.js',
+          '<%= yeoman.assets %>/components/rrssb/js/rrssb.min.js',
+          '<%= yeoman.assets %>/components/covervid/covervid.min.js',
+          '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.js',
+          '<%= yeoman.assets %>/components/smoothstate/jquery.smoothState.min.js'
+        ],
+        dest: '<%= yeoman.dist %>/js/dependencies.js'
+      }, 
+      page: {  
+        src: [  
+          '<%= yeoman.assets %>/js/form.js',
+          '<%= yeoman.assets %>/js/page.js'
+        ],  
+        dest: '<%= yeoman.dist %>/js/page.js'  
+      },
+      footer: {
+        src: [  
+          '<%= yeoman.assets %>/js/smoothstate.js'
+        ],
+        dest: '<%= yeoman.dist %>/js/footer.js'        
+      }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          src: [
+            '<%= yeoman.assets %>/components/normalize.css/normalize.css',
+            '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css',
+            '<%= yeoman.assets %>/components/rrssb/css/rrssb.css'
+          ],
+          dest: '<%= yeoman.dist %>/css/dependencies.min.css'
+        }]
+      }
+    },
+
     copy: {
       img: {
         files: [{
@@ -52,37 +100,17 @@ module.exports = function(grunt) {
           ]
         }]
       },
-      js: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.assets %>/js',
-          dest: '<%= yeoman.dist %>/js',
-          src: [
-            '**/*'
-          ]
-        }]
-      },
-      components: {
+      assets: {
         files: [{
           expand: true,
           dot: true,
           cwd: '<%= yeoman.assets %>/components',
           dest: '<%= yeoman.dist %>/components',
           src: [
-            'jquery-placeholder/jquery.placeholder.min.{js,map}',
-            'bxslider-4/dist/jquery.bxslider.min.*',
             'bxslider-4/dist/images/bx_loader.*',
-            'covervid/covervid.min.js',
             'html5shiv/dist/html5shiv.min.js',
-            'jquery/dist/jquery.min.*',
-            'normalize.css/normalize.css',
-            'rrssb/css/rrssb.css',
-            'rrssb/js/rrssb.min.js',
             'rrssb/icons/*',
-            'smoothstate/jquery.smoothState.min.js',
             'components-font-awesome/fonts/*',
-            'components-font-awesome/css/font-awesome.min.css',
           ]
         }]
       }
@@ -133,6 +161,8 @@ module.exports = function(grunt) {
     'clean',
     'modernizr',
     'sass',
+    'cssmin',
+    'uglify',
     'copy'
   ]);
 

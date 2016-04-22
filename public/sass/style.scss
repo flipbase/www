@@ -4,7 +4,14 @@
 $primary-color: #A62651;
 $padding: 20px;
 
+$fa-font-path: '../components/components-font-awesome/fonts';
+@import "../components/components-font-awesome/scss/font-awesome";
+
 @import "_nav";
 @import "_home";
 @import "_blog";
 @import "_pagetransition";
+
+.bx-wrapper .bx-loading {
+  background: url('../components/bxslider-4/dist/images/bx_loader.gif') center center no-repeat #ffffff;
+}
