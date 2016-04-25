@@ -5,23 +5,8 @@ div.testimonials
     i(class="fa fa-angle-right")
 
   ul(class="bxslider")
-    li
-      div.quote-wrap
-        span.quote &ldquo; Op basis van enkel het CV is het moeilijk in te schatten of iemand geschikt is voor de functie en past bij Unique. Met de Flipbase video introductie heb je een extra selectie middel waarmee deze twijfel bevestigd wordt, of juist onterecht blijkt. &rdquo;
-        h4.quotee Esther Kuipers, Unique
-    li
-      div.quote-wrap
-        span.quote &ldquo; De video functionaliteit van Flipbase heeft het selecteren van geschikte kandidaten effectiever en leuker gemaakt. &rdquo;
-        h4.quotee Kadriye Demirel, Schiphol
-    li
-      div.quote-wrap
-        span.quote &ldquo; Bij de werving van potentials voor ons Agrifirm Traineeship programma geeft het motivatiefilmpje een uitstekende eerste indruk van de kandidaat. Het spreekt de sollicitant zelf ook aan. Het is vernieuwend en positief voor je employer brand. &rdquo;
-        h4.quotee Gert Jan Nagel, Agrifirm
-    li
-      div.quote-wrap
-        span.quote &ldquo; Flipbase levert ons een behoorlijke tijdsbesparing op. Een C.V. geeft immer niet weer hoe iemand overkomt. &rdquo;
-        h4.quotee Maikel Boksteen, 2Trust
-    li
-      div.quote-wrap
-        span.quote &ldquo; Mede dankzij het inzetten van Flipbase gaan er meer voorgestelde kandidaten op gesprek bij onze opdrachtgevers! &rdquo;
-        h4.quotee Richard Groeneveld
+    each quote in page.metadata.testimonials
+      li
+        div.quote-wrap
+          span.quote &ldquo; #{quote.quote} &rdquo;
+          h4.quotee  #{quote.name}

@@ -1,10 +1,9 @@
 ---
-template: job.jade
+template: article.jade
+header: Jobs
+title: Not so junior, junior JavaScript 
 ---
 
-# Not so junior, junior JavaScript 
-
-## We
 We are expanding!
 
 ### Modern technologies

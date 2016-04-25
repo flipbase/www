@@ -1,5 +1,10 @@
 extends layout
 
+//- Only include player when defined in metadata
+block append scripts
+  if page.metadata.player
+    script(src="https://app.flipbase.com/player.js")
+
 block logo
   img(src="#{locals.path}/assets/images/logo_whitedark_small.png")
 
@@ -7,12 +12,18 @@ block body
   
   div.blog
     div.header
-      h1 Blog
+      if page.metadata.header
+        h1= page.metadata.header
+      else
+        h1 Blog
     
     div.article
       h1= page.title
-      - var date = moment.utc(page.date).format('DD MMMM YYYY')
-      span.metadata Geschreven door #{page.metadata.author} op #{date}
+
+      if (page.data && page.metadata.author)
+        - var date = moment.utc(page.date).format('DD MMMM YYYY')
+        span.metadata Geschreven door #{page.metadata.author} op #{date}
+
       #article !{page.html}
       //- Social media icons
       div.social-icons

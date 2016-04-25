@@ -6,12 +6,16 @@ header
           li
             a(href="#{locals.path}/" data-type="page-transition") Home
           li
+            a(href="#{locals.path}/jobs/junior-accountmanager" data-type="page-transition") Jobs
+          li
             a(href="#{locals.path}/blog" data-type="page-transition") Blog
           li
             a(href="#{locals.path}/#contact" data-type="page-transition") Contact
-          li
-            a(href="#{locals.path}/en" data-type="page-transition")
-              img(src="#{locals.path}/assets/images/flag_uk.png")
+          - var isEN = page && page.filepath.relative === 'en/index.json' ? true : false;
+          if !isEN
+            li
+              a(href="#{locals.path}/en" data-type="page-transition")
+                img(src="#{locals.path}/assets/images/flag_uk.png")
 
       div.logo
         a(href="#{locals.path}/" data-type="page-transition")

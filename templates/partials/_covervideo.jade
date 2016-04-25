@@ -7,8 +7,8 @@ div.cover-wrapper
       img(src="#{locals.path}/assets/images/cover.jpg")
     div.cover-overlay
     div.cover-titles
-      h1 In 30 seconden een beeld van de persoon achter het C.V.
-      h2.subtitle Direct beschikbaar in je eigen recruitment omgeving
+      h1= page.metadata.titles.header
+      h2.subtitle= page.metadata.titles.subheader
     #arrow.arrow
       i(class="fa fa-angle-down" aria-hidden="true")
 

@@ -1,0 +1,83 @@
+{
+ "template": "index.jade",
+
+  "titles": {
+    "header": "In 30 seconden een beeld van de persoon achter het C.V.",
+    "subheader": "Direct beschikbaar in je eigen recruitment omgeving"
+  },
+
+  "partners": {
+    "header": "In iedere recruitment omgeving",
+    "desc": "Flipbase is géén systeem. Flipbase is een plugin die speciaal ontwikkeld is om geïntegreerd te worden in je huidige recruitment omgeving. Hierdoor zijn er geen grote veranderingen in het recruitment proces nodig."
+  },
+
+  "why": {
+    "title": "Waarom?",
+    "no": "Geen onnodige kennismakingsgesprekken",
+    "no_desc": "Op basis van een eerste indruk weet je vaak al of een kandidaat wel of niet geschikt is voor de functie.",
+    "direct": "Direct een eerste indruk beschikbaar",
+    "direct_desc": "Zoek niet langer online naar een eerste indruk van een kandidaat.",
+    "versterk": "Versterk de voordracht",
+    "versterk_desc": "Versterk de interne of externe voordracht van kandidaten, aan bijvoorbeeld een manager of opdrachtgever.",
+    "no2": "Geen onterechte afwijzingen",
+    "no2_desc": "Beoordeel een kandidaat niet enkel op basis van competenties en ervaring, maar ook op persoonlijkheid en motivatie."
+  },
+
+  "how": {
+    "title": "Hoe werkt het?",
+    "one": "In het formulier of na een eerste selectie",
+    "one_desc" : "Zet video in waar en wanneer je wilt. Hierbij heb je de mogelijkheid om het opnemen van een video verplicht of optioneel te maken.",
+    "two": "Automatisch gekoppeld aan het kandidaat dossier",
+    "two_desc": "Zodra een video is opgenomen, wordt deze automatisch gekoppeld aan het kandidaat dossier in je recruitment omgeving.",
+    "three": "Versterk de interne voordracht",
+    "three_desc": "In je recruitment omgeving kan je met Flipbase eenvoudig de voordracht van kandidaten, aan bijvoorbeeld een manager, versterken.",
+    "four": "Verrijk profielen",
+    "four_desc": "In je recruitment omgeving kan je met Flipbase eenvoudig profielen verrijken waardoor je altijd een eerste indruk van talenten bij de hand hebt."
+  },
+
+  "gedoe": {
+    "title": "Geen gedoe",
+    "ready": "Kant en klaar",
+    "ready_desc": "Samen met de leverancier van jouw recruitment software zorgen wij dat onze video functionaliteit beschikbaar is in jouw huidige recruitment proces.",
+    "device": "Op ieder apparaat",
+    "device_desc": "Het opnemen en afspelen van video wordt ondersteund op ieder apparaat, zonder een app te hoeven downloaden of in te loggen in een andere omgeving.",
+    "data": "Geen data opslag",
+    "data_desc": "Flipbase verzorgt alle video- en data opslag, je hebt geen groter (data) pakket nodig bij je huidige recruitment software leverancier."
+  },
+
+  "testimonials": [
+    {
+      "quote": "Op basis van enkel het CV is het moeilijk in te schatten of iemand geschikt is voor de functie en past bij Unique. Met de Flipbase video introductie heb je een extra selectie middel waarmee deze twijfel bevestigd wordt, of juist onterecht blijkt.",
+      "name": "Esther Kuipers, Unique"
+    },
+    {
+      "quote": "De video functionaliteit van Flipbase heeft het selecteren van geschikte kandidaten effectiever en leuker gemaakt.",
+      "name": "Kadriye Demirel, Schiphol"
+    },
+    {
+      "quote": "Bij de werving van potentials voor ons Agrifirm Traineeship programma geeft het motivatiefilmpje een uitstekende eerste indruk van de kandidaat. Het spreekt de sollicitant zelf ook aan. Het is vernieuwend en positief voor je employer brand.",
+      "name": "Gert Jan Nagel, Agrifirm"
+    },
+    {
+      "quote": "Flipbase levert ons een behoorlijke tijdsbesparing op. Een C.V. geeft immer niet weer hoe iemand overkomt.",
+      "name": "Maikel Boksteen, 2Trust"
+    },
+    {
+      "quote": "Mede dankzij het inzetten van Flipbase gaan er meer voorgestelde kandidaten op gesprek bij onze opdrachtgevers!",
+      "name": "Richard Groeneveld, Someone"
+    }
+  ],
+
+  "clients": "Flipbase wordt onder andere gebruikt door..",
+
+  "contact": {
+    "title": "Contact",
+    "name": "Naam",
+    "email": "E-mail",
+    "msg": "Bericht",
+    "send": "Versturen",
+    "success": "All good! Je hoort zo snel mogelijk van ons!",
+    "error": "Kan gebeuren: je hebt je ___ niet ingevuld."
+  }
+
+}

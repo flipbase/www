@@ -1,0 +1,48 @@
+extends layout
+
+block body
+  div.cover-wrapper
+    div.cover-container
+      img(src="#{locals.path}/assets/images/cover.jpg" class="cover-video")
+      div.cover-overlay
+      div.cover-titles
+        h1 Flipbase
+        h2.subtitle fdsfdsa
+
+      //- h2 Flipbase
+      //- div.divider
+      //- div.contactdetails
+      //-   | Leidsegracht 16 E
+      //-   | 1016 CK, Amsterdam
+      //-   | Email: support@flipbase.com
+      //-   | Telefoon: +31 (0)20 893 26 47
+      //-   button Contact ons
+
+
+script.
+  function setupCoverVideo () {
+    var vid = document.querySelector('.cover-video');
+
+    Modernizr.on('videoautoplay', function (bool) {
+      if (bool) {
+        $('video').html('<source type="video/mp4" src="#{locals.path}/assets/images/video/rick.mp4" /><source type="video/webm" src="#{locals.path}/assets/images/video/rick.webm" /><source type="video/ogv" src="#{locals.path}/assets/images/video/rick.ogv" />');
+      }
+    });
+
+    if (vid) {
+      coverVid(vid, 1280, 720);
+
+      fullscreen();
+      $(window).resize(fullscreen);
+      function fullscreen() {
+        var videoWrapper = $('.cover-wrapper');
+        var windowH = $(window).height();
+        var windowW = $(window).width();
+
+        videoWrapper.width(windowW);
+        videoWrapper.height(windowH);
+      }
+    }
+  }
+
+  invoker.push(setupCoverVideo);

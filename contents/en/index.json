@@ -1,0 +1,83 @@
+{
+ "template": "index.jade",
+
+ "titles": {
+    "header": "A first impression of the person behind the CV within 30 seconds",
+    "subheader": "Instantly accessible in your own recruitment environment"
+ },
+
+  "partners": {
+    "header": "In every recruitment environment",
+    "desc": "Flipbase is not a system. It is specially developed to integrate into your current recruitment environment. Therefore no big changes have to made in your recruitment process."
+  },
+
+  "why": {
+    "title": "Waarom?",
+    "no": "No unnecessary first acquaintances",
+    "no_desc": "Often you can judge, based on a first impression, whether or not an applicant is suited for the job.",
+    "direct": "A first impression instantly at your disposal",
+    "direct_desc": "No more searching the web for a first impression of an applicant.",
+    "versterk": "Strengthen the representation",
+    "versterk_desc": "Strengthen the representation of applicants with video, to for example a manager.",
+    "no2": "No more unfounded rejections",
+    "no2_desc": "Don’t judge an applicant solely based on competences and experience, but also on personality and motivation."
+  },
+
+  "how": {
+    "title": "How does it work?",
+    "one": "In the application form or after a first selection",
+    "one_desc" : "Apply video where and when you want, obligatory or optional.",
+    "two": "Automatically attached",
+    "two_desc": "As soon as a video is recorded and saved it will automatically be attached to the candidate profile in your recruitment environment.",
+    "three": "Strengthen the internal representation",
+    "three_desc": "In your recruitment environment you can easily strengthen the representation of applicants with video, to for example a manager.",
+    "four": "Enrich profiles in talentpools",
+    "four_desc": "In your recruitment environment you can enrich profiles with video, making sure you always have a first impression of talents available."
+  },
+
+  "gedoe": {
+    "title": "No hassle",
+    "ready": "Ready to use",
+    "ready_desc": "Together with your recruitment software provider we will make sure that the video functionality will be available in your recruitment environment and is compatible with your current proces.",
+    "device": "In no time up and running",
+    "device_desc": "Flipbase is completely integrated in your recruitment software provider, giving you the possibility to instantly start applying video in your recruitment proces.",
+    "data": "No data storage",
+    "data_desc": "Flipbase takes care of all the video and data storage. You will not need a bigger recruitment software licence to use Flipbase."
+  },
+
+  "testimonials": [
+    {
+      "quote": "Using solely a resume it is hard judge if a candidate fits the vacancy and company. Using Flipbase we have an extra tool that can confirm any doubt, or contrary, that can prove a good fit.",
+      "name": "Esther Kuipers, Unique"
+    },
+    {
+      "quote": "The Flipbase video applications has made the selection proces of candidates more effective and fun.",
+      "name": "Kadriye Demirel, Schiphol"
+    },
+    {
+      "quote": "The recruiting process for our Agrifirm Traineeship programme is strongly supported through the Flipbase video tool, as it gives a very good first impression of the candidates. This innovative  approach also appeals to the candidate itself and it has a positive impact on the employer brand.",
+      "name": "Gert Jan Nagel, Agrifirm"
+    },
+    {
+      "quote": "The Flipbase video tool creates a significant time efficiency during the recruitment process, as only a written CV does not get the candidate’s motivation and presentation across.",
+      "name": "Maikel Boksteen, 2Trust"
+    },
+    {
+      "quote": "Thanks to the launch of  Flipbase video tool, more candidates are being presented at our clients",
+      "name": "Richard Groeneveld, Someone"
+    }
+  ],
+
+  "clients": "Flipbase is, amongst others, used by:",
+
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "E-mail",
+    "msg": "Message",
+    "send": "Send",
+    "success": "All good! We will contact you as soon as possible!",
+    "error": "Oh no... you accidentally forgot to provide your ___."
+  }
+
+}

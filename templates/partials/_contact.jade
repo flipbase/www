@@ -1,18 +1,41 @@
 #contact.contactform
   div.form
-    h3 Contact
+    h3= page.metadata.contact.title
     form#contactform
       div.field
-        input(placeholder="Naam *" id="name" type="text")
+        input(placeholder="#{page.metadata.contact.name} *" id="name" type="text")
       div.field
-        input(placeholder="E-mail *" id="email" type="email")
+        input(placeholder="#{page.metadata.contact.email} *" id="email" type="email")
       div.field
-        textarea(placeholder="Bericht *" rows="4" id="message")
-      button(type="submit") Versturen
+        textarea(placeholder="#{page.metadata.contact.msg} *" rows="4" id="message")
+      button(type="submit") #{page.metadata.contact.send}
       #successMessage.success
-        span All good! Je hoort zo snel mogelijk van ons!
+        span #{page.metadata.contact.success}
       #errorMessage.error
-        span Whoops! Niet alle velden ingevuld!
+        span #{page.metadata.contact.error}
 
 script.
   $('input, textarea').placeholder();
+
+  var formID = '#contactform';
+
+  //- Translate error message
+  var errorMsg = {
+    name: '#[+toLowerCase(page.metadata.contact.name)]',
+    email: '#[+toLowerCase(page.metadata.contact.email)]',
+    message: '#[+toLowerCase(page.metadata.contact.msg)]' 
+  };
+  var fields = ['name', 'email', 'message'];
+  
+  function err(msg) {
+    var err = '#{page.metadata.contact.error}';
+    return err.replace(/___/, msg);
+  }
+
+  function getData () {
+    return {
+      naam: $('#name').val(),
+      email: $('#email').val(),
+      message: $('#message').val()
+    }
+  }

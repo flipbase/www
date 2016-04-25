@@ -20,22 +20,11 @@ $(document).ready(function() {
     $.ajax({
       url: "//formspree.io/" + whereToSendTo(), 
       method: "POST",
-      data: {
-        naam: $('#name').val(),
-        email: $('#email').val(),
-        message: $('#message').val()
-      },
+      data: getData(),
       dataType: "json",
       success: handleSuccess
     });
   });
-
-  var fields = ['name', 'email', 'message'];
-  var errorMsg = {
-    name: 'naam',
-    email: 'e-mail adres',
-    message: 'bericht' 
-  };
 
   /**
    * Iterate over form fields and return instantly when an error occurred
@@ -56,7 +45,7 @@ $(document).ready(function() {
   function getEmptyError(id) {
     var el = q(id);
     if (!el.value || el.value.length <= 2) {
-      return 'Kan gebeuren: je hebt je ' + errorMsg[id] +' niet ingevuld.' 
+      return err(errorMsg[id]); 
     }
   }
 
@@ -83,7 +72,7 @@ $(document).ready(function() {
 
   function handleSuccess(data) {
     if (data.success) {
-      $('#contactform')[0].reset();
+      $(formID)[0].reset();
       $('#errorMessage').hide();
       $('#successMessage').fadeIn('fast').delay(5000).fadeOut('fast');
       $('form button').prop('disabled', false);
