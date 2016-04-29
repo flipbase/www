@@ -89,6 +89,15 @@ module.exports = function(grunt) {
     },
 
     copy: {
+      htaccess: {
+          expand: true,
+          dot: true,
+          cwd: './',
+          dest: 'build',
+          src: [
+            '.htaccess'
+          ]
+      },
       img: {
         files: [{
           expand: true,
