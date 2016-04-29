@@ -68,16 +68,6 @@
     }
   ],
 
-  "clients": "Flipbase is, amongst others, used by:",
-
-  "contact": {
-    "title": "Contact",
-    "name": "Name",
-    "email": "E-mail",
-    "msg": "Message",
-    "send": "Send",
-    "success": "All good! We will contact you as soon as possible!",
-    "error": "Oh no... you accidentally forgot to provide your ___."
-  }
+  "clients": "Flipbase is, amongst others, used by:"
 
 }

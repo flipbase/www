@@ -68,16 +68,5 @@
     }
   ],
 
-  "clients": "Flipbase wordt onder andere gebruikt door..",
-
-  "contact": {
-    "title": "Contact",
-    "name": "Naam",
-    "email": "E-mail",
-    "msg": "Bericht",
-    "send": "Versturen",
-    "success": "All good! Je hoort zo snel mogelijk van ons!",
-    "error": "Kan gebeuren: je hebt je ___ niet ingevuld."
-  }
-
+  "clients": "Flipbase wordt onder andere gebruikt door.."
 }

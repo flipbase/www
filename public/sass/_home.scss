@@ -587,68 +587,6 @@ $partners: (
 
 
 /**
- * Contact form
- */
-.contactform {
-  background: #ededed;
-
-  & .form {
-    @include layout($susy);
-    @include container(20em);
-    padding: 40px;
-
-    & .success, & .error {
-      display: none;
-      font-weight: bold;
-    }
-    & .success {
-      color: #4bd117;
-    }
-    & .error {
-      color: #e03c3c;
-    }
-  }
-
-  & input[type=email], & input[type=password], & input[type=text], & textarea {
-    width: 100%;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #e3e3e3;
-    outline: 0;
-    padding: 10px 12px;
-    font-size: 14px;
-    margin-bottom: 4px;
-    font-family: "freight-sans-pro";
-  }
-
-  & button {
-    margin: 10px 0;
-    border: 1px solid #000;
-    background: none;
-    color: #000;
-    text-align: center;
-    padding: 10px 30px;
-    font-weight: bold;
-    font-size: 0.8em;
-    cursor: pointer;
-
-    .borderradius & {
-      @include border-radius(2px);
-    }
-    .csstransitions & {
-      @include transition(color 500ms ease, background-color 500ms ease);
-    }
-    &:hover {
-      background-color: #333;
-      color: #FFF;
-    }
-
-  }
-
-}
-
-
-/**
  * Footer
  */
 .footer {

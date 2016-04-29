@@ -3492,71 +3492,6 @@ video::-webkit-media-controls {
 }
 
 /**
- * Contact form
- */
-.contactform {
-  background: #ededed;
-}
-.contactform .form {
-  max-width: 20em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 40px;
-}
-.contactform .form:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-.contactform .form .success, .contactform .form .error {
-  display: none;
-  font-weight: bold;
-}
-.contactform .form .success {
-  color: #4bd117;
-}
-.contactform .form .error {
-  color: #e03c3c;
-}
-.contactform input[type=email], .contactform input[type=password], .contactform input[type=text], .contactform textarea {
-  width: 100%;
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #e3e3e3;
-  outline: 0;
-  padding: 10px 12px;
-  font-size: 14px;
-  margin-bottom: 4px;
-  font-family: "freight-sans-pro";
-}
-.contactform button {
-  margin: 10px 0;
-  border: 1px solid #000;
-  background: none;
-  color: #000;
-  text-align: center;
-  padding: 10px 30px;
-  font-weight: bold;
-  font-size: 0.8em;
-  cursor: pointer;
-}
-.borderradius .contactform button {
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-.csstransitions .contactform button {
-  -moz-transition: color 500ms ease, background-color 500ms ease;
-  -o-transition: color 500ms ease, background-color 500ms ease;
-  -webkit-transition: color 500ms ease, background-color 500ms ease;
-  transition: color 500ms ease, background-color 500ms ease;
-}
-.contactform button:hover {
-  background-color: #333;
-  color: #FFF;
-}
-
-/**
  * Footer
  */
 .footer {
@@ -3830,6 +3765,136 @@ video::-webkit-media-controls {
   font-size: 12px;
 }
 .blog .paginate .paginator:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.contact {
+  position: relative;
+}
+
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: scroll;
+}
+
+.mask {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  background-color: rgba(39, 38, 48, 0.85);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contact-box {
+  max-width: 100%;
+  left: 50%;
+  top: 50%;
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+}
+
+.contact button {
+  margin: 10px 0;
+  border: 1px solid #FFF;
+  background: none;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.borderradius .contact button {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.csstransitions .contact button {
+  -moz-transition: border 500ms ease, background-color 500ms ease;
+  -o-transition: border 500ms ease, background-color 500ms ease;
+  -webkit-transition: border 500ms ease, background-color 500ms ease;
+  transition: border 500ms ease, background-color 500ms ease;
+}
+.contact button:hover {
+  background-color: #A62651;
+  border-color: #A62651;
+  color: #FFF;
+}
+
+/**
+ * Contact form
+ */
+.contactform {
+  background: #ededed;
+}
+.contactform .form {
+  max-width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+.contactform .form:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.contactform .form .success, .contactform .form .error {
+  display: none;
+  font-weight: bold;
+}
+.contactform .form .success {
+  color: #4bd117;
+}
+.contactform .form .error {
+  color: #e03c3c;
+}
+.contactform input[type=email], .contactform input[type=password], .contactform input[type=text], .contactform textarea {
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #e3e3e3;
+  outline: 0;
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 4px;
+  font-family: "freight-sans-pro";
+}
+.contactform button {
+  margin: 10px 0;
+  border: 1px solid #000;
+  background: none;
+  color: #000;
+  text-align: center;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.borderradius .contactform button {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.csstransitions .contactform button {
+  -moz-transition: color 500ms ease, background-color 500ms ease;
+  -o-transition: color 500ms ease, background-color 500ms ease;
+  -webkit-transition: color 500ms ease, background-color 500ms ease;
+  transition: color 500ms ease, background-color 500ms ease;
+}
+.contactform button:hover {
   background-color: #333;
   color: #FFF;
 }

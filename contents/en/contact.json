@@ -1,0 +1,14 @@
+{
+  "template": "contact.jade",
+
+  "contact": {
+    "title": "Questions, remarks or feedback? Please let us know!",
+    "name": "Name",
+    "email": "E-mail",
+    "msg": "Message",
+    "send": "Send",
+    "success": "All good! We will contact you as soon as possible!",
+    "error": "Oh no... you accidentally forgot to provide your ___.",
+    "scroll": "Contact us"
+  }
+}
