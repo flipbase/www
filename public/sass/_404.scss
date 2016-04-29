@@ -1,0 +1,17 @@
+@import "susy";
+@import "breakpoint";
+
+.e404 {
+  .header {
+    background-color: $primary-color;
+    padding: 40px;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .page {
+    @include layout($susy);
+    @include container(60em);
+    padding: 60px 0;
+  }
+}

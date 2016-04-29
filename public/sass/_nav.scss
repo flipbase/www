@@ -52,6 +52,7 @@ $pink: #a72552;
     line-height: $height;
     
     a {
+      font-size: 15px;
       font-weight: bold;
       color: #FFF;
       text-decoration: none;
@@ -71,9 +72,9 @@ $pink: #a72552;
       display: block;
       position: absolute;
       left: 0;
-      bottom: -4px;
+      bottom: -6px;
       width: 0;
-      height: 3px;
+      height: 2px;
       background-color: #FFF;
       content: "";
       transition: width 0.2s;
@@ -176,11 +177,14 @@ $pink: #a72552;
   // Menu links
   .nav, .sticky .nav {
     ul li a {
-    font-size: 12px;
+      font-size: 12px;
     }
     ul li {
       line-height: $height / 2;
       padding: 0 5px;
+    }
+    ul li a:after {
+      background-color: $primary-color;
     }
   }
 }
