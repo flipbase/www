@@ -5,6 +5,7 @@
     "description": "Flipbase",
     "path": "http://flipbase.com/newsite/build"
   },
+  "output": "./www",
   "plugins": [
     "wintersmith-livereload",
     "./plugins/paginator.coffee",

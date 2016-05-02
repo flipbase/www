@@ -93,7 +93,7 @@ module.exports = function(grunt) {
           expand: true,
           dot: true,
           cwd: './',
-          dest: 'build',
+          dest: 'www',
           src: [
             '.htaccess'
           ]
