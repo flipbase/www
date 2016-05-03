@@ -32,9 +32,11 @@ script.
         var windowH = $(window).height();
         var windowW = $(window).width();
 
+
         videoWrapper.width(windowW);
         videoWrapper.height(windowH);
         $('.cover-video').height(windowH); // fix!!
+        $('.cover-video').width(windowW); // fix!!
       }
     }
     
