@@ -5,7 +5,7 @@ title: "Een eerste indruk, voor jou en je opdrachtgevers"
 player: true
 ---
 
-<div id="el" style="display: none">
+<div id="el">
 <video type="flipbase" data-video-id="8f1c69d5-b847-49e7-aede-4f6107e6655d"></video>
 </div>
 <script>

@@ -5,6 +5,7 @@
     "description": "Flipbase",
     "path": "http://localhost:8080"
   },
+  "output": "./www",
   "plugins": [
     "wintersmith-livereload",
     "./plugins/paginator.coffee",

@@ -14,3 +14,7 @@ Repo uses wintersmith, bower, npm and the Ruby gems SASS, susy, compass and Brea
   
   npm run setup // Install all local packages and dependencies
   npm run build // Build the website
+
+## Deploy
+
+Just upload the /www directory using SFTP

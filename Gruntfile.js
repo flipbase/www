@@ -68,7 +68,7 @@ module.exports = function(grunt) {
         dest: '<%= yeoman.dist %>/js/page.js'  
       },
       footer: {
-        src: [  
+        src: [
           '<%= yeoman.assets %>/js/smoothstate.js'
         ],
         dest: '<%= yeoman.dist %>/js/footer.js'        
@@ -90,13 +90,22 @@ module.exports = function(grunt) {
 
     copy: {
       htaccess: {
-          expand: true,
-          dot: true,
-          cwd: './',
-          dest: 'www',
-          src: [
-            '.htaccess'
-          ]
+        expand: true,
+        dot: true,
+        cwd: './',
+        dest: 'www',
+        src: [
+          '.htaccess'
+        ]
+      },
+      html: {
+        expand: true,
+        dot: true,
+        cwd: 'legacy_html',
+        dest: 'www',
+        src: [
+          '**/*'
+        ]
       },
       img: {
         files: [{
@@ -172,7 +181,8 @@ module.exports = function(grunt) {
     'sass',
     'cssmin',
     'uglify',
-    'copy'
+    'copy:img',
+    'copy:assets'
   ]);
 
 };
