@@ -1,10 +1,21 @@
-Redirect 301 /flipbase-lanceert-gratis-video-sollicitatie-tool /blog/2015/01/mijn-flipbase-een-gratis-video-sollicitatie-tool
+Redirect 301 /flipbase-lanceert-gratis-video-sollicitatie-tool /blog/2015/06/mijn-flipbase-een-gratis-video-sollicitatie-tool
 Redirect 301 /toenemende-focus-op-soft-skills /blog
-Redirect 301 /we-judge-books-by-their-covers-and-we-cant-help-it /blog/2015/01/we-judge-books-by-their-covers-and-we-cant-help-it
+Redirect 301 /we-judge-books-by-their-covers-and-we-cant-help-it /blog/2015/11/we-judge-books-by-their-covers-and-we-cant-help-it
 Redirect 301 /contact-en /en/contact.html
 Redirect 301 /contact /contact.html
 redirectMatch 301 ^/jobs$ /jobs/junior-accountmanager
 Redirect 301 /en-faq /en/faq.html
 Redirect 301 /faqs /faq.html
+Redirect 301 /carerix /
+Redirect 301 /jobs.html /jobs/junior-accountmanager
+
+Redirect 301 /docs-en https://flipbase.gitbooks.io/docs/content/
+Redirect 301 /docs https://flipbase.gitbooks.io/docs/content/
+
+Redirect 301 /homepage-1 /en
+Redirect 301 /category/trends /blog
+Redirect 301 /author/ron /blog
+Redirect 301 /hireserve /
+Redirect 301 /connexys /
 
 ErrorDocument 404 /404.html

@@ -1,7 +1,7 @@
 ---
 title: Mijn Flipbase, een gratis video sollicitatie tool
 author: Ron
-date: 2015-01-12 16:00
+date: 2015-06-12 16:00
 template: article.jade
 ---
 

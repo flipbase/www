@@ -3669,6 +3669,9 @@ video::-webkit-media-controls {
   text-decoration: none;
   color: #A62651;
 }
+.blog img {
+  max-width: 100%;
+}
 .blog .header h1 {
   color: #FFF;
 }

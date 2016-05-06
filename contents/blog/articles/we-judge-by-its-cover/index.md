@@ -1,7 +1,7 @@
 ---
 title: “We judge books by their covers, and we can’t help it”
 author: Ron
-date: 2015-01-05 11:00
+date: 2015-11-05 11:00
 template: article.jade
 ---
 
