@@ -1,9 +1,9 @@
-
+---
 title: "DPA: 'video neemt twijfels weg'"
 author: Ron
 date: 2016-07-15 16:00
 template: article.jade
-
+---
 
 "Na het traineeship zullen onze young professionals op interim basis aan de slag gaan en moeten ze gelijk presteren. Om die reden zoeken we mensen die zich goed kunnen presenteren en dat kun je uitstekend testen door middel van het opnemen van een video."
 
