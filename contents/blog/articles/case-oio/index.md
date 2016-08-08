@@ -5,9 +5,11 @@ date: 2016-07-15 16:00
 template: article.jade
 ---
 
-Jeroen van der Made van Ontwikkelwaars in Ontwikkeling (OiO) over video: "De opdrachtgever heeft een volledig beeld van de kandidaat voordat hij überhaubt opgesprek is geweest, doordat de kandidaat al meerdere stappen heeft doorlopen en al een volledig dossier heeft opgebouwd met daarin de verschillende assessments en meerdere video’s."
+Jeroen van der Made van Ontwikkelwaars in Ontwikkeling (OiO) over video: "De opdrachtgever heeft een volledig beeld van de kandidaat voordat hij überhaubt opgesprek is geweest, doordat de kandidaat al meerdere stappen heeft doorlopen en al een volledig dossier heeft opgebouwd met daarin de verschillende assessments en meerdere video’s. We zijn erg tevreden over de tool in combinatie met de werking van Emply. Gouden combinatie voor ons."
 
 <span class="more"></span>
+
+<div style="position: relative; padding-bottom: 75%; padding-top: 0px; height: 0; overflow: hidden;"><iframe frameborder="0" style="position: absolute; top:0; left: 0; width: 100%; height: 100%;" src="https://videoreferentie.flipbase.com/embed/f41c2fdc-55a4-41ae-b247-214e35b04fc8 "allowfullscreen=""></iframe></div>
 
 ### Hoe zetten jullie videosollicitatie in tijdens jullie sollicitatie proces? 
 "In het selectie proces zitten verschillende stappen waaronder natuurlijk een motivatiebrief en CV. Maar daarnaast ook een aantal interviews, twee online assesments, een persoonlijk profiel analyse, een general intelligence assessment en een technisch assessment. Als kandidaten uiteindelijk geschikt worden geacht krijgen ze een uitnodiging om een 8 tal vragen te beantwoorden op video. Deze vragen zijn samen met de opdrachtgever opgesteld. Deze video’s worden met de opdrachtgever gedeeld en dit is dan ook gelijk de eerste kennismaking met de kandidaten."
@@ -23,6 +25,3 @@ Jeroen van der Made van Ontwikkelwaars in Ontwikkeling (OiO) over video: "De opd
 
 ### Hoe reageren sollicitanten?
 "Allemaal positief. Dit omdat ze al weten dat ze door gaan en op gesprek mogen komen."
-
-### Kunnen wij aan onzekant nog iets doen om het te verbeteren?
-"We zijn erg tevreden over de tool in combinatie met de werking van Emply. Gouden combinatie voor ons."

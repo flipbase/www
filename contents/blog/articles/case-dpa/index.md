@@ -1,9 +1,9 @@
----
+
 title: "DPA: 'video neemt twijfels weg'"
 author: Ron
 date: 2016-07-15 16:00
 template: article.jade
----
+
 
 "Na het traineeship zullen onze young professionals op interim basis aan de slag gaan en moeten ze gelijk presteren. Om die reden zoeken we mensen die zich goed kunnen presenteren en dat kun je uitstekend testen door middel van het opnemen van een video."
 
@@ -27,4 +27,4 @@ template: article.jade
 "De video sollicitatie door iedereen erg positief gezien en we zien ook van veel sollicitanten een creatieve video binnenkomen. De respons ligt tussen de 80 en 90%."
 
 ## Wat zijn jullie verwachtingen met het inzetten video in het recruitment proces?
-"Wij hopen op een gedegen manier een betere voorselectie kunnen maken en onze tijd zoveel mogelijk kunnen besteden aan de meest geschikte kandidaten voor onze uiteindelijke opdrachtgevers."
+"Wij hopen op een gedegen manier een betere voorselectie kunnen maken en onze tijd zoveel mogelijk kunnen besteden aan de meest geschikte kandidaten voor onze uiteindelijke opdrachtgevers
