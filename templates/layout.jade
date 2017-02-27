@@ -19,12 +19,10 @@ html(lang='en')
 
       block scripts
         script(src='#{locals.path}/assets/js/modernizr.custom.min.js')
-        //- script(src="//use.typekit.net/uvu0omm.js")
-        //- script.
-        //-   try{Typekit.load({ async: true });}catch(e){}
-        //- Alternative typekit loader that stores font in a session, which should lead to faster loading times
+        //- These scripts needs to be executed on every page request
         script(src="https://app.flipbase.com/recorder.js")
         script(src="#{locals.path}/assets/js/dependencies.js")
+        script(src='#{locals.path}/assets/js/page.js')
         script.
           $(window).load(function() {
             $('.loader').fadeOut('slow');
@@ -32,7 +30,6 @@ html(lang='en')
           setTimeout(function () {
             $('.loader').fadeOut('slow');
           }, 10000);
-
           //- Custom typekit loader
           (function(d) {
             var tkTimeout=3000;
@@ -47,6 +44,10 @@ html(lang='en')
           // Placeholder for functions we want to invoke at the end of each page
           // This is a workaround to invoke inline javascript; because that is not exectued by default because of smoothState.js plugin
           var invoker = [];
+          //- script(src="//use.typekit.net/uvu0omm.js")
+          //- script.
+          //-   try{Typekit.load({ async: true });}catch(e){}
+          //- Alternative typekit loader that stores font in a session, which should lead to faster loading times
 
         <!--[if lt IE 9]>
         script(src='#{locals.path}/assets/components/html5shiv/dist/html5shiv.min.js')
@@ -66,21 +67,56 @@ html(lang='en')
           div(class="browser ie-icon" style="background: url(#{locals.path}/assets/images/ie.png) no-repeat top;")
             button(class="download-browser" onclick="location.href='http://windows.microsoft.com/en-us/internet-explorer/download-ie'") Download IE 11
     <![endif]-->
+    
+    #main.main.off-canvas-wrapper
+      .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+      
+        // Mobile Menu
+        #offCanvas.off-canvas.position-left(data-off-canvas='', data-options, data-position="left", data-content-scroll="false")
+          // Menu
+          ul.vertical.menu(data-accordion-menu='')
+            li
+              a(href='#') Products
+              ul.menu.vertical.nested
+                li
+                  a(href='#') Application proces
+                li
+                  a(href='#') Employer branding
+            li
+              a(href='#') Jobs
+            li
+              a(href='#') Blog
+            li
+              a(href='#') Help
+              ul.menu.vertical.nested
+                li
+                  a(href='#') Recruiters
+                li
+                  a(href='#') Candidates
+                li
+                  a(href='#') Developers
+            li
+              a(href='#') Contact
+      
+        // There is the rest contect of the page
+        .off-canvas-content(data-off-canvas-content)
+          include partials/_nav
 
-    div.loader
-      img(src="#{locals.path}/assets/images/logo_whitedark_small.png")
+          block body
 
-    #main.main
-      include partials/_nav
-
-      block body
-
-      include partials/_footer
-      //- These scripts needs to be executed on every page request
-      script(src='#{locals.path}/assets/js/page.js')
+          footer
+            include partials/_footer
 
     block footer-scripts
+      // Dark Navigation if blog
+      script.
+        if ($(".blog_section").length) {
+          $("#main_navigation").addClass("dark-nav");
+        }
+      
       script(src='#{locals.path}/assets/js/footer.js')
+      
+      // Google Analytics
       script.
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,0 +1,30 @@
+extends layout
+
+block body
+  section
+    .full-screen-section
+      include partials/_covervideo
+      .row
+        .small-10.small-offset-1.small-centered
+          h1.main-header= page.metadata.titles.header
+          p.main-subheader= page.metadata.titles.subheader
+          
+  include partials/sollicitatie-proces/_features-1
+  
+  include partials/sollicitatie-proces/_features-2
+  
+  include partials/sollicitatie-proces/_features-3
+  
+  include partials/sollicitatie-proces/_features-4
+  
+  include partials/sollicitatie-proces/_features-5
+  
+  include partials/sollicitatie-proces/_partners
+  
+  include partials/sollicitatie-proces/_testimonials
+  
+  include partials/sollicitatie-proces/_clients
+  
+  include partials/sollicitatie-proces/_request
+
+

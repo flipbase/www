@@ -1,0 +1,23 @@
+section
+  .expanded
+    .row.features_4_section
+      .medium-6.medium-centered
+        h2.features_4_title #{page.metadata.features_4.title}
+      .medium-10.medium-centered.large-5.large-uncentered.column.features_4_content
+        // Feature 1
+        h4.features_4_header #{page.metadata.features_4.feature1_header}
+        p.features_4_desc #{page.metadata.features_4.feature1_desc}
+
+        // Feature 2
+        h4.features_4_header #{page.metadata.features_4.feature2_header}
+        p.features_4_desc #{page.metadata.features_4.feature2_desc}
+
+        // Feature 3
+        h4.features_4_header #{page.metadata.features_4.feature3_header}
+        p.features_4_desc #{page.metadata.features_4.feature3_desc}
+
+        // Feature 4
+        h4.features_4_header #{page.metadata.features_4.feature4_header}
+        p.features_4_desc #{page.metadata.features_4.feature4_desc}
+      .medium-11.end.large-6.column.features_4_image
+        img(src="#{locals.path}/assets/images/features_4.png" srcset="#{locals.path}/assets/images/features_4@2x.png 2x, #{locals.path}/assets/images/features_4@3x.png 3x")

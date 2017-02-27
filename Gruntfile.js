@@ -51,12 +51,12 @@ module.exports = function(grunt) {
       deps: {
         src: [  
           '<%= yeoman.assets %>/components/jquery/dist/jquery.min.js',
+          '<%= yeoman.assets %>/components/foundation-sites/dist/js/foundation.js',
           '<%= yeoman.assets %>/components/jquery-placeholder/jquery.placeholder.min.js',
           '<%= yeoman.assets %>/components/covervid/covervid.min.js',
-          '<%= yeoman.assets %>/components/rrssb/js/rrssb.min.js',
-          '<%= yeoman.assets %>/components/covervid/covervid.min.js',
           '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.js',
-          '<%= yeoman.assets %>/components/smoothstate/jquery.smoothState.min.js'
+          '<%= yeoman.assets %>/components/smoothstate/jquery.smoothState.min.js',
+          '<%= yeoman.assets %>/components/rrssb/js/rrssb.js'
         ],
         dest: '<%= yeoman.dist %>/js/dependencies.js'
       }, 
@@ -80,8 +80,9 @@ module.exports = function(grunt) {
         files: [{
           src: [
             '<%= yeoman.assets %>/components/normalize.css/normalize.css',
-            '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css',
-            '<%= yeoman.assets %>/components/rrssb/css/rrssb.css'
+            '<%= yeoman.assets %>/components/foundation-sites/dist/css/foundation.min.css',
+            '<%= yeoman.assets %>/components/Ionicons/css/ionicons.css',
+            '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css'
           ],
           dest: '<%= yeoman.dist %>/css/dependencies.min.css'
         }]
@@ -118,6 +119,15 @@ module.exports = function(grunt) {
           ]
         }]
       },
+      ionicons: {
+        expand: true,
+        dot: true,
+        cwd: '<%= yeoman.assets %>/fonts',
+        src: [  
+          '*'
+        ],  
+        dest: '<%= yeoman.dist %>/fonts'  
+      },
       assets: {
         files: [{
           expand: true,
@@ -125,13 +135,10 @@ module.exports = function(grunt) {
           cwd: '<%= yeoman.assets %>/components',
           dest: '<%= yeoman.dist %>/components',
           src: [
-            'bxslider-4/dist/images/bx_loader.*',
-            'html5shiv/dist/html5shiv.min.js',
-            'rrssb/icons/*',
-            'components-font-awesome/fonts/*',
+            'bxslider-4/dist/images/bx_loader.*'
           ]
         }]
-      }
+      },
     },
 
     modernizr: {
@@ -150,7 +157,7 @@ module.exports = function(grunt) {
           "boxshadow",
           "boxsizing",
           "fontface",
-          // "cssgradients",
+          "flexbox",
           "lastchild",
           "mediaqueries",
           "nthchild",
@@ -161,7 +168,6 @@ module.exports = function(grunt) {
           "videoautoplay",
           "videoloop",
           "videopreload",
-
           "siblinggeneral",
           "csstransforms",
           "csstransitions",
@@ -182,7 +188,7 @@ module.exports = function(grunt) {
     'cssmin',
     'uglify',
     'copy:img',
-    'copy:assets'
+    'copy:assets',
   ]);
 
 };

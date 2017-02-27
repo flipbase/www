@@ -3,7 +3,7 @@
     "name": "Flipbase",
     "owner": "Ron Jansen <ron@flipbase.com>",
     "description": "Flipbase",
-    "path": "http://flipbase.com"
+    "path": "http://themeimperia.com/flipbase"
   },
   "output": "./www",
   "plugins": [

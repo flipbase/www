@@ -1,35 +1,59 @@
 - var isEN = page && page.filepath.relative.indexOf('en/') > -1 ? true : false;
-header
-  div.nav-wrapper
-    div.nav-inner
-      nav.nav
-        ul
-          if isEN
+
+// Mobile Menu is located in layout.jade
+
+nav#main_navigation(data-sticky-container)
+  .expanded.row(data-sticky data-options="marginTop:0;", data-top-anchor="4", data-sticky-on="large")
+    .row
+      #main-menu.top-bar
+        .top-bar-left
+          ul.menu
             li
-              a(href="#{locals.path}/en" data-type="page-transition") Home
+              button.menu-mobile-icon(type='button', data-toggle="offCanvas")
+            li.brand 
+              a(href="#{locals.path}/")
+                block logo
+                  img(src="#{locals.path}/assets/images/logo_white_small.png").logo-white
+                  img(src="#{locals.path}/assets/images/logo_small.png").logo-dark
+        .top-bar-right
+          ul.menu.dropdown(data-responsive-menu='drilldown medium-dropdown', 
+                           data-dropdown-menu, 
+                           data-options="closingTime: 140")
+            li.has-submenu.opens-right
+              a(href='#').
+                #[i.ion-ios-arrow-down]Products
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#{locals.path}/sollicitatie-proces.html') Sollicitatie proces
+                    p.
+                      Werf en selecteer met video, ontvang een beeld van de persoon achter het CV
+                li
+                  a(href='#') Employer branding
+                    p.
+                      Verrijk arbeidsmarktcommunicatie en geef een authentiek beeld van de werkomgeving
             li
-              a(href="#{locals.path}/en/contact.html" data-type="page-transition") Contact
+              a(href='#') Jobs
             li
-              a(href="#{locals.path}/" data-type="page-transition")
-                img(src="#{locals.path}/assets/images/flag_nl.png")
-          else
+              a(href='#') Blog
+            li.has-submenu.opens-right
+              a(href='#').
+                #[i.ion-ios-arrow-down]Help
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#') Recruiters
+                    p.
+                      When, where and how to use Flipbase in your recruitment process
+                li
+                  a(href='#') Candidates
+                    p.
+                      Get help creating and submitting your video
+                li
+                  a(href='#') Developers
+                    p.
+                      API documentation and integration guides
             li
-              a(href="#{locals.path}/" data-type="page-transition") Home
+              a(href='#') Contact
             li
-              a(href="#{locals.path}/jobs/junior-accountmanager" data-type="page-transition") Jobs
-            li
-              a(href="#{locals.path}/blog" data-type="page-transition") Blog
-            li
-              a(href="#{locals.path}/contact.html" data-type="page-transition") Contact            
-            li
-              a(href="#{locals.path}/en" data-type="page-transition")
+              a.language(href='#')
                 img(src="#{locals.path}/assets/images/flag_uk.png")
-
-      div.logo
-        a(href="#{locals.path}/" data-type="page-transition")
-          block logo
-            img(src="#{locals.path}/assets/images/logo_white_small.png")
-
-      div.sticky-logo
-        a(href="#{locals.path}/" data-type="page-transition")
-          img(src="#{locals.path}/assets/images/logo_small.png")
+              

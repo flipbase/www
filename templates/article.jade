@@ -5,24 +5,27 @@ block append scripts
   if page.metadata.player
     script(src="https://app.flipbase.com/player.js")
 
-block logo
-  img(src="#{locals.path}/assets/images/logo_whitedark_small.png")
-
 block body
-  
-  div.blog
-    div.header
-      if page.metadata.header
-        h1= page.metadata.header
-      else
-        h1 Blog
-
-    div.article
-      h1= page.title
-
-      if (page.data && page.metadata.author)
-        - var date = moment.utc(page.date).format('DD MMMM YYYY')
-        span.metadata Geschreven door #{page.metadata.author} op #{date}
+  .row.blog_section
+    .small-10.small-centered.blog_title
+      h1 Blog
+    .small-12.blog_categories
+      ul
+        li
+          a Case studies
+        li
+          a Product updates
+        li
+          a Applications
+        li
+          a Applications
+    .blog_article_content
+      if page.metadata.cover
+        .medium-11.medium-centered
+          img.float-center(src="#{page.metadata.cover}")
+      .medium-6.medium-centered
+        h2= page.metadata.title
+        small.meta Geschreven door #{page.metadata.author} op #{date}
 
       #article !{page.html}
       //- Social media icons

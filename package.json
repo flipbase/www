@@ -1,7 +1,7 @@
 {
  "scripts": {
     "setup": "npm install && bower install",
-    "build": "grunt build && wintersmith build --clean -c config.build.json && grunt copy:htaccess && grunt copy:html"
+    "build": "grunt build && wintersmith build --clean -c config.build.json && grunt copy:htaccess && grunt copy:html && grunt copy:ionicons"
   },
   "dependencies": {
     "load-grunt-tasks": "*",

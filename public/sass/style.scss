@@ -1,17 +1,16 @@
 @import "susy";
 @import "breakpoint";
+@import "base";
 
 $primary-color: #A62651;
 $padding: 20px;
 
-$fa-font-path: '../components/components-font-awesome/fonts';
-@import "../components/components-font-awesome/scss/font-awesome";
-
 @import "_nav";
+@import "_footer";
 @import "_home";
+@import "_sollicitatie-proces";
 @import "_blog";
 @import "_contact";
-@import "_404";
 @import "_pagetransition";
 
 .bx-wrapper .bx-loading {

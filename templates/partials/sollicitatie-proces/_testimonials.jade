@@ -1,0 +1,23 @@
+section
+  .expanded.testimonials_section.clearfix
+    .row
+      h2.testimonal_title #{page.metadata.testimonials.title}
+      .medium-5.large-4.column.testimonial_statistics
+        h1 #{page.metadata.testimonials.statistics.number1}
+        p #{page.metadata.testimonials.statistics.desc1}
+      .medium-5.large-4.column.testimonial_statistics
+        h1 #{page.metadata.testimonials.statistics.number2}
+        p #{page.metadata.testimonials.statistics.desc2}
+    .row
+      .small-10.medium-8.large-6.small-centered.testimonial_slider
+        #prev.prev
+          i(class="fa fa-angle-left")
+        #next.next
+          i(class="fa fa-angle-right")
+        ul(class="bxslider")
+          each quote in page.metadata.testimonials.quotes
+            li
+              div.quote-wrap
+                span.quote 
+                  em &ldquo; #{quote.quote} &rdquo;
+                h5.quotee  #{quote.name}

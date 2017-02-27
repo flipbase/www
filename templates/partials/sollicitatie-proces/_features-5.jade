@@ -1,0 +1,27 @@
+section
+  .expanded.features_5_section
+    .show-for-large.large-6.column.features_5_image
+        img(src="#{locals.path}/assets/images/features_5.jpg" srcset="#{locals.path}/assets/images/features_5@2x.jpg 2x, #{locals.path}/assets/images/features_5@3x.jpg 3x")
+    .row
+      .large-6.column.end
+        // Feature 1
+        h4.features_5_header #{page.metadata.features_5.feature1_header}
+        p.features_5_desc #{page.metadata.features_5.feature1_desc}
+
+        // Feature 2
+        h4.features_5_header #{page.metadata.features_5.feature2_header}
+        p.features_5_desc #{page.metadata.features_5.feature2_desc}
+
+        // Feature 3
+        h4.features_5_header #{page.metadata.features_5.feature3_header}
+        p.features_5_desc #{page.metadata.features_5.feature3_desc}
+
+        // Feature 4
+        h4.features_5_header #{page.metadata.features_5.feature4_header}
+        p.features_5_desc #{page.metadata.features_5.feature4_desc}
+
+        // Feature 5
+        h4.features_5_header #{page.metadata.features_5.feature5_header}
+        p.features_5_desc #{page.metadata.features_5.feature5_desc}
+      .hide-for-large.column.features_5_image
+        img(src="#{locals.path}/assets/images/features_5.jpg" srcset="#{locals.path}/assets/images/features_5@2x.jpg 2x, #{locals.path}/assets/images/features_5@3x.jpg 3x")

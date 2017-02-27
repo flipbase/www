@@ -1,0 +1,60 @@
+@import "variables";
+
+a {
+  transition: color .3s ease;
+  &:hover {
+    color: $brand-color;
+    transition: $default-transition;
+  }
+}
+
+a, a:focus, button, button:focus, span, span:focus, li, li:focus {
+  outline: none !important;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.75;
+  font-family: $default-font;
+	overflow-x: hidden;
+  font-weight: 400;
+  background-color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    font-family: $default-font;
+    font-weight: 600;
+    margin: 1.414em 0 0.5em;
+}
+
+h1 {
+    @include font-size($h1-font-sizes);
+    line-height: 1.17;
+    color: #ffffff; 
+}
+h2 {
+    @include font-size($h2-font-sizes);
+    line-height: 1.17;
+}
+h3 {
+    @include font-size($h3-font-sizes);
+    line-height: 1.17;
+}
+h4 {
+    @include font-size($h4-font-sizes);
+    line-height: 1.17;
+}
+h5 {
+    font-size: em(18px);
+    line-height: 1.17;
+}
+h6 {
+    font-size: em(16px);
+    line-height: 1.17;
+}
+.align-center {
+  text-align: center;
+}

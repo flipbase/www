@@ -1,16 +1,17 @@
 extends layout
-
+  
 block body
-  include partials/_covervideo
-
-  include partials/_partners
-
-  include partials/_why
-
-  include partials/_how
-
-  include partials/_geengedoe
-
-  include partials/_testimonials
-
-  include partials/_clients
+  section
+    .full-screen-section
+      include partials/_covervideo
+      .row
+        h1.home-header.align-center #{page.metadata.header}
+        .medium-6.medium-6.columns
+          .home-text-block
+            h3 #{page.metadata.title1}
+            p #{page.metadata.desc1}
+        .medium-6.medium-6.columns.end
+          .home-text-block
+            h3 #{page.metadata.title2}
+            p #{page.metadata.desc2}
+        

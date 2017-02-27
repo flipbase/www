@@ -1,0 +1,59 @@
+@import "mixins";
+
+// Colors
+$brand-color: #a62651; // Accent Color
+$dark-purple: #221e30; // Footer, Mobile menu background
+$body-text-color: #1a1624; // Default color for body text
+$border-tags-color: #f2f4f9; // Color for borders, tags, mobile menu text
+$footer-links-color: #939ca9;
+$grey-background: #F8F8F8; // Background for features_2
+
+// Font
+$default-font: "freight-sans-pro", Helvetica;
+
+// Transition
+$default-transition: all .3s ease;
+
+
+// Responsive Typography
+$breakpoints: (
+  small : 480px,
+  medium: 768px,
+  large : 992px
+);
+
+$p-font-sizes: (
+  null  : em(15px),
+  480px : em(16px),
+);
+
+$h1-font-sizes: (
+  null  : em(24px),
+  480px : em(26px),
+  768px : em(30px),
+  1024px: em(36px)
+);
+
+$h2-font-sizes: (
+  null  : em(28px),
+  768px : em(30px),
+  1024px: em(32px)
+);
+
+$h3-font-sizes: (
+  null  : em(20px),
+  768px : em(22px),
+  1024px: em(24px)
+);
+
+$h4-font-sizes: (
+  null  : em(20px),
+  1024px: em(22px)
+);
+
+$request_button: (
+  null  : em(16px),
+  1024px: em(18px),
+  1200px: em(20px)
+);
+

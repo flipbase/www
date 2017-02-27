@@ -1,11 +1,16 @@
 $(document).ready(function() {
 
-  // Setup sticky header
-  $(window).scroll(function() {
-    var fromTop = $(document).scrollTop();
-    $('.nav-wrapper').toggleClass('sticky', (fromTop > 80));
-  });
+  var $main_navigation = $("#main_navigation");
+  
+  // Init foundation
+  $(document).foundation();
 
+  function checkNav(number) {
+    if (number) {
+      return $main_navigation.addClass("dark-nav");
+    }
+  }
+  
   // Testimonial slider
   if ($('.bxslider').length) {
     var slider = $('.bxslider').bxSlider({
