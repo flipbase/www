@@ -1,21 +1,24 @@
 extends layout
 
 block body
-  div.contact
+  .contact
     div(style="background-image: url(#{locals.path}/assets/images/leidsegracht.jpg);" class="cover")
-      div.mask
-      div.contact-box
-        h1 Flipbase
-        div.divider
-        div.details
-          p Leidsegracht 16E
-          p 1016 CK, Amsterdam
-          p support@flipbase.com
-          p +31 (0)20 893 26 47
-        div.btns
-          button(type="button" class="scrollto") #{page.metadata.contact.scroll}
+      .mask
+      .contact-box
+        img.contact_logo(src="#{locals.path}/assets/images/logo_white_small.png")
+        .divider
+        .details
+          p 
+            | Leidsegracht 16E 
+            br
+            | 1016 CK, Amsterdam
+            br
+            | support@flipbase.com
+            br
+            | +31 (0)20 893 26 47
+        button(type="button" class="scrollto") #{page.metadata.contact.scroll}
 
-    include partials/_contact
+  include partials/_contact
 
   script.
     function setupCoverVideo () {

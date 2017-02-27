@@ -17,6 +17,8 @@ $(document).ready(function() {
       return $('#errorMessage').html('<span>' + formError + '</span>').fadeIn('fast');
     }
 
+    $("#loadingProgress").css("display", "block");  
+    
     $.ajax({
       url: "//formspree.io/" + whereToSendTo(), 
       method: "POST",
@@ -74,6 +76,7 @@ $(document).ready(function() {
     if (data.success) {
       $(formID)[0].reset();
       $('#errorMessage').hide();
+      $('#loadingProgress').hide();
       $('#successMessage').fadeIn('fast').delay(5000).fadeOut('fast');
       $('form button').prop('disabled', false);
     }

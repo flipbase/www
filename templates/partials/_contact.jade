@@ -1,23 +1,30 @@
-#contact.contactform
-  div.form
+.row.contact_form_section.clearfix
+  .small-10.medium-5.large-4.small-centered
     h3= page.metadata.contact.title
-    form#contactform
-      div.field
+    form#contact_form
+      .small-12
         input(placeholder="#{page.metadata.contact.name} *" id="name" type="text")
-      div.field
+      .small-12
         input(placeholder="#{page.metadata.contact.email} *" id="email" type="email")
-      div.field
+      .small-12
         textarea(placeholder="#{page.metadata.contact.msg} *" rows="4" id="message")
       button(type="submit") #{page.metadata.contact.send}
+      #loadingProgress.loading
+        span
+          i.ion-ios-loop-strong
+          | Sending your message…
+      .clearfix
       #successMessage.success
-        span #{page.metadata.contact.success}
+        span 
+          i.ion-checkmark-round 
+          | #{page.metadata.contact.success}
       #errorMessage.error
         span #{page.metadata.contact.error}
 
 script.
   $('input, textarea').placeholder();
 
-  var formID = '#contactform';
+  var formID = '#contact_form';
 
   //- Translate error message
   var errorMsg = {
