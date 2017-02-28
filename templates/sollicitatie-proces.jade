@@ -17,14 +17,21 @@ block body
   
   include partials/sollicitatie-proces/_features-4
   
+  // Partners For mobile only
+  .hide-for-large.mobile_partners
+    include partials/sollicitatie-proces/_partners
+  
   include partials/sollicitatie-proces/_features-5
   
-  include partials/sollicitatie-proces/_partners
+  // Partners for desktop
+  .show-for-large
+    include partials/sollicitatie-proces/_partners
   
   include partials/sollicitatie-proces/_testimonials
   
   include partials/sollicitatie-proces/_clients
   
-  include partials/sollicitatie-proces/_request
+  .show-for-large
+    include partials/sollicitatie-proces/_request
 
 

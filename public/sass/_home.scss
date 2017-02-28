@@ -71,11 +71,19 @@
   }
 }
 
+.home-link {
+  &:hover .home-text-block {
+    background-color: #7F1D3E;
+    transition: $default-transition;
+  }
+}
+
 .home-text-block {
   background-color: $brand-color;
   box-shadow: 1px 0 10px 4px rgba(0, 0, 0, 0.5);
   padding: 70px 30px 35px 30px;
   border-radius: 10px;
+  transition: $default-transition;
   h3, p {
     color: white;
     word-break: break-word;

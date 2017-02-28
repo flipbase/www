@@ -49,13 +49,21 @@
   .features_1_icon {
     font-size: em(22px);
   }
-  .features_1_text {
+  .features_1_text p {
     font-size: em(22px);
     margin-bottom: 26px;
   }
-  @include breakpoint((max-width 1200px)) {
+  @include breakpoint((max-width: 1200px)) {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  @include breakpoint((max-width: 520px)) {
+    .features_1_text p {
+      font-size: em(18px);
+      padding-left: 10px;
+      position: relative;
+      top: 5px;
+    }
   }
 }
 
@@ -117,6 +125,10 @@
   .features_4_title {
     text-align: center;
     margin-bottom: 130px;
+    @include breakpoint((max-width: 480px)) {
+      margin-bottom: 34px;
+      text-align: left;
+    }
   }
   .features_4_desc {
     font-size: em(18px);
@@ -124,6 +136,19 @@
   }
   .features_4_header {
     margin-top: 0;
+  }
+  .features_4_image_mobile {
+    margin-bottom: 50px;
+    p {
+      font-size: em(22px);
+      margin-bottom: 10px;
+    }
+    .divider {
+      height: 1px;
+      width: 50%;
+      border-bottom: 1px solid $border-tags-color;
+      margin-bottom: 40px;
+    }
   }
   @include breakpoint((max-width: 1200px)) {
     padding-left: 20px;
@@ -137,6 +162,7 @@
       text-align: center;
       margin-top: 30px;
     }
+    padding-bottom: 76px;
   }
 }
 
@@ -145,7 +171,7 @@
   padding: 50px 0 80px 0;
   .features_5_image {
     padding-left: 0;
-    padding-right: 30px;
+    padding-right: 60px;
     img {
       width: 100%;
     }
@@ -156,6 +182,29 @@
   .features_5_desc {
     font-size: em(18px);
     margin-bottom: 36px;
+  }
+  .features_5_image_mobile {
+    margin-bottom: 50px;
+    p {
+      font-size: em(22px);
+      margin-bottom: 10px;
+    }
+    .divider {
+      height: 1px;
+      width: 50%;
+      border-bottom: 1px solid $border-tags-color;
+      margin-bottom: 40px;
+    }
+  }
+  @include breakpoint((max-width: 1200px)) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include breakpoint((min-width: 1024px)) {
+    .fix .small-centered, .fix .small-centered:last-child:not(:first-child) {
+      clear: none;
+      float: right;
+    }
   }
 }
 
@@ -169,6 +218,18 @@
   .partners_image {
     margin-bottom: 80px;
     text-align: center;
+  }
+}
+
+.mobile_partners .partners_section {
+  padding: 0 15px 20px 15px;
+  @include breakpoint((max-width: 640px)) {
+    .partners_title {
+      text-align: left;
+      width: 80%;
+      padding-left: 10px;
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -191,6 +252,17 @@
   }
   .testimonial_slider {
     padding-top: 120px;
+    .prev, .next {
+      position: absolute;
+      color: white;
+      font-size: em(44px);
+    }
+    .prev {
+      left: 28px;
+    }
+    .next {
+      right: 28px;
+    }
     .bx-wrapper {
       background-color: transparent;
       border: 0;
@@ -208,6 +280,11 @@
   }
   .bx-wrapper .bx-pager.bx-default-pager a {
     background-color: rgba(0,0,0, .35);
+  }
+  @include breakpoint((max-width: 640px)) {
+    .prev, .next {
+      display: none;
+    }
   }
 }
 
@@ -255,7 +332,60 @@
         top: 23px;
         font-size: 28px;
       }
-    }
-    
+    }  
   }
 }
+
+// Custom text section 1
+.custom_text_section_1 {
+  padding: 90px 20px 110px 15px;
+  h3 {
+    margin-bottom: 34px;
+  }
+  p {
+    margin-bottom: 24px;
+    font-size: em(18px);
+  }
+}
+
+.features_6_section {
+  background-color: #F5F6F7;
+  padding-bottom: 40px;
+  .features_6_header_block {
+    text-align: center;
+    border-bottom: 1px solid $grey-text-color;
+    margin-bottom: 82px;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: em(18px);
+  }
+  .split_section-right {
+    padding: 80px 15px 90px 15px;
+    img .custom-padding {
+      padding-left: 40px;
+    }
+    @include breakpoint((max-width: 640px)) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+  .split_section-left {
+    padding: 80px 15px 90px 15px;
+    @include breakpoint((max-width: 640px)) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+  .vertical_centered {
+    display: flex;
+    align-items: center;
+  }
+  @include breakpoint((min-width: 640px)) {
+    .fix .small-centered, .fix .small-centered:last-child:not(:first-child) {
+      clear: none;
+      float: right;
+    }
+  }
+}
+

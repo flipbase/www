@@ -32,14 +32,13 @@ Fusce tempus porttitor sem, cursus consectetur lorem consectetur sed. Morbi luct
 </div>
 
 <div class="small-10 medium-6 small-centered">
-<h3>Hoe zetten jullie videosollicitatie in tijdens jullie sollicitatie proces? </h3>
-<p>"In het selectie proces zitten verschillende stappen waaronder natuurlijk een motivatiebrief en CV. Maar daarnaast ook een aantal interviews, twee online assesments, een persoonlijk profiel analyse, een general intelligence assessment en een technisch assessment. Als kandidaten uiteindelijk geschikt worden geacht krijgen ze een uitnodiging om een 8 tal vragen te beantwoorden op video. Deze vragen zijn samen met de opdrachtgever opgesteld. Deze video’s worden met de opdrachtgever gedeeld en dit is dan ook gelijk de eerste kennismaking met de kandidaten." </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada dolor vestibulum libero fermentum, non vehicula est porttitor. Cras aliquet erat vel dolor efficitur pretium. Proin nec vestibulum urna. Maecenas efficitur quam eu libero dictum, ut semper libero ornare. Duis lobortis ante at iaculis lobortis. Nunc molestie lorem ac lacus maximus tempor. Curabitur dui ex, tincidunt vehicula elementum eget, rhoncus ut lorem.</p>
 
-<h3>Wat is het doel van het op deze manier inzetten van video? </h3>
-<p>"Het voorstellen van de kandidaten bij de opdrachtgever. Doordat de kandidaat al meerdere stappen heeft doorlopen en al een volledig dossier heeft opgebouwd met daarin de verschillende assessments en de video’s heeft de opdrachtgever een volledig beeld bij de kandidaat voordat hij überhaubt opgesprek is geweest."</p>
+<p>Fusce tempus porttitor sem, cursus consectetur lorem consectetur sed. Morbi luctus elit ut urna porta varius sed a mi. Ut nec blandit nibh, vel molestie orci. Pellentesque mattis condimentum arcu, ac cursus ligula pellentesque non. In ac lorem dolor. Donec venenatis magna in venenatis pulvinar. Donec vitae urna facilisis, ornare dui non, egestas dolor. Cras felis dolor, ornare vitae nulla imperdiet, commodo egestas mi. Duis condimentum nisl eget dolor tristique, eget pretium risus malesuada. Vivamus blandit auctor quam nec porta. Integer rutrum nec tortor eu vestibulum. Donec sit amet urna porta, auctor erat et, lobortis est.</p>
 
-<h3>Wat is de respons? </h3>
-<p>"100%. Het is gewoon een onderdeel van het volledige sollicitatieproces. Er is 1 keer een kandidaat geweest die er niet helemaal achter stond maar het uiteindelijk alsnog gedaan heeft." </p>
+<img class="article_image" src="../../../../assets/images/blog/example-article.jpg"
+     srcset="../../../../assets/images/blog/example-article@2x.jpg 2x, ../../../../assets/images/blog/example-article@3x.jpg 3x">
+<p class="image-caption">Optional caption for this image</p>
 
 <h3>Wat is de reactie van de opdrachtgevers?</h3>
 <p>"Heel positief. Door de video’s krijg je echt een volledig beeld van een kandidaat. Omdat het 8 video’s zijn waarin verschillende vragen worden beantwoord is het al een redelijk volledig beeld van een kandidaat. Ook omdat in deze vragen al wat basis vragen worden gesteld die vaak in het eerste sollicitatiegesprek gesteld worden kunnen we deze nu vaak overslaan en gelijk wat meer de diepte in gaan tijdens het sollicitatie gesprek."</p>

@@ -4,14 +4,16 @@ block body
   section
     .full-screen-section
       include partials/_covervideo
-      .row
+      .row(data-equalizer data-equalize-on="medium")
         h1.home-header.align-center #{page.metadata.header}
         .medium-6.medium-6.columns
-          .home-text-block
-            h3 #{page.metadata.title1}
-            p #{page.metadata.desc1}
+          a.home-link(href="#")
+            .home-text-block(data-equalizer-watch)
+              h3 #{page.metadata.title1}
+              p #{page.metadata.desc1}
         .medium-6.medium-6.columns.end
-          .home-text-block
-            h3 #{page.metadata.title2}
-            p #{page.metadata.desc2}
+          a.home-link(href="#")
+            .home-text-block(data-equalizer-watch href="#")
+              h3 #{page.metadata.title2}
+              p #{page.metadata.desc2}
         
