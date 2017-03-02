@@ -1,11 +1,5 @@
 @import "susy";
 @import "breakpoint";
-@import "compass/css3/animation";
-@import "compass/css3/transform";
-@import "compass/css3/transition";
-@import "compass/css3/border-radius";
-@import "compass/css3/box-sizing";
-@import "compass/css3/opacity";
 @import "variables";
 @import "mixins";
 
@@ -36,44 +30,60 @@
   }
 }
 
-.flexbox .full-screen-section {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  align-content: center;
-  .home-header {
-    margin-bottom: 90px;
-  }
-  .row {
-    width: 1200px;
-    z-index: 100;
-    margin: auto;
-    @include breakpoint((max-width: 640px)) {
-      padding: 100px 15px 60px 15px;
-      width: 100%;
-    }
-  }
-}
+//.flexbox .full-screen-section {
+//  display: flex;
+//  vertical-align: middle;
+//  align-items: center;
+//  align-content: center;
+//  .home-header {
+//    margin-bottom: 90px;
+//  }
+//  .row {
+//    z-index: 100;
+//    margin: auto;
+//    max-width: 1200px;
+//    @include breakpoint((max-width: 640px)) {
+//      padding: 100px 15px 60px 15px;
+//      width: 100%;
+//    }
+//  }
+//}
 
-.no-flexbox .full-screen-section {
+.full-screen-section {
   .row {
-    position: absolute;
     z-index: 100;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    width: 1200px;
+    position: relative;
     margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     .home-header {
       text-align: center;
       margin-bottom: 50px;
+    }
+  }
+  @include breakpoint((min-width: 640px)) {
+    .row {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      margin: auto;
+      width: 100%;
+      padding: 0 20px 0 20px;
+      .home-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
     }
   }
 }
 
 .home-link {
   &:hover .home-text-block {
-    background-color: #7F1D3E;
+    background-color: $brand-color-hover;
     transition: $default-transition;
   }
 }

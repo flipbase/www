@@ -56,6 +56,41 @@ h6 {
     line-height: 1.17;
 }
 
+.padding-0 {
+  padding: 0;
+}
+
 .align-center {
   text-align: center;
+}
+
+.full-screen-section.not_found:after {
+  display: none;
+}
+
+.not_found {
+  h1 {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: em(22px);
+    color: white;
+    margin-bottom: 40px;
+  }
+  button {
+    border: 1px solid white;
+    border-radius: 5px;
+    min-width: 220px;
+    height: 60px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .or {
+    text-align: center;
+    position: relative;
+    top: 16px;
+    left: -12px;
+    color: white;
+  }
 }

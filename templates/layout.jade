@@ -79,13 +79,13 @@ html(lang='en')
               a(href='#') Products
               ul.menu.vertical.nested
                 li
-                  a(href='#') Application proces
+                  a(href='#{locals.path}/sollicitatie-proces.html') Application proces
                 li
-                  a(href='#') Employer branding
+                  a(href='#{locals.path}/employer-branding.html') Employer branding
             li
-              a(href='#') Jobs
+              a(href='#{locals.path}/jobs.html') Jobs
             li
-              a(href='#') Blog
+              a(href='#{locals.path}/blog') Blog
             li
               a(href='#') Help
               ul.menu.vertical.nested
@@ -96,7 +96,7 @@ html(lang='en')
                 li
                   a(href='#') Developers
             li
-              a(href='#') Contact
+              a(href='#{locals.path}/contact.html') Contact
       
         // There is the rest contect of the page
         .off-canvas-content(data-off-canvas-content)

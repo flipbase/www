@@ -1,9 +1,26 @@
 extends layout
 
 block body
-  div.e404
-    div.header
-      h1 Oh no!
-    div.page
-      h2 This is not how things supposed to be..
-      p Something went terribly wrong! If you any questions or remarks, please #[a(href="/en/contact.html") contact us]!
+  section
+    .full-screen-section.not_found(style="background-image: url(#{locals.path}/assets/images/404.jpg)")
+      .row
+        .medium-8.large-6.medium-centered
+          h1 Oh no, this page does exist!
+          p The page you were looking has shomehow vanished! If you think we made a mistake on our, please let us know! Otherwise we advise you to just go to our homepage and see what Flipbase is about.
+          .medium-12.large-5.columns.padding-0
+            button Go to the homepage
+          .large-2.columns.padding-0.show-for-large.or Or
+          .medium-12.large-5.columns.padding-0
+            button Contact Us
+            
+  script.
+    fullscreen();
+    $(window).resize(fullscreen);
+    function fullscreen() {
+      var videoWrapper = $('.full-screen-section');
+      var windowH = $(window).height();
+      var windowW = $(window).width();
+
+      videoWrapper.width(windowW);
+      videoWrapper.height(windowH);
+    }

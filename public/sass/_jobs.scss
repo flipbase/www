@@ -1,0 +1,117 @@
+@import "susy";
+@import "breakpoint";
+@import "variables";
+@import "mixins";
+
+.jobs_section_header {
+  background-color: $brand-color;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.jobs_section_header {
+  .row {
+    z-index: 100;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    h1 {
+      margin-bottom: 52px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+      li {
+        margin-bottom: 10px;
+      }
+      a {
+        color: white;
+        font-size: em(24px);
+        font-weight: 600;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  @include breakpoint((min-width: 640px)) {
+    .row {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      margin: auto;
+      width: 100%;
+      padding: 0 20px 0 20px;
+      .home-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.who_we_are {
+  padding: 140px 15px 140px 15px;
+  h4 {
+    margin-top: 0;
+  }
+  p {
+    font-size: em(18px);
+  }
+}
+
+.who_we_are-additional {
+  padding: 140px 15px 140px 15px;
+  p {
+    font-size: em(18px);
+  }
+}
+
+.what_we_offer {
+  padding: 130px 15px 130px 15px;
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  p {
+    font-size: em(18px);
+    margin-bottom: 20px;
+  }
+}
+
+.send_application_section {
+  padding: 30px 20px 80px 20px;
+  background-color: $grey-background;
+  text-align: center;
+  p {
+    font-size: em(24px);
+  }
+  button {
+    @include font-size($request_button);
+    min-height: 74px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $brand-color;
+    font-weight: 600;
+    position: relative;
+    margin-top: 18px;
+    padding: 0 10px 0 10px;
+    transition: $default-transition;
+    cursor: pointer;
+    @include breakpoint((max-width: 640px)) {
+      width: 300px;
+    }
+  }
+  a:hover button {
+    background-color: $brand-color-hover;
+    transition: $default-transition;
+  }
+}

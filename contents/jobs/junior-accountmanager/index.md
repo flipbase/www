@@ -1,6 +1,7 @@
 ---
 template: job.jade
 title: Junior account manager
+city: Amsterdam
 ---
 
 ## Wie zijn wij?

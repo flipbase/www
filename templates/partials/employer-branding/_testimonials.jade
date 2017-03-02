@@ -1,0 +1,15 @@
+section
+  .expanded.testimonials_section.clearfix
+    .row
+      .small-10.medium-8.large-6.small-centered.testimonial_slider
+        #prev.prev
+          i(class="ion-ios-arrow-left")
+        #next.next
+          i(class="ion-ios-arrow-right")
+        ul(class="bxslider")
+          each quote in page.metadata.testimonials.quotes
+            li
+              div.quote-wrap
+                span.quote 
+                  em &ldquo; #{quote.quote} &rdquo;
+                h5.quotee  #{quote.name}

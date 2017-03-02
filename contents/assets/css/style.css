@@ -99,8 +99,41 @@ h6 {
   line-height: 1.17;
 }
 
+.padding-0 {
+  padding: 0;
+}
+
 .align-center {
   text-align: center;
+}
+
+.full-screen-section.not_found:after {
+  display: none;
+}
+
+.not_found h1 {
+  margin-bottom: 30px;
+}
+.not_found p {
+  font-size: 1.375em;
+  color: white;
+  margin-bottom: 40px;
+}
+.not_found button {
+  border: 1px solid white;
+  border-radius: 5px;
+  min-width: 220px;
+  height: 60px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+.not_found .or {
+  text-align: center;
+  position: relative;
+  top: 16px;
+  left: -12px;
+  color: white;
 }
 
 /**
@@ -422,39 +455,34 @@ footer ul a:hover {
   left: 0;
 }
 
-.flexbox .full-screen-section {
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  align-content: center;
-}
-.flexbox .full-screen-section .home-header {
-  margin-bottom: 90px;
-}
-.flexbox .full-screen-section .row {
-  width: 1200px;
+.full-screen-section .row {
   z-index: 100;
+  position: relative;
   margin: auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-@media (max-width: 640px) {
-  .flexbox .full-screen-section .row {
-    padding: 100px 15px 60px 15px;
-    width: 100%;
-  }
-}
-
-.no-flexbox .full-screen-section .row {
-  position: absolute;
-  z-index: 100;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 1200px;
-  margin: auto;
-}
-.no-flexbox .full-screen-section .row .home-header {
+.full-screen-section .row .home-header {
   text-align: center;
   margin-bottom: 50px;
+}
+@media (min-width: 640px) {
+  .full-screen-section .row {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+  .full-screen-section .row .home-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
 }
 
 .home-link:hover .home-text-block {
@@ -1223,6 +1251,129 @@ footer ul a:hover {
 }
 .blog_article_tags ul li:hover {
   background-color: #a62651;
+  transition: all 0.3s ease;
+}
+
+.jobs_section_header {
+  background-color: #a62651;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.jobs_section_header .row {
+  z-index: 100;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.jobs_section_header .row h1 {
+  margin-bottom: 52px;
+}
+.jobs_section_header .row ul {
+  list-style: none;
+  margin-left: 0;
+}
+.jobs_section_header .row ul li {
+  margin-bottom: 10px;
+}
+.jobs_section_header .row ul a {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.jobs_section_header .row ul a span {
+  font-weight: 400;
+}
+@media (min-width: 640px) {
+  .jobs_section_header .row {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    width: 100%;
+    padding: 0 20px 0 20px;
+  }
+  .jobs_section_header .row .home-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.who_we_are {
+  padding: 140px 15px 140px 15px;
+}
+.who_we_are h4 {
+  margin-top: 0;
+}
+.who_we_are p {
+  font-size: 1.125em;
+}
+
+.who_we_are-additional {
+  padding: 140px 15px 140px 15px;
+}
+.who_we_are-additional p {
+  font-size: 1.125em;
+}
+
+.what_we_offer {
+  padding: 130px 15px 130px 15px;
+}
+.what_we_offer h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.what_we_offer p {
+  font-size: 1.125em;
+  margin-bottom: 20px;
+}
+
+.send_application_section {
+  padding: 30px 20px 80px 20px;
+  background-color: #F8F8F8;
+  text-align: center;
+}
+.send_application_section p {
+  font-size: 1.5em;
+}
+.send_application_section button {
+  font-size: 1em;
+  min-height: 74px;
+  color: white;
+  width: 400px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #a62651;
+  font-weight: 600;
+  position: relative;
+  margin-top: 18px;
+  padding: 0 10px 0 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .send_application_section button {
+    font-size: 1.125em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .send_application_section button {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 640px) {
+  .send_application_section button {
+    width: 300px;
+  }
+}
+.send_application_section a:hover button {
+  background-color: #7F1D3E;
   transition: all 0.3s ease;
 }
 
