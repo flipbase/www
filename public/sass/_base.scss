@@ -77,6 +77,10 @@ h6 {
     color: white;
     margin-bottom: 40px;
   }
+  a:hover button {
+    background-color: $brand-color;
+    transition: $default-transition;
+  }
   button {
     border: 1px solid white;
     border-radius: 5px;
@@ -85,6 +89,8 @@ h6 {
     font-weight: 600;
     color: white;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: $default-transition;
   }
   .or {
     text-align: center;

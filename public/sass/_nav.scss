@@ -49,6 +49,29 @@ nav.sticky-container {
   }
 }
 
+nav.white-links {
+  .top-bar-right li a {
+    &:hover {
+      color: white;
+      transition: $default-transition;
+    }
+    &:after {
+      background-color: white !important;
+    }
+  }
+  .is-stuck {
+    .top-bar-right li a {
+      &:hover {
+        color: $brand-color !important;
+        transition: $default-transition;
+      }
+      &:after {
+        background-color: $brand-color !important;
+      }
+    }
+  }
+}
+
 nav.dark-nav {
   .top-bar-right li a {
     color: $body-text-color !important;

@@ -119,6 +119,10 @@ h6 {
   color: white;
   margin-bottom: 40px;
 }
+.not_found a:hover button {
+  background-color: #a62651;
+  transition: all 0.3s ease;
+}
 .not_found button {
   border: 1px solid white;
   border-radius: 5px;
@@ -127,6 +131,8 @@ h6 {
   font-weight: 600;
   color: white;
   margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .not_found .or {
   text-align: center;
@@ -175,6 +181,21 @@ nav.sticky-container .is-stuck .top-bar {
 nav.sticky-container .is-stuck .top-bar li a {
   color: #221e30;
   font-weight: 500;
+}
+
+nav.white-links .top-bar-right li a:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+nav.white-links .top-bar-right li a:after {
+  background-color: white !important;
+}
+nav.white-links .is-stuck .top-bar-right li a:hover {
+  color: #a62651 !important;
+  transition: all 0.3s ease;
+}
+nav.white-links .is-stuck .top-bar-right li a:after {
+  background-color: #a62651 !important;
 }
 
 nav.dark-nav .top-bar-right li a {
@@ -1369,7 +1390,7 @@ footer ul a:hover {
 }
 @media (max-width: 640px) {
   .send_application_section button {
-    width: 300px;
+    width: 280px;
   }
 }
 .send_application_section a:hover button {
