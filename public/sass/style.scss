@@ -2,16 +2,15 @@
 @import "breakpoint";
 @import "base";
 
-$primary-color: #A62651;
-$padding: 20px;
 
-@import "_nav";
-@import "_footer";
-@import "_home";
-@import "_sollicitatie-proces";
-@import "_blog";
-@import "_jobs";
-@import "_contact";
+@import "layout/_nav";
+@import "layout/_footer";
+@import "pages/_home";
+@import "pages/_sollicitatie-proces";
+@import "pages/_employer-branding";
+@import "pages/_blog";
+@import "pages/_jobs";
+@import "pages/_contact";
 @import "_pagetransition";
 
 .bx-wrapper .bx-loading {

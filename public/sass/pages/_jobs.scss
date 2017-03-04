@@ -1,0 +1,282 @@
+@import "susy";
+@import "breakpoint";
+@import "../variables";
+@import "../mixins";
+
+
+// There are styles for jobs.html page and inner pages with job posts
+
+/////
+// Jobs.html
+/////
+
+.open-video-btn {
+  border: 3px solid white;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  i {
+    color: white;
+    font-size: 42px;
+  }
+}
+
+.jobs_section_header {
+  background-color: $brand-color;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.jobs_section_header {
+  .row {
+    z-index: 100;
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 130px;
+    padding-bottom: 90px;
+    h1 {
+      margin-bottom: 52px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+      li {
+        margin-bottom: 10px;
+      }
+      a {
+        color: white;
+        @include font-size($font24);
+        font-weight: 600;
+        span {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  @include breakpoint((min-width: 640px)) {
+    .row {
+      margin: auto;
+      width: 100%;
+      .home-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.who_we_are {
+  padding: 140px 15px 140px 15px;
+  h4 {
+    margin-top: 0;
+  }
+}
+
+.who_we_are-additional {
+  padding: 140px 15px 140px 15px;
+}
+
+.what_we_offer {
+  padding: 130px 15px 130px 15px;
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.send_application_section {
+  padding: 30px 20px 80px 20px;
+  background-color: $grey-background;
+  text-align: center;
+  p {
+    @include font-size($font24);
+  }
+  button {
+    @include font-size($request_button);
+    min-height: 74px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $brand-color;
+    font-weight: 600;
+    position: relative;
+    margin-top: 18px;
+    padding: 0 10px 0 10px;
+    transition: $default-transition;
+    cursor: pointer;
+    @include breakpoint((max-width: 640px)) {
+      width: 280px;
+    }
+  }
+  a:hover button {
+    background-color: $brand-color-hover;
+    transition: $default-transition;
+  }
+}
+
+//////
+// Inner Job Post Page
+//////
+
+.job_post_section {
+  padding: 100px 15px 100px 15px;
+  p {
+    margin-bottom: 60px;
+    &:first-child {
+      @include font-size($font24);
+    }
+  }
+  ul {
+    margin-bottom: 60px;
+  }
+  li {
+    @include font-size($p-font-sizes);
+  }
+  .content-section {
+    margin-bottom: 40px;
+  }
+}
+
+// Application form for job
+
+.application_form_section {
+  padding: 100px 20px 100px 20px;
+  background-color: $grey-background;
+  p {
+    margin-bottom: 30px;
+  }
+  h3 {
+    margin-bottom: 80px;
+  }
+  input, select {
+    border: 1px solid #b4b4b4;
+    box-shadow: none;
+    border-radius: 3px;
+    margin-bottom: 24px;
+  }
+  label {
+    text-align: right;
+    @include font-size($p-font-sizes);
+    &.req:after {
+      content: "*";
+      color: red;
+    }
+  }
+  .red {
+    color: #d63737;
+  }
+  .application-submit {
+    @include font-size($request_button);
+    min-height: 70px;
+    color: white;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $brand-color;
+    font-weight: 600;
+    position: relative;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    transition: $default-transition;
+    &:hover {
+      background-color: $brand-color-hover;
+      transition: $default-transition;
+    }
+  }
+  .success, .error {
+    display: none;
+  }
+  .succes {
+    color: #4bd117;
+  }
+  .error {
+    color: #e03c3c;
+  }
+  @include breakpoint((max-width: 640px)) {
+    label {
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+  @include breakpoint((min-width: 1024px)) {
+    .video-section, .submit-section {
+      float: right
+    }
+  }
+}
+
+
+// Custom Upload Input
+
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  label {
+      display: block;
+      margin-bottom: 5px;
+  }
+}
+.file-upload-wrapper {
+  position: relative; 
+}
+.file-upload-input {
+  width: 50%;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px 11px 20px;
+  border: 1px solid #b4b4b4; 
+  float: left; /* IE 9 Fix */
+  box-shadow: none;
+  border-radius: 3px;
+  &:hover, &:focus { 
+      outline: none; 
+  }
+}
+.file-upload-button {
+  background-image: linear-gradient(to bottom, #f2f2f2, #dddddd);
+  width: 48%;
+  margin-left: 2%;
+  border: solid 1px #b4b4b4;
+  cursor: pointer; 
+  display: inline-block; 
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px 11px 20px;
+  border-radius: 3px;
+  font-family: "freight-sans-pro", Helvetica;
+  float: left; /* IE 9 Fix */
+  &:hover {
+  }
+}
+
+.flipbase-recorder {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: #f4f4f4;
+  margin-bottom: 70px;
+}
+
+
+// Custom styles for flipbase recorder
+
+#flipbase-recorder-0.flipbase-recorder .flipbase-custom-interface {
+  background-color: #f4f4f4 !important;
+}
+#flipbase-recorder-0.flipbase-recorder .flipbase-user-interface .flipbase-closed-button {
+  background-color: #6BA63F !important;
+}

@@ -1,0 +1,93 @@
+@import "susy";
+@import "breakpoint";
+@import "../variables";
+@import "../mixins";
+
+// Video Slider Section
+.video_slider_section {
+  position: relative;
+  .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    ul {
+      left: -20px;
+    }
+  }
+  .prev-video, .next-video {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    i {
+      font-size: 70px;
+      color: white;
+      @include breakpoint((max-width: 640px)) {
+        font-size: 56px;
+      }
+    }
+  }
+  .next-video {
+    right: 15px;
+  }
+  .prev-video {
+    left: 15px;
+  }
+}
+
+// Custom text section 1
+.custom_text_section_1 {
+  padding: 90px 20px 110px 15px;
+  h3 {
+    margin-bottom: 34px;
+  }
+  p {
+    margin-bottom: 24px;
+  }
+}
+
+// Features_6 section (employer-branding)
+.features_6_section {
+  background-color: #F5F6F7;
+  padding-bottom: 40px;
+  .features_6_header_block {
+    text-align: center;
+    border-bottom: 1px solid $grey-text-color;
+    margin-bottom: 82px;
+    padding-bottom: 10px;
+  }
+  .split_section-right {
+    padding: 80px 15px 90px 15px;
+    img .custom-padding {
+      padding-left: 40px;
+    }
+    @include breakpoint((max-width: 640px)) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+  .split_section-left {
+    padding: 80px 15px 90px 15px;
+    @include breakpoint((max-width: 640px)) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+  .vertical_centered {
+    display: flex;
+    align-items: center;
+    @include breakpoint((max-width: 640px)) {
+      margin-left: 20px;
+      float: left !important;
+    }
+  }
+  .row90 {
+    max-width: 100rem;
+  }
+  @include breakpoint((max-width: 640px)) {
+    .vertical_centered, .fix {
+      margin-left: 20px;
+      float: left !important;
+    }  
+  }
+}
+

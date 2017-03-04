@@ -1,0 +1,46 @@
+@import "susy";
+@import "breakpoint";
+@import "../variables";
+@import "../mixins";
+
+footer {
+  background-color: $dark-purple;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  a, p, h6 {
+    color: white;
+  }
+  h6 {
+    margin-bottom: 18px;
+    margin-top: 8px;
+  }
+  .logo img {
+    margin-bottom: 30px;
+    width: 160px;
+  }
+  .language img {
+    width: 18px;
+  }
+  .social-block a {
+    font-size: 18px;
+    margin: 0 6px 0 6px;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+    a, p {
+      color: $footer-links-color;
+    }
+    a:hover {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
+@include breakpoint((max-width 640px)) {
+  footer ul {
+    margin-bottom: 34px;
+  }
+}
+

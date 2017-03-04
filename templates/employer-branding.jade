@@ -2,25 +2,21 @@ extends layout
 
 block body
   section
-    .full-screen-section
-      include partials/_covervideo
-      .row
+    .full-screen-section.no-overlay(style="background-image: url(#{locals.path}/assets/images/employer-branding/4.jpg")
+      .row.vertical-centered-text
         .small-11.small-centered
           h1.main-header= page.metadata.titles.header
           p.main-subheader= page.metadata.titles.subheader
           
   include partials/employer-branding/_features-1
-  
-  section
-    .row.custom_text_section_1
-      .small-11.medium-7.large-6
-        h3 Samen met collega’s eenvoudig video’s opnemen, beheren en publiceren
-        p Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Een vacature staat gemiddeld niet langer online dan 3 maanden. Wij helpen jouw om zelf eenvoudig video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunciatie op een 
-        p Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een standaard dure video productie. Het is toch gek dat iemand tijdens de eerste werkdag te zien krijgt waar en met wie je kkomt te werken?!
+
+  include partials/employer-branding/_custom-text-section
   
   include partials/employer-branding/_features-6
   
   include partials/sollicitatie-proces/_partners
+    
+  include partials/employer-branding/_video-slider
   
   include partials/employer-branding/_testimonials
   

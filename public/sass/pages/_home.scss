@@ -1,0 +1,113 @@
+@import "susy";
+@import "breakpoint";
+@import "../variables";
+@import "../mixins";
+
+.cover-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.full-screen-section, .half-screen-section {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 37, 62, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @include breakpoint((max-width: 640px)) {
+    .row.vertical-centered-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &.no-overlay {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.full-screen-section, .half-screen-section {
+  .row {
+    z-index: 100;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .home-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+  @include breakpoint((min-width: 640px)) {
+    .row {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      margin: auto;
+      width: 100%;
+      padding: 0 20px 0 20px;
+      .home-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.half-screen-section {
+  min-height: 70vh;
+}
+
+.home-link {
+  &:hover .home-text-block {
+    background-color: $brand-color-hover;
+    transition: $default-transition;
+  }
+}
+
+.home-text-block {
+  background-color: $brand-color;
+  box-shadow: 1px 0 10px 4px rgba(0, 0, 0, 0.5);
+  padding: 70px 30px 35px 30px;
+  border-radius: 10px;
+  transition: $default-transition;
+  h3, p {
+    color: white;
+    word-break: break-word;
+  }
+  @include breakpoint((max-width 768px)) {
+    margin-bottom: 40px;
+    padding: 5px 30px 15px 30px;
+  }
+}
+
+
+/**
+ * Outdated browser message
+ */
+.ie-warning{position:fixed;left:0;top:0;right:0;bottom:0;background:#303036;z-index:9999}
+.ie-warning>div.ie-warning-wrapper{position:absolute;left:50%;top:50%;margin-left:-400px;margin-top:-200px;text-align:center;padding:75px 0px;width:800px;height:300px;color:#fff}
+.ie-warning>div.ie-warning-wrapper>h3{font-weight:500;font-size:22px;margin-bottom:15px}
+.ie-warning>div.ie-warning-wrapper>p{font-weight:200;margin-bottom:50px}
+.ie-warning div.browser-choice>.browser{width:150px;display:inline-block;*display:inline;zoom:1;margin-left:20px;margin-right:20px;padding-top:110px;padding-bottom:20px;}
+.ie-warning div.browser-choice button.download-browser{margin-top:10px;width:150px;height:35px;border:0;border-radius:5px;color:#ffffff;font-weight:700;background:#258BE1; cursor: pointer;}

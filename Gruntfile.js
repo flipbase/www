@@ -55,8 +55,8 @@ module.exports = function(grunt) {
           '<%= yeoman.assets %>/components/jquery-placeholder/jquery.placeholder.min.js',
           '<%= yeoman.assets %>/components/covervid/covervid.min.js',
           '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.js',
-          '<%= yeoman.assets %>/components/smoothstate/jquery.smoothState.min.js',
-          '<%= yeoman.assets %>/components/rrssb/js/rrssb.js'
+          '<%= yeoman.assets %>/components/rrssb/js/rrssb.js',
+          '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.js'
         ],
         dest: '<%= yeoman.dist %>/js/dependencies.js'
       }, 
@@ -66,12 +66,6 @@ module.exports = function(grunt) {
           '<%= yeoman.assets %>/js/page.js'
         ],  
         dest: '<%= yeoman.dist %>/js/page.js'  
-      },
-      footer: {
-        src: [
-          '<%= yeoman.assets %>/js/smoothstate.js'
-        ],
-        dest: '<%= yeoman.dist %>/js/footer.js'        
       }
     },
 
@@ -82,7 +76,8 @@ module.exports = function(grunt) {
             '<%= yeoman.assets %>/components/normalize.css/normalize.css',
             '<%= yeoman.assets %>/components/foundation-sites/dist/css/foundation.min.css',
             '<%= yeoman.assets %>/components/Ionicons/css/ionicons.css',
-            '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css'
+            '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css',
+            '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.css'
           ],
           dest: '<%= yeoman.dist %>/css/dependencies.min.css'
         }]

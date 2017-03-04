@@ -22,24 +22,24 @@ block body
     article 
       .blog_article_content
       
+        //- Social media icons _top
+        .medium-12.large-11.medium-centered.blog_article_social_top
+            ul.sticky.rrssb-buttons
+              li Deel op
+              li.rrssb-linkedin
+                a(class="popup")
+                  i.ion-social-linkedin-outline
+              li.rrssb-facebook
+                a(class="popup")
+                  i.ion-social-facebook-outline
+              li.rrssb-twitter
+                a(class="popup")
+                  i.ion-social-twitter-outline
+        
         // Image cover (optional)
         if page.metadata.cover
           .small-11.medium-8.small-centered
             img.float-center(src="#{page.metadata.cover}")
-            
-        //- Social media icons _top
-        .medium-11.large-9.medium-centered.blog_article_social_top
-          ul.rrssb-buttons
-            li Deel op
-            li.rrssb-linkedin
-              a(class="popup")
-                i.ion-social-linkedin-outline
-            li.rrssb-facebook
-              a(class="popup")
-                i.ion-social-facebook-outline
-            li.rrssb-twitter
-              a(class="popup")
-                i.ion-social-twitter-outline
                 
         // Post Header
         .small-10.medium-6.small-centered
@@ -75,6 +75,7 @@ block body
             li
               a(href="#") Inspiration
         
+block append footer-scripts
   script.
     var desc = $('#article').first().text().slice(0, 144) + ' ...';
     $('.blog_section .rrssb-buttons').rrssb({
@@ -83,4 +84,13 @@ block body
       url: '!{locals.path}!{page.url}',
       // optional:
       description: desc
+    });
+
+    var $social_top = $(".blog_article_social_top ul");
+    $(window).scroll(function () {
+        if (252 < $(window).scrollTop()) {
+            $social_top.addClass("sticky-social");
+        } else {
+            $social_top.removeClass("sticky-social");
+        }
     });

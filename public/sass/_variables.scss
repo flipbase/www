@@ -28,30 +28,35 @@ $breakpoints: (
 
 $p-font-sizes: (
   null  : em(15px),
-  480px : em(16px),
+  480px: em(16px),
+  640px: em(17px),
+  1024px : em(18px),
 );
 
 $h1-font-sizes: (
-  null  : em(24px),
-  480px : em(26px),
-  768px : em(30px),
-  1024px: em(36px)
+  null  : em(28px),
+  480px : em(30px),
+  640px : em(32px),
+  1024px: em(34px),
+  1200px: em(36px)
 );
 
 $h2-font-sizes: (
-  null  : em(28px),
-  768px : em(30px),
-  1024px: em(32px)
+  null  : em(26px),
+  640px : em(28px),
+  1024px: em(30px),
+  1200px: em(32px)
 );
 
 $h3-font-sizes: (
   null  : em(20px),
-  768px : em(22px),
-  1024px: em(24px)
+  1024px: em(22px),
+  1200px: em(24px)
 );
 
 $h4-font-sizes: (
-  null  : em(20px),
+  null  : em(18px),
+  640px: em(20px),
   1024px: em(22px)
 );
 
@@ -61,3 +66,36 @@ $request_button: (
   1200px: em(20px)
 );
 
+$application_submit: (
+  null  : em(20px),
+  1024px: em(26px),
+  1200px: em(30px)
+);
+
+$font24: (
+  null  : em(18px),
+  640px : em(20px),
+  1024px: em(22px),
+  1200px: em(24px)
+);
+
+$font32: (
+  null  : em(26px),
+  640px : em(28px),
+  1024px: em(30px),
+  1200px: em(32px)
+);
+
+
+$font22: (
+  null  : em(18px),
+  640px : em(20px),
+  1024px: em(21px),
+  1200px: em(22px)
+);
+
+$font16: (
+  null  : em(14px),
+  1024px: em(15px),
+  1200px: em(16px)
+);

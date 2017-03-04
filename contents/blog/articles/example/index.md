@@ -7,7 +7,7 @@ template: article.jade
 ---
 
 <div class="first-paragraph">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada dolor vestibulum libero fermentum, non vehicula est porttitor. Cras aliquet erat vel dolor efficitur pretium.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada dolor vestibulum libero fermentum, non vehicula est porttitor. Cras aliquet erat vel dolor efficitur pretium.</p>
 </div>
 
 <span class="more"></span>

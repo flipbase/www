@@ -1,46 +1,87 @@
-div.contactform
-  div(class="form" style="max-width: 30em;")
-    h2 Geïnteresseerd?
-    span Wellicht nodigen wij je uit voor een kop koffie. Voordat wij de koffiebonen malen verwachten wij wel iets van jou: een sollicitatievideo!
-    p
-    form#applicationform
-      div.field
-        input(placeholder="Voornaam *" id="firstname" type="text")
-      div.field
-        input(placeholder="Achternaam *" id="lastname" type="text")
-      div.field
-        input(placeholder="E-mail *" id="email" type="email")
-      div.field
-        input(id="vacancy" type="hidden" value="#{page.title}")
-      div.field
-        input(placeholder="Telefoon *" id="phone" type="text")
-      div.field
-        h5 Leg kort uit in een video wat jouw #[i(style="text-decoration: underline") specifiek] aanspreekt in deze functie, ons team of binnen Flipbase? 
-        input(type="flipbase" id="video")
-      button(type="submit") Versturen
-      #successMessage.success
-        span All good! Je hoort zo snel mogelijk van ons!
-      #errorMessage.error
-        span
+.expanded.application_form_section
+  .row
+    .medium-10.large-7.medium-centered
+      .large-push-3
+        h3 Interested? Apply below!
+      form#applicationform
+          .row
+            .medium-3.large-3.columns.padding-0
+              label.req(for="firstname") First name 
+            .medium-8.large-9.columns
+              input(id="firstname" type="text" required)
+          
+            .medium-3.large-3.columns.padding-0
+              label.req(for="lastname") Last name 
+            .medium-8.large-9.columns
+              input(id="lastname" type="text" required)
+            
+            .medium-3.large-3.columns.padding-0
+              label English proficiency
+            .medium-8.large-9.columns
+              select(id="english_level")
+                option 
+                option Beginner
+                option Intermediate
+                option Upper-intermediate
+                option Advanced
+                option Native
+            
+            .medium-3.large-3.columns.padding-0
+              label.req Resume 
+            .medium-8.large-9.columns
+              .custom-file-upload
+                // <label for="file">File: </label>
+                input(type='file', id='resume' required)
+                
+            .medium-3.large-3.columns.padding-0
+              label.req Cover letter 
+            .medium-8.large-9.columns
+              .custom-file-upload
+                // <label for="file">File: </label>
+                input(type='file', id='cover' required)
+            
+            .medium-3.large-3.columns.padding-0
+              label Video
+            .medium-8.large-9.columns
+              p Please describe in a 
+                b 30 second video 
+                | what was the 
+                b most exciting experience 
+                | for you on your 
+                b last job. 
+                | Look straight into the camera lens, record in a quite environment, relaxt and just be yourselve!
+              
+            .large-11.video-section
+              input(type="flipbase" id="video")
+              
+            .large-11.align-center.submit-section
+              button.application-submit(type="submit") Yes, I’d like to work at Flipbase!
+              #successMessage.success
+                span
+                  i.ion-checkmark-round
+                  | All good! Je hoort zo snel mogelijk van ons!
+              #errorMessage.error
+                span
 
 script.
+    
   Flipbase.recorder({
     recorderId: '1a4ba320-7a4c-4040-9b67-c02490809cf1',
   });
 
   var formID = '#applicationform';
 
-  $('#firstname, #lastname, #email, #phone').placeholder();
+  $('#firstname, #lastname, #english-level, #resume, #cover').placeholder();
 
   //- Translate error message
   var errorMsg = {
     firstname: 'voornaam',
     lastname: 'achternaam',
-    email: 'email',
-    phone: 'telefoonnummer',
+    resume: 'resume',
+    cover: 'cover',
     video: 'video' 
   };
-  var fields = ['firstname', 'lastname', 'email', 'phone', 'video'];
+  var fields = ['firstname', 'lastname', 'english-level', 'resume', 'cover', 'video'];
 
   function err(msg) {
     return 'Kan gebeuren: je bent je ' + msg + ' vergeten in te vullen!';
@@ -50,9 +91,143 @@ script.
     return {
       voornaam: $('#firstname').val(),
       achternaam: $('#lastname').val(),
-      vacature: $('#vacancy').val(),
-      email: $('#email').val(),
-      telefoon: $('#phone').val(),
+      vacature: $('#english-level').val(),
+      email: $('#resume').val(),
+      telefoon: $('#cover').val(),
       video: 'https://app.flipbase.com/video/' + $('#video').val()
     }
   }
+  
+  // Custom upload input
+  ;(function ($) {
+    // Browser supports HTML5 multiple file?
+    var multipleSupport = typeof $('<input/>')[0].multiple !== 'undefined',
+      isIE = /msie/i.test(navigator.userAgent);
+
+    $.fn.customFile = function () {
+
+      return this.each(function () {
+
+        var $file = $(this).addClass('custom-file-upload-hidden'), // the original file input
+          $wrap = $('<div class="file-upload-wrapper">'),
+          $input = $('<input type="text" class="file-upload-input" />'),
+          // Button that will be used in non-IE browsers
+          $button = $('<button type="button" class="file-upload-button">Browse</button>'),
+          // Hack for IE
+          $label = $('<label class="file-upload-button" for="' + $file[0].id + '">Browse</label>');
+
+        // Hide by shifting to the left so we
+        // can still trigger events
+        $file.css({
+          position: 'absolute',
+          left: '-9999px'
+        });
+
+        $wrap.insertAfter($file)
+          .append($file, $input, (isIE ? $label : $button));
+
+        // Prevent focus
+        $file.attr('tabIndex', -1);
+        $button.attr('tabIndex', -1);
+
+        $button.click(function () {
+          $file.focus().click(); // Open dialog
+        });
+
+        $file.change(function () {
+
+          var files = [],
+            fileArr, filename;
+
+          // If multiple is supported then extract
+          // all filenames from the file array
+          if (multipleSupport) {
+            fileArr = $file[0].files;
+            for (var i = 0, len = fileArr.length; i < len; i++) {
+              files.push(fileArr[i].name);
+            }
+            filename = files.join(', ');
+
+            // If not supported then just take the value
+            // and remove the path to just show the filename
+          } else {
+            filename = $file.val().split('\\').pop();
+          }
+
+          $input.val(filename) // Set the value
+            .attr('title', filename) // Show filename in title tootlip
+            .focus(); // Regain focus
+
+        });
+
+        $input.on({
+          blur: function () {
+            $file.trigger('blur');
+          },
+          keydown: function (e) {
+            if (e.which === 13) { // Enter
+              if (!isIE) {
+                $file.trigger('click');
+              }
+            } else if (e.which === 8 || e.which === 46) { // Backspace & Del
+              // On some browsers the value is read-only
+              // with this trick we remove the old input and add
+              // a clean clone with all the original events attached
+              $file.replaceWith($file = $file.clone(true));
+              $file.trigger('change');
+              $input.val('');
+            } else if (e.which === 9) { // TAB
+              return;
+            } else { // All other keys
+              return false;
+            }
+          }
+        });
+
+      });
+
+    };
+
+    // Old browser fallback
+    if (!multipleSupport) {
+      $(document).on('change', 'input.customfile', function () {
+
+        var $this = $(this),
+          // Create a unique ID so we
+          // can attach the label to the input
+          uniqId = 'customfile_' + (new Date()).getTime(),
+          $wrap = $this.parent(),
+
+          // Filter empty input
+          $inputs = $wrap.siblings().find('.file-upload-input')
+          .filter(function () {
+            return !this.value
+          }),
+
+          $file = $('<input type="file" id="' + uniqId + '" name="' + $this.attr('name') + '"/>');
+
+        // 1ms timeout so it runs after all other events
+        // that modify the value have triggered
+        setTimeout(function () {
+          // Add a new input
+          if ($this.val()) {
+            // Check for empty fields to prevent
+            // creating new inputs when changing files
+            if (!$inputs.length) {
+              $wrap.after($file);
+              $file.customFile();
+            }
+            // Remove and reorganize inputs
+          } else {
+            $inputs.parent().remove();
+            // Move the input so it's always last on the list
+            $wrap.appendTo($wrap.parent());
+            $wrap.find('input').focus();
+          }
+        }, 1);
+
+      });
+    }
+  }(jQuery));
+
+  $('input[type=file]').customFile();

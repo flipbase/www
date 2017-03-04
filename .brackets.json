@@ -1,6 +1,7 @@
 {
     "jscodehints.detectedExclusions": [
         "D:/themeimperia/freelance/flipbase/project/www/Gruntfile.js",
-        "D:/themeimperia/freelance/flipbase/github/public/js/form.js"
+        "D:/themeimperia/freelance/flipbase/github/public/js/form.js",
+        "D:/themeimperia/freelance/flipbase/github/public/js/page.js"
     ]
 }

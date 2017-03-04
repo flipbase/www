@@ -19,17 +19,7 @@ html(lang='en')
 
       block scripts
         script(src='#{locals.path}/assets/js/modernizr.custom.min.js')
-        //- These scripts needs to be executed on every page request
-        script(src="https://app.flipbase.com/recorder.js")
-        script(src="#{locals.path}/assets/js/dependencies.js")
-        script(src='#{locals.path}/assets/js/page.js')
         script.
-          $(window).load(function() {
-            $('.loader').fadeOut('slow');
-          });
-          setTimeout(function () {
-            $('.loader').fadeOut('slow');
-          }, 10000);
           //- Custom typekit loader
           (function(d) {
             var tkTimeout=3000;
@@ -43,7 +33,6 @@ html(lang='en')
 
           // Placeholder for functions we want to invoke at the end of each page
           // This is a workaround to invoke inline javascript; because that is not exectued by default because of smoothState.js plugin
-          var invoker = [];
           //- script(src="//use.typekit.net/uvu0omm.js")
           //- script.
           //-   try{Typekit.load({ async: true });}catch(e){}
@@ -97,17 +86,25 @@ html(lang='en')
                   a(href='#') Developers
             li
               a(href='#{locals.path}/contact.html') Contact
+            li
+              a.language(href='#')
+                img(src="#{locals.path}/assets/images/flag_uk.png")
       
         // There is the rest contect of the page
         .off-canvas-content(data-off-canvas-content)
-          include partials/_nav
+          include partials/layout/_nav
 
           block body
 
           footer
-            include partials/_footer
+            include partials/layout/_footer
 
     block footer-scripts
+      //- These scripts needs to be executed on every page request
+      script(src="https://app.flipbase.com/recorder.js")
+      script(src="#{locals.path}/assets/js/dependencies.js")
+      script(src='#{locals.path}/assets/js/page.js')
+    
       // Dark Navigation if blog
       script.
         if ($(".blog_section").length) {
@@ -116,8 +113,6 @@ html(lang='en')
         if ($(".jobs_section_header").length) {
           $("#main_navigation").addClass("white-links");
         }
-      
-      script(src='#{locals.path}/assets/js/footer.js')
       
       // Google Analytics
       script.

@@ -21,28 +21,5 @@
       #errorMessage.error
         span #{page.metadata.contact.error}
 
-script.
-  $('input, textarea').placeholder();
 
-  var formID = '#contact_form';
-
-  //- Translate error message
-  var errorMsg = {
-    name: '#[+toLowerCase(page.metadata.contact.name)]',
-    email: '#[+toLowerCase(page.metadata.contact.email)]',
-    message: '#[+toLowerCase(page.metadata.contact.msg)]' 
-  };
-  var fields = ['name', 'email', 'message'];
-  
-  function err(msg) {
-    var err = '#{page.metadata.contact.error}';
-    return err.replace(/___/, msg);
-  }
-
-  function getData () {
-    return {
-      naam: $('#name').val(),
-      email: $('#email').val(),
-      message: $('#message').val()
-    }
-  }
+    

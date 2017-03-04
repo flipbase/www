@@ -16,52 +16,29 @@
     "feature5": "Personaliseer afwijzingen met een boodschap van de recruiter.",
     "feature6": "Presenteer jezelf op onderscheidende wijze in de arbeidsmarktcommunicatie."
   },
-
-  "features_2": {
-    "title": "Jij bepaalt waar, hoe en wanneer",
-    "feature1_header": "bij welke vacatures",
-    "feature1_desc": "Video is niet relevant voor iedere vacature. Jij bepaalt dus wanneer je video wél en wanneer niet in wilt zetten.",
-    "feature2_header": "waar in de procedure",
-    "feature2_desc": "Je kan een video opvragen door waar jij dit waarde vindt toeveogen. Dit kan het het sollicitatieformulier, direct na een sollicitatie, voor of na een eerste of tweede gesprek, of bij de voordracht.",
-    "feature3_header": "wat de kandidaat presenteert",
-    "feature3_desc": "Wil je dat kandidaten op video een case of probleem oplossen; een specifieke situatie of gebeurtenis omschrijven of wil je horen wat hen motiveert?"
+  
+  "custom_text_section_1": {
+    "header1": "Samen met collega’s eenvoudig video’s opnemen, beheren en publiceren",
+    "text1_1": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Een vacature staat gemiddeld niet langer online dan 3 maanden. Wij helpen jouw om zelf eenvoudig video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunciatie op een",
+    "text1_2": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een standaard dure video productie. Het is toch gek dat iemand tijdens de eerste werkdag te zien krijgt waar en met wie je kkomt te werken?!"
   },
   
-  "features_3": {
-    "title": "Waar past video in jouw recruitment proces?",
-    "feature1_header": "Bij de sollicitatie",
-    "feature1_desc": "Geef kandidaten de mogelijkheid om zich te onderscheiden van de rest.",
-    "feature2_header": "Direct na de sollicitatie",
-    "feature2_desc": "Automatisch iedere sollicitatie uitnodigen.",
-    "feature3_header": "Na een eerste selectie",
-    "feature3_desc": "CV selectie kandidaten utinodigen voor video.",
-    "feature4_header": "In de voordracht aan vacaturehouder",
-    "feature4_desc": "In de voordracht aan vacaturehouder Deel een kandidaat profiel mét video."
-  },
-  
-  "features_4": {
-    "title": "Waarom Flipbase?",
-    "feature1_header": "Geen extra login nodig",
-    "feature1_desc": "Zowel het opnemen als afspelen van video’s is geïntegreerd in je huidige recruitment systeem. Je hoeft dus niet in te loggen in een ander systeem waar je video’s kan bekijken.",
-    "feature2_header": "Vanuit je systeem kandidaten uitnodigen",
-    "feature2_desc": "Met een klik kan je een of meerdere kandidaten uitnodigen per e-mail om een video op te nemen. Stel een concrete vraag of leg ze bijvoorbeeld een case voor.",
-    "feature3_header": "Video direct afspelen in het kandidaat profiel",
-    "feature3_desc": "Je ontvangt video’s in het kandidaat profiel binnen je huidige recruitment omgeving. Je kan kan ze direct afspelen en delen met collega’s; je hoeft niet naar een andere omgeving. ",
-    "feature4_header": "Geen extra data opslag",
-    "feature4_desc": "Flipbase verzorgt alle video- en data opslag, je hebt geen groter (data) pakket nodig bij je huidige recruitment software leverancier."
-  },
-  
-  "features_5": {
-    "feature1_header": "Geen app",
-    "feature1_desc": "Kandidaten en recruiters hoeven geen software of apps te downloaden om een video op te nemen of af te spelen. Zowel de recorder als de player module zijn te gebruiken in iedere (mobiele) browser.",
-    "feature2_header": "Volledig responsive",
-    "feature2_desc": "Volledig responsive Zowel de recorder als de player zijn volledig responsive en zijn dus ook makkelijk te gebruiken op een smartphone of tabelt.",
-    "feature3_header": "Op ieder apparaat",
-    "feature3_desc": "Gebruik een webcam, camera van een smartphone of tablet of upload een video bestand. Als gebruiker kan je op alle manieren een video versturen",
-    "feature4_header": "Aanpasbare opname tijd",
-    "feature4_desc": "Verander de maximale opname tijd aan van 30 seconden tot maximaal 3 minuten. Wij vinden hoe korter hoe beter, maar we geven je wel de mogelijkheid.",
-    "feature5_header": "In iedere taal",
-    "feature5_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan op automatisch op basis van de browser voorkeur worden aangepast. "
+  "features_6": {
+    "title": "Hoe werkt het?",
+    "subtitle": "in arbeidsmarktcoummicatie",
+    
+    "header1": "Hoe werkt het?",
+    "text1_1": "Nodig een of meerdere collega’s uit per e-mail om een video op te nemen voor de geselecteerde vacature of social media bericht.",
+    "text1_2": "Geef aan enkele tips of suggesties wat je collega eventueel kan benoemen in zijn of haar video.",
+    "text1_3": "Stuur een voorbeeld van een video mee zodat de collega een idee heeft wat van hem of haar verwacht wordt.",
+    
+    
+    "header2": "Ontvang en beheer video’s",
+    "text2_1": "Op het moment dat een video is opgenomen ontvang je een e-mail notificatie. In het dashboard heb je een overzicht van alle video’s die eerder zijn opgenomen.",
+    "text2_2": "Verwijder video’s die je niet meer nodig hebt of waarvan je zeker.",
+    
+    "header3": "Publiceer video’s",
+    "text3_1": "‘Deel de video’ met een werkenbij website om deze toe te voegen aan een vacature of met Facebook, Twitter of LinkedIn om toe te voegen aan een post."
   },
 
   "testimonials": {

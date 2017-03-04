@@ -18,26 +18,51 @@ block body
             | +31 (0)20 893 26 47
         button(type="button" class="scrollto") #{page.metadata.contact.scroll}
 
+  // Contact Form
   include partials/_contact
 
+block append footer-scripts
   script.
-    function setupCoverVideo () {
-      
-      $(".scrollto").click(function() {
-        $('html, body').animate({
-            scrollTop: $(".contact_form_section").offset().top
-        }, 1000);
-      });
+    $(".scrollto").click(function() {
+      $('html, body').animate({
+          scrollTop: $(".contact_form_section").offset().top
+      }, 1000);
+    });
 
-      fullscreen();
-      $(window).resize(fullscreen);
-      function fullscreen() {
-        var wrapper = $('.cover, .mask');
-        var windowH = $(window).height();
-        var windowW = $(window).width();
+    fullscreen();
+    $(window).resize(fullscreen);
+    function fullscreen() {
+      var wrapper = $('.cover, .mask');
+      var windowH = $(window).height();
+      var windowW = $(window).width();
 
-        wrapper.width(windowW);
-        wrapper.height(windowH);
+      wrapper.width(windowW);
+      wrapper.height(windowH);
+    }
+    
+    // Form
+    
+    $('input, textarea').placeholder();
+
+    var formID = '#contact_form';
+
+    //- Translate error message
+    var errorMsg = {
+      name: '#[+toLowerCase(page.metadata.contact.name)]',
+      email: '#[+toLowerCase(page.metadata.contact.email)]',
+      message: '#[+toLowerCase(page.metadata.contact.msg)]' 
+    };
+    var fields = ['name', 'email', 'message'];
+
+    function err(msg) {
+      var err = '#{page.metadata.contact.error}';
+      return err.replace(/___/, msg);
+    }
+
+    function getData () {
+      return {
+        naam: $('#name').val(),
+        email: $('#email').val(),
+        message: $('#message').val()
       }
     }
-    invoker.push(setupCoverVideo);
