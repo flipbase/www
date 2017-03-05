@@ -50,6 +50,7 @@ nav.sticky-container {
   }
 }
 
+// White Navbar for specific pages (jobs)
 nav.white-links {
   .top-bar-right li a {
     &:hover {
@@ -73,6 +74,7 @@ nav.white-links {
   }
 }
 
+// Dark Navbar for specific pages (blog)
 nav.dark-nav {
   .top-bar-right li a {
     color: $body-text-color !important;

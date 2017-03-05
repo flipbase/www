@@ -2,6 +2,7 @@
 @import "breakpoint";
 @import "../variables";
 
+// Blog Section
 .blog_section {
   padding-top: 60px;
   .blog_title {
@@ -129,6 +130,7 @@
   }
 }
 
+// Article Page
 .blog_article_content {
   padding: 70px 0 90px 0;
   .first-paragraph {

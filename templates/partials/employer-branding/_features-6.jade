@@ -1,9 +1,11 @@
+// You can find styles for this section in pages/_employer-branding.scss
+
 section
   .expanded.features_6_section
   
     // Feature 1
     
-    .row.split_section-right.row90(data-equalizer data-equalize-on="large")
+    .row.split_section-right.row90(data-equalizer data-equalize-on="large", data-aos="fade-zoom-in")
       .medium-4.medium-centered.features_6_header_block
         h2.features_1_title #{page.metadata.features_6.title}
 
@@ -19,7 +21,7 @@ section
         p #{page.metadata.features_6.text1_3}
 
       // Desktop Image
-      .medium-12.large-7.columns.hide-for-small-only.vertical_centered(data-equalizer-watch)
+      .medium-12.large-7.columns.hide-for-small-only.vertical_centered(data-equalizer-watch, data-aos="fade-zoom-in")
         .vertical_centered_content
           img(src="#{locals.path}/assets/images/employer-branding/1.png" srcset="#{locals.path}/assets/images/employer-branding/1@2x.png 2x, #{locals.path}/assets/images/employer-branding/1@3x.png 3x" width="100%")
 

@@ -51,7 +51,9 @@ module.exports = function(grunt) {
       deps: {
         src: [  
           '<%= yeoman.assets %>/components/jquery/dist/jquery.min.js',
+          '<%= yeoman.assets %>/components/animsition/dist/js/animsition.min.js',
           '<%= yeoman.assets %>/components/foundation-sites/dist/js/foundation.js',
+          '<%= yeoman.assets %>/components/aos/dist/aos.js',
           '<%= yeoman.assets %>/components/jquery-placeholder/jquery.placeholder.min.js',
           '<%= yeoman.assets %>/components/covervid/covervid.min.js',
           '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.js',
@@ -74,7 +76,9 @@ module.exports = function(grunt) {
         files: [{
           src: [
             '<%= yeoman.assets %>/components/normalize.css/normalize.css',
+            '<%= yeoman.assets %>/components/animsition/dist/css/animsition.min.css',
             '<%= yeoman.assets %>/components/foundation-sites/dist/css/foundation.min.css',
+            '<%= yeoman.assets %>/components/aos/dist/aos.css',
             '<%= yeoman.assets %>/components/Ionicons/css/ionicons.css',
             '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css',
             '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.css'

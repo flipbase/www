@@ -17,7 +17,9 @@
     "Ionicons": "ionicons#^2.0.1",
     "foundation-sites": "^6.3.0",
     "rrssb": "^1.14.0",
-    "motion-ui": "^1.2.2"
+    "motion-ui": "^1.2.2",
+    "animsition": "^4.0.2",
+    "aos": "^2.1.1"
   },
   "devDependencies": {}
 }

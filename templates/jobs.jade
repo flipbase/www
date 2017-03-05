@@ -1,3 +1,5 @@
+// You can find styles for this section in pages/_blog.scss
+
 extends layout
 
 block body
@@ -24,82 +26,20 @@ block body
           li
             a Customer support (part time), 
               span Amsterdam
+  
+  include partials/jobs/_who-we-are
               
-  section
-    .row.who_we_are
-      .medium-10.large-6.columns
-        h4 #{page.metadata.who_we_are.title}
-        p #{page.metadata.who_we_are.text}
-      .medium-12.large-5.columns
-        img(src="#{locals.path}/assets/images/jobs/1.jpg" srcset="#{locals.path}/assets/images/jobs/1@2x.jpg 2x, #{locals.path}/assets/images/jobs/1@3x.jpg 3x")
-        
-  #modalVideo1.reveal.modal-video.large(data-reveal='', data-close-on-click='true', data-animation-in='fade-in', data-animation-out='fade-out')
-    video(poster="#{locals.path}/assets/images/cover.jpg" preload="auto" autoplay="true" controls="true")
-      source(type="video/webm" src="#{locals.path}/assets/images/video/rick.webm")
-      source(type="video/mp4" src="#{locals.path}/assets/images/video/rick.mp4")
-      source(type="video/ogv" src="#{locals.path}/assets/images/video/rick.ogv")
-    button.close-button(data-close='', aria-label='Close modal', type='button')
-      span(aria-hidden='true') ×      
-        
-  section
-    .half-screen-section.no-overlay(style="background-image: url(#{locals.path}/assets/images/jobs/video-bg.jpg")
-      .row.vertical-centered-text
-        .small-10.small-centered.align-center
-          button.open-video-btn(data-open="modalVideo1")
-            i.ion-play
-          h1 Stage content- & online marketing
-        
-  section
-    .row.who_we_are-additional
-      .medium-8.large-6.column
-        h4 #{page.metadata.who_we_are_additional.title1}
-        p #{page.metadata.who_we_are_additional.text1}
-        p #{page.metadata.who_we_are_additional.text1_2}
-        br
-        h4 #{page.metadata.who_we_are_additional.title2}
-        p #{page.metadata.who_we_are_additional.text2}
+  include partials/jobs/_video-section      
+       
+  include partials/jobs/_who-we-are-additional
     
   section
     .expanded
       img(src="#{locals.path}/assets/images/jobs/2.jpg" srcset="#{locals.path}/assets/images/jobs/2@2x.jpg 2x" style="width: 100%")
       
-  section
-    .row.what_we_offer(data-equalizer data-equalize-on="medium")
-      .medium-6.medium-centered
-        h2 What we offer
-      .medium-9.large-12
-        .row
-          .large-5.columns
-            h4 #{page.metadata.what_we_offer.header1}
-            p #{page.metadata.what_we_offer.offer1}
-          .large-5.columns
-            h4 #{page.metadata.what_we_offer.header3}
-            p #{page.metadata.what_we_offer.offer3}
-      .medium-9.large-12
-        .row
-          .large-5.columns
-            h4 #{page.metadata.what_we_offer.header2}
-            p #{page.metadata.what_we_offer.offer2}
-          .large-5.column
-            h4 #{page.metadata.what_we_offer.header4}
-            p #{page.metadata.what_we_offer.offer4}
-      .medium-9.large-12
-        .row
-          .large-5.column
-            h4 #{page.metadata.what_we_offer.header6}
-            p #{page.metadata.what_we_offer.offer6}
-          .large-5.columns
-            h4 #{page.metadata.what_we_offer.header5}
-            p #{page.metadata.what_we_offer.offer5}
+  include partials/jobs/_what-we-offer
   
-  section
-    .expanded.send_application_section
-      .row
-        .medium-8.medium-centered
-          h2 Interested, but no relevant opening?
-          p We are always happy to get a cup of coffee with talented people.
-          a(href="#")
-            button Send us an open application
+  include partials/jobs/_application-section
         
         
         

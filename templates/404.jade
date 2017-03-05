@@ -1,3 +1,5 @@
+// You can find styles for this section in _base.scss
+
 extends layout
 
 block body
@@ -9,20 +11,9 @@ block body
           p #{page.metadata.text}
           .medium-12.large-5.columns.padding-0
             a(href="#{locals.path}/")
-              button Go to the homepage
+              button #{page.metadata.button1}
           .large-2.columns.padding-0.show-for-large.or Or
           .medium-12.large-5.columns.padding-0
             a(href="#{locals.path}/contact.html")
-              button Contact Us
+              button #{page.metadata.button2}
             
-  script.
-    fullscreen();
-    $(window).resize(fullscreen);
-    function fullscreen() {
-      var videoWrapper = $('.full-screen-section');
-      var windowH = $(window).height();
-      var windowW = $(window).width();
-
-      videoWrapper.width(windowW);
-      videoWrapper.height(windowH);
-    }

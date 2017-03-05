@@ -2,5 +2,7 @@
   "template": "404.jade",
   
   "title": "Oh no, this page does exist!",
-  "text": "The page you were looking has shomehow vanished! If you think we made a mistake on our, please let us know! Otherwise we advise you to just go to our homepage and see what Flipbase is about."
+  "text": "The page you were looking has shomehow vanished! If you think we made a mistake on our, please let us know! Otherwise we advise you to just go to our homepage and see what Flipbase is about.",
+  "button1": "Go to the homepage",
+  "button2": "Contact Us"
 }

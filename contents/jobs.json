@@ -42,5 +42,11 @@
     
     "header6": "Macbook and phone",
     "offer6": "Since you spent about a quarter of your time at the office we believe it should be fun. So, we have a giant screen with PS4 and weekly drinks at the office. And as a bonus a yearly outing of at 5 working days to sunny places like Malta."
+  },
+  
+  "application_section": {
+    "header": "Interested, but no relevant opening?",
+    "text": "We are always happy to get a cup of coffee with talented people.",
+    "button": "Send us an open application"
   }
 }

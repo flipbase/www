@@ -69,6 +69,7 @@
   }
 }
 
+// Who_we_are section
 .who_we_are {
   padding: 140px 15px 140px 15px;
   h4 {
@@ -76,12 +77,14 @@
   }
 }
 
+// Who_we_are-additional section
 .who_we_are-additional {
   padding: 140px 15px 140px 15px;
 }
 
+// What_we_offer section
 .what_we_offer {
-  padding: 130px 15px 130px 15px;
+  padding: 130px 30px 130px 30px;
   h2 {
     text-align: center;
     margin-bottom: 60px;
@@ -91,6 +94,7 @@
   }
 }
 
+// Send_application section
 .send_application_section {
   padding: 30px 20px 80px 20px;
   background-color: $grey-background;
@@ -247,6 +251,7 @@
       outline: none; 
   }
 }
+
 .file-upload-button {
   background-image: linear-gradient(to bottom, #f2f2f2, #dddddd);
   width: 48%;
@@ -263,6 +268,14 @@
   float: left; /* IE 9 Fix */
   &:hover {
   }
+}
+
+/* IE 9 and 10 fix */
+.no-flexbox .file-upload-button {
+  padding: 2px 20px 3px 20px !important;
+}
+.no-flexbox .submit-section {
+  margin-top: 50px;
 }
 
 .flipbase-recorder {

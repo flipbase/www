@@ -1117,6 +1117,7 @@ footer ul a:hover {
 .video_slider_section .bx-wrapper {
   box-shadow: none;
   border: 0;
+  background-color: transparent;
 }
 .video_slider_section .bx-wrapper ul {
   left: -20px;
@@ -1615,7 +1616,7 @@ footer ul a:hover {
 }
 
 .what_we_offer {
-  padding: 130px 15px 130px 15px;
+  padding: 130px 30px 130px 30px;
 }
 .what_we_offer h2 {
   text-align: center;
@@ -1874,6 +1875,15 @@ footer ul a:hover {
   font-family: "freight-sans-pro", Helvetica;
   float: left;
   /* IE 9 Fix */
+}
+
+/* IE 9 and 10 fix */
+.no-flexbox .file-upload-button {
+  padding: 2px 20px 3px 20px !important;
+}
+
+.no-flexbox .submit-section {
+  margin-top: 50px;
 }
 
 .flipbase-recorder {

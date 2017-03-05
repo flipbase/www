@@ -1,3 +1,5 @@
+// You can find styles for this section in pages/_contact.scss
+
 extends layout
 
 block body
@@ -23,6 +25,7 @@ block body
 
 block append footer-scripts
   script.
+    // Smooth Scroll to contact form
     $(".scrollto").click(function() {
       $('html, body').animate({
           scrollTop: $(".contact_form_section").offset().top
