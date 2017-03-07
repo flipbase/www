@@ -131,3 +131,9 @@ h6 {
     color: white;
   }
 }
+
+@include breakpoint((max-width: 1024px)) {
+  .main {
+    overflow-x: hidden;
+  }
+}

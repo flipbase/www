@@ -57,7 +57,9 @@ html(lang='en')
             button(class="download-browser" onclick="location.href='http://windows.microsoft.com/en-us/internet-explorer/download-ie'") Download IE 11
     <![endif]-->
     
-    #main.main.off-canvas-wrapper
+    include partials/layout/_nav
+    
+    #main.main
       .off-canvas-wrapper-inner(data-off-canvas-wrapper)
       
         // Mobile Menu
@@ -92,7 +94,6 @@ html(lang='en')
       
         // There is the rest contect of the page
         .off-canvas-content(data-off-canvas-content)
-          include partials/layout/_nav
 
           block body
 

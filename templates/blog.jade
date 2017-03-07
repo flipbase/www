@@ -20,7 +20,7 @@ block body
       //- Iterate over blog/articles directory
       each article in articles
         - var date = moment.utc(article.date).format('DD MMMM YYYY')
-        section.blog_article
+        section.blog_article(data-aos="fade-zoom-in")
           if (article.metadata.cover)
             img(src="#{article.metadata.cover}")
           h4.blog_article_header

@@ -33,6 +33,22 @@ $(document).ready(function() {
       delay: 100,
     });
   
+  var $toggleMenu = $(".menu-mobile-icon"),
+      $main_navigation = $("#main_navigation"),
+      $page_content = $("#off-canvas-content");
+  $toggleMenu.on("click", function() {
+    $main_navigation.toggleClass("push-right");
+    $page_content.toggleClass("push-right");
+  })
+  
+    $(window).scroll(function () {
+        if (0 < $(window).scrollTop()) {
+            $main_navigation.addClass("mobile-sticky");
+        } else {
+            $main_navigation.removeClass("mobile-sticky");
+        }
+    });
+  
   
   // Cover Video. You can find setupCoverVideo function in _covervideo.jade
   if($(".cover-video").length) {

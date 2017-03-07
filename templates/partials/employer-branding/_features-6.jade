@@ -10,7 +10,7 @@ section
         h2.features_1_title #{page.metadata.features_6.title}
 
       // Mobile Image
-      .small-12.columns.show-for-small-only
+      .small-12.columns.hide-for-large
         img(src="#{locals.path}/assets/images/employer-branding/1.png" srcset="#{locals.path}/assets/images/employer-branding/1@2x.png 2x, #{locals.path}/assets/images/employer-branding/1@3x.png 3x" style="margin-bottom: 10px")
 
       // Description
@@ -21,17 +21,17 @@ section
         p #{page.metadata.features_6.text1_3}
 
       // Desktop Image
-      .medium-12.large-7.columns.hide-for-small-only.vertical_centered(data-equalizer-watch, data-aos="fade-zoom-in")
+      .medium-12.column52.columns.show-for-large.vertical_centered(data-equalizer-watch)
         .vertical_centered_content
           img(src="#{locals.path}/assets/images/employer-branding/1.png" srcset="#{locals.path}/assets/images/employer-branding/1@2x.png 2x, #{locals.path}/assets/images/employer-branding/1@3x.png 3x" width="100%")
 
 
     //Feature 2    
 
-    .row.split_section-left.row90(data-equalizer data-equalize-on="medium")
-      .medium-6.large-7.columns(data-equalizer-watch)
+    .row.split_section-left.row90(data-equalizer data-equalize-on="medium", data-aos="fade-zoom-in")
+      .medium-12.column52.columns(data-equalizer-watch)
         img.custom-padding(src="#{locals.path}/assets/images/employer-branding/2.png" srcset="#{locals.path}/assets/images/employer-branding/2@2x.png 2x, #{locals.path}/assets/images/employer-branding/2@3x.png 3x" width="100%")
-      .small-11.medium-6.large-3.large-pull-1.columns.vertical_centered(data-equalizer-watch)
+      .small-11.medium-12.large-3.large-pull-2.columns.vertical_centered(data-equalizer-watch)
         .vertical_centered_content
           h4 #{page.metadata.features_6.header2}
           p #{page.metadata.features_6.text2_1} 
@@ -41,18 +41,18 @@ section
 
     // Feature 3
 
-    .row.split_section-left.row90(data-equalizer data-equalize-on="medium")
+    .row.split_section-left.row90(data-equalizer data-equalize-on="medium", data-aos="fade-zoom-in")
 
       // Mobile image
-      .small-12.columns.show-for-small-only
+      .small-12.columns.hide-for-large
         img(src="#{locals.path}/assets/images/employer-branding/3.png" srcset="#{locals.path}/assets/images/employer-branding/3@2x.png 2x, #{locals.path}/assets/images/employer-branding/3@3x.png 3x")
 
       // Description
-      .small-11.medium-6.medium-uncentered.large-3.large-push-1.columns.vertical_centered(data-equalizer-watch)
+      .small-11.medium-12.medium-uncentered.large-3.large-push-2.columns.vertical_centered(data-equalizer-watch)
         .vertical_centered_content
           h4 #{page.metadata.features_6.header3}
           p #{page.metadata.features_6.text3_1}
 
       // Desktop Image
-      .medium-6.large-7.columns.hide-for-small-only(data-equalizer-watch)
+      .medium-6.column52.columns.show-for-large(data-equalizer-watch)
         img(src="#{locals.path}/assets/images/employer-branding/3.png" srcset="#{locals.path}/assets/images/employer-branding/3@2x.png 2x, #{locals.path}/assets/images/employer-branding/3@3x.png 3x" width="100%")

@@ -37,7 +37,7 @@
 
 // Custom text section 1
 .custom_text_section_1 {
-  padding: 90px 20px 110px 15px;
+  padding: 90px 20px 110px 30px;
   h3 {
     margin-bottom: 34px;
   }
@@ -86,9 +86,22 @@
   }
   @include breakpoint((max-width: 640px)) {
     .vertical_centered, .fix {
-      margin-left: 20px;
+      margin-left: 30px;
       float: left !important;
     }  
+  }
+  @include breakpoint((min-width: 1024px)) {
+    .column52 {
+      width: 52.5%;
+    }
+  }
+  @include breakpoint((640px 1024px)) {
+    .vertical_centered_content {
+      padding-left: 36px;
+    }
+    .fix {
+      padding-left: 46px;
+    }
   }
 }
 

@@ -95,8 +95,34 @@ nav.dark-nav {
 
 // Mobile styles
 @include breakpoint((max-width 1023px)) {
+  
+  .push-right {
+    transform: translateX(250px);
+    transition: transform .5s ease !important;
+    position: fixed;
+  }
+  
+  .mobile-sticky {
+    background-color: white;
+    transition: all .5 ease;
+    .top-bar .menu-mobile-icon {
+      background-color: black;
+      &:after, &:before {
+        background-color: black;
+      }
+    }
+    .logo-white {
+      display: none !important;
+    }
+    .logo-dark {
+      display: block !important;
+    }
+  }
+  
   // Fix bug with sticky nav for mobile
   nav {
+    position: fixed !important;
+    transition: all .5 ease !important;
     .sticky.is-anchored.is-at-bottom {
       top: 0 !important;
     }
