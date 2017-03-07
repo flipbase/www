@@ -7,6 +7,9 @@ footer {
   background-color: $dark-purple;
   padding-top: 100px;
   padding-bottom: 60px;
+  p {
+    font-size: em(16px);
+  }
   a, p, h6 {
     color: white;
   }

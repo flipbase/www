@@ -524,6 +524,9 @@ footer {
   padding-top: 100px;
   padding-bottom: 60px;
 }
+footer p {
+  font-size: 1em;
+}
 footer a, footer p, footer h6 {
   color: white;
 }
