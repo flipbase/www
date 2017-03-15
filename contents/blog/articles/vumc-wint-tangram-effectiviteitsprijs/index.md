@@ -3,6 +3,7 @@ title: VUmc wint Tangram Effectiviteitsprijs 2016 met Flipbase!
 author: Ron
 date: 2016-06-03 11:00
 template: article.jade
+tags: Sollicitatie proces
 ---
 
 Tangram reikt jaarlijks de <a href="http://www.tangram.nl/nieuws/vumc-levert-met-videopitch-beste-idee-voor-effectiviteitsprijs-2016/" target="_blank">Effectiviteitsprijs</a> uit aan de organisatie met het beste idee om de recruitmentsoftware Tangram nog efficienter in te zetten.

@@ -4,6 +4,7 @@ author: Ron
 date: 2016-07-15 16:00
 cover: ../../../../assets/images/blog/cover.png
 template: article.jade
+tags: Sollicitatie proces
 ---
 
 Jeroen van der Made van Ontwikkelwaars in Ontwikkeling (OiO) over video: "De opdrachtgever heeft een volledig beeld van de kandidaat voordat hij überhaubt opgesprek is geweest, doordat de kandidaat al meerdere stappen heeft doorlopen en al een volledig dossier heeft opgebouwd met daarin de verschillende assessments en meerdere video’s. We zijn erg tevreden over de tool in combinatie met de werking van Emply. Gouden combinatie voor ons."

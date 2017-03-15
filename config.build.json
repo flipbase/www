@@ -8,9 +8,16 @@
   "output": "./www",
   "plugins": [
     "wintersmith-livereload",
+    "wintersmith-tag",
     "./plugins/paginator.coffee",
     "./plugins/slugify.coffee"
   ],
+
+  "tag": {
+    "template": "blog-tag-index.jade",
+    "perPage": 4
+  },
+
   "require": {
     "moment": "moment",
     "_": "underscore"

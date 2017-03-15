@@ -4,6 +4,7 @@ author: Ron
 date: 2017-02-27 16:00
 cover: ../../../../assets/images/blog/example.jpg
 template: article.jade
+tags: Sollicitatie proces, Case studies
 ---
 
 <div class="first-paragraph">

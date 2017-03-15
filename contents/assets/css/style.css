@@ -1332,20 +1332,17 @@ footer ul a:hover {
 }
 .blog_section .blog_article_list .pagination li {
   background-color: #f2f4f9;
-  border: 1px solid #a4acb8;
   margin: 0 4px;
   display: inline-block !important;
+  border: #efefef 1px solid;
 }
 .blog_section .blog_article_list .pagination li:last-child, .blog_section .blog_article_list .pagination li:first-child {
   background-color: transparent;
-  border: 0;
   margin: 0;
 }
 .blog_section .blog_article_list .pagination li i {
   color: #a4acb8;
-  font-size: 20px;
   position: relative;
-  top: 3px;
 }
 @media (max-width: 480px) {
   .blog_section .blog_article_list .pagination li {

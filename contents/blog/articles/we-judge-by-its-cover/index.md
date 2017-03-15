@@ -3,6 +3,7 @@ title: “We judge books by their covers, and we can’t help it”
 author: Ron
 date: 2015-11-05 11:00
 template: article.jade
+tags: Sollicitatie proces
 ---
 
 Aldus Nicholas Rule, Ph.D., onderzoeker aan de Universiteit van Toronto. Uit zijn onderzoek blijkt dat een eerste indruk zelfs belangrijker en blijvender is dan feiten.

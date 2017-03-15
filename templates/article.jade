@@ -9,18 +9,9 @@ block append scripts
 
 block body
   .row.blog_section
-    .small-10.small-centered.blog_title
-      h1 Blog
-    .small-12.blog_categories
-      ul
-        li
-          a Case studies
-        li
-          a Product updates
-        li
-          a Applications
-        li
-          a Applications
+    
+    include partials/blog/_header
+
     article 
       .blog_article_content
       
@@ -70,12 +61,12 @@ block body
                 
         // Tags        
         .small-11.medium-6.small-centered.blog_article_tags
+          - var tags = env.helpers.getTagsFromArticle(page)
           ul
             li Topics
-            li
-              a(href="#") Product updates
-            li
-              a(href="#") Inspiration
+            each tag in tags
+              li
+                a(href='/blog/tag/#{tag}/1/index.html') #{tag}
         
 block append footer-scripts
   script.
