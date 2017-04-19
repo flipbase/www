@@ -1,0 +1,80 @@
+{
+ "template": "employer-branding.jade",
+
+  "titles": {
+    "header": "Geef een echt beeld van de werkomgeving en toekomstige collega’s",
+    "subheader": "Versterk de arbeidscommunicatie met video vanuit je huidige recruitment omgeving"
+  },
+
+  "whyvideo": {
+    "title": "Voordelen van video",
+    "subtitle": "in arbeidsmarktcoummicatie",
+    "feature1": "Trek de aandacht van meer kandidaten door vacatures visueler te presenteren.",
+    "feature2": "Verhoog de kwaliteit van sollicitanten en voorkom mismatches later in het proces.",
+    "feature3": "Geef een authentiek van de werkomgeving en toekomstige collega’s aan sollicitanten.",
+    "feature4": "Verhoog het bereik social media berichten en maak berichte visueel aantrekkelijker.",
+    "feature5": "Personaliseer afwijzingen met een boodschap van de recruiter.",
+    "feature6": "Presenteer jezelf op onderscheidende wijze in de arbeidsmarktcommunicatie."
+  },
+  
+  "about": {
+    "header1": "Samen met collega’s eenvoudig video’s opnemen, beheren en publiceren",
+    "text1_1": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Een vacature staat gemiddeld niet langer online dan 3 maanden. Wij helpen jouw om zelf eenvoudig video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunciatie op een",
+    "text1_2": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een standaard dure video productie. Het is toch gek dat iemand tijdens de eerste werkdag te zien krijgt waar en met wie je kkomt te werken?!"
+  },
+  
+  "howdoesitworks": {
+    "title": "Hoe werkt het?",
+    "subtitle": "in arbeidsmarktcoummicatie",
+    
+    "header1": "Hoe werkt het?",
+    "text1_1": "Nodig een of meerdere collega’s uit per e-mail om een video op te nemen voor de geselecteerde vacature of social media bericht.",
+    "text1_2": "Geef aan enkele tips of suggesties wat je collega eventueel kan benoemen in zijn of haar video.",
+    "text1_3": "Stuur een voorbeeld van een video mee zodat de collega een idee heeft wat van hem of haar verwacht wordt.",
+    
+    
+    "header2": "Ontvang en beheer video’s",
+    "text2_1": "Op het moment dat een video is opgenomen ontvang je een e-mail notificatie. In het dashboard heb je een overzicht van alle video’s die eerder zijn opgenomen.",
+    "text2_2": "Verwijder video’s die je niet meer nodig hebt of waarvan je zeker.",
+    
+    "header3": "Publiceer video’s",
+    "text3_1": "‘Deel de video’ met een werkenbij website om deze toe te voegen aan een vacature of met Facebook, Twitter of LinkedIn om toe te voegen aan een post."
+  },
+
+  "testimonials": {
+    "title": "You are not the first…",
+    "statistics": {
+      "number1": "29465",
+      "desc1": "candidates have used our applications",
+      "number2": "48755",
+      "desc2": "views by colleague’s of you"
+    },
+    "quotes": [
+      {
+        "quote": "Op basis van enkel het CV is het moeilijk in te schatten of iemand geschikt is voor de functie en past bij Unique. Met de Flipbase video introductie heb je een extra selectie middel waarmee deze twijfel bevestigd wordt, of juist onterecht blijkt.",
+        "name": "Esther Kuipers, Unique"
+      },
+      {
+        "quote": "De video functionaliteit van Flipbase heeft het selecteren van geschikte kandidaten effectiever en leuker gemaakt.",
+        "name": "Kadriye Demirel, Schiphol"
+      },
+      {
+        "quote": "Bij de werving van potentials voor ons Agrifirm Traineeship programma geeft het motivatiefilmpje een uitstekende eerste indruk van de kandidaat. Het spreekt de sollicitant zelf ook aan. Het is vernieuwend en positief voor je employer brand.",
+        "name": "Gert Jan Nagel, Agrifirm"
+      },
+      {
+        "quote": "Flipbase levert ons een behoorlijke tijdsbesparing op. Een C.V. geeft immer niet weer hoe iemand overkomt.",
+        "name": "Maikel Boksteen, 2Trust"
+      },
+      {
+        "quote": "Mede dankzij het inzetten van Flipbase gaan er meer voorgestelde kandidaten op gesprek bij onze opdrachtgevers!",
+        "name": "Richard Groeneveld, Someone"
+      },
+      {
+        "quote": "Met Flipbase kunnen we naast enkel het profiel en CV ook een video sturen zo dat de kandidaat zichzelf wat persoonlijker en op eigen creatieve manier kan voorstellen. Wij merken dat veel klanten en kandidaten waarde hechten aan deze nieuwe manier van voorstellen.",
+        "name": "Koen Buddenburg, Unique Hoofddorp"
+      }
+    ]
+  }
+
+}

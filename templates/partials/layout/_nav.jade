@@ -1,9 +1,11 @@
-// You can find styles for this section in layout/_nav.scss
+//- You can find styles for this section in layout/_nav.scss
 
+//- The locales for the navigation; since we cannot translate partials without repeating ourselves
 - var isEN = page && page.filepath.relative.indexOf('en/') > -1 ? true : false;
+- var locales = {"en": {"products": "Products", "sp_title": "Application process", "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter het CV", "eb_desc": "Strength your employer brand", "lang_flag": "flag_nl.png", "lang_url": "/", "sp_path": "/en/application-process.html", "eb_path": "/en/employer-branding.html" }, "nl": { "products": "Producten", "sp_title": "Sollicitatie proces", "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter het CV", "eb_desc": "Verrijk arbeidsmarktcommunicatie en geef een authentiek beeld van de werkomgeving", "lang_flag": "flag_uk.png", "lang_url": "/en", "sp_path": "/sollicitatie-proces.html", "eb_path": "/employer-branding.html"  }};
+- var locales = isEN ? locales['en'] : locales['nl'];
 
-// Mobile Menu is located in layout.jade
-
+//- Mobile Menu is located in layout.jade
 nav#main_navigation(data-sticky-container)
   .expanded.row(data-sticky data-options="marginTop:0;", data-top-anchor="4", data-sticky-on="large")
     .row
@@ -23,39 +25,40 @@ nav#main_navigation(data-sticky-container)
                            data-options="closingTime: 140")
             li.has-submenu.opens-right
               a(href='#').
-                #[i.ion-ios-arrow-down]Products
+                #[i.ion-ios-arrow-down]#{locales.products}
               ul.submenu.menu.vertical(data-submenu='')
                 li
-                  a(href='#{locals.path}/sollicitatie-proces.html') Sollicitatie proces
+                  a(href='#{locals.path}#{locales.sp_path}') #{locales.sp_title}
                     p.
-                      Werf en selecteer met video, ontvang een beeld van de persoon achter het CV
+                      #{locales.sp_desc}
                 li
-                  a(href='#{locals.path}/employer-branding.html') Employer branding
+                  a(href='#{locals.path}#{locales.eb_path}') Employer branding
                     p.
-                      Verrijk arbeidsmarktcommunicatie en geef een authentiek beeld van de werkomgeving
+                      #{locales.eb_desc}
             li
-              a(href='#{locals.path}/jobs.html') Jobs
+              a(href='#{locals.path}/jobs/') Jobs
             li
-              a(href='#{locals.path}/blog') Blog
-            li.has-submenu.opens-right
-              a(href='#').
-                #[i.ion-ios-arrow-down]Help
-              ul.submenu.menu.vertical(data-submenu='')
-                li
-                  a(href='#') Recruiters
-                    p.
-                      When, where and how to use Flipbase in your recruitment process
-                li
-                  a(href='#') Candidates
-                    p.
-                      Get help creating and submitting your video
-                li
-                  a(href='#') Developers
-                    p.
-                      API documentation and integration guides
+              a(href='#{locals.path}/blog/') Blog
+            
+            //- li.has-submenu.opens-right
+            //-   a(href='#').
+            //-     #[i.ion-ios-arrow-down]Help
+            //-   ul.submenu.menu.vertical(data-submenu='')
+            //-     li
+            //-       a(href='#') Recruiters
+            //-         p.
+            //-           When, where and how to use Flipbase in your recruitment process
+            //-     li
+            //-       a(href='#') Candidates
+            //-         p.
+            //-           Get help creating and submitting your video
+            //-     li
+            //-       a(href='#') Developers
+            //-         p.
+            //-           API documentation and integration guides
             li
               a(href='#{locals.path}/contact.html') Contact
             li
-              a.language(href='#')
-                img(src="#{locals.path}/assets/images/flag_uk.png")
+              a.language(href='#{locales.lang_url}')
+                img(src="#{locals.path}/assets/images/#{locales.lang_flag}")
               

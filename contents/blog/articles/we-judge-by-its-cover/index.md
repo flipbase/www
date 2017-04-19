@@ -5,10 +5,13 @@ date: 2015-11-05 11:00
 template: article.jade
 tags: Sollicitatie proces
 ---
-
+<div class="first-paragraph">
 Aldus Nicholas Rule, Ph.D., onderzoeker aan de Universiteit van Toronto. Uit zijn onderzoek blijkt dat een eerste indruk zelfs belangrijker en blijvender is dan feiten.
+</div>
 
 <span class="more"></span>
+
+<div class="small-10 medium-6 small-centered">
 
 Participanten van één van zijn onderzoeken beoordeelden diverse proefpersonen op diens seksuele voorkeur op basis van een eerste indruk. Zelfs wanneer de seksuele voorkeur bekend was, oordeelden en vertrouwden de participanten op hun eerste indruk in plaats van de feiten.
 

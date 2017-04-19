@@ -1,8 +1,13 @@
 {
   "template": "index.jade",
   "header": "Video volledig geïntegreerd in je recruitment proces",
-  "title1": "Verrijk het sollicitatieproces",
-  "desc1": "Werf en selecteer met video, ontvang een beeld van de persoon achter CV",
-  "title2": "Versterk je arbeidsmarktcommunicatie",
-  "desc2": "Geef een authentiek beeld van de werkomgeving en collega’s"
+  
+  "sp_title": "Verrijk het sollicitatieproces",
+  "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter CV",
+  "sp_path": "/sollicitatie-proces.html",
+
+  "eb_title": "Versterk je arbeidsmarktcommunicatie",
+  "eb_desc": "Geef een authentiek beeld van de werkomgeving en collega’s",
+  "eb_path": "/employer-branding.html"
+
 }

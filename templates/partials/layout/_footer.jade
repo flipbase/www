@@ -1,46 +1,48 @@
 // You can find styles for this section in layout/_footer.scss
 
+- var isEN = page && page.filepath.relative.indexOf('en/') > -1 ? true : false;
+- var locales = {"en": {"products": "Products", "sp_title": "Application process", "lang_flag": "flag_nl.png", "lang_url": "/", "sp_path": "/en/application-process.html", "eb_path": "/en/employer-branding.html" }, "nl": { "products": "Producten", "sp_title": "Sollicitatie proces", "lang_flag": "flag_uk.png", "lang_url": "/en", "sp_path": "/sollicitatie-proces.html", "eb_path": "/employer-branding.html"  }};
+- var locales = isEN ? locales['en'] : locales['nl'];
+
 .row.column
   .medium-3.large-4.columns
     a.logo(href="#{locals.path}/" data-type="page-transition")
       img(src="#{locals.path}/assets/images/logo_white_small.png")
     p.language
       | Change language to: 
-      a(href='#')
-        img(src="#{locals.path}/assets/images/flag_uk.png")
+      a(href='#{locales.lang_url}')
+        img(src="#{locals.path}/assets/images/#{locales.lang_flag}")
     .social-block
-      a(href="")
+      a(href='https://www.linkedin.com/company-beta/3523563/' target="_blank")
         i.ion-social-linkedin
-      a(href="")
+      a(href='https://www.facebook.com/flipbasecom' target="_blank")
         i.ion-social-facebook
-      a(href="")
+      a(href='https://twitter.com/flipbase' target="_blank")
         i.ion-social-twitter
     br.show-for-small-only
   .medium-2.columns
     h6 Products
     ul
-      li 
-        a(href="#{locals.path}/employer-branding.html") Employer branding
       li
-        a(href="href='#{locals.path}/sollicitatie-proces.html") Applicaiton proces
+        a(href='#{locals.path}#{locales.sp_path}') #{locales.sp_title}
+      li 
+        a(href='#{locals.path}#{locales.eb_path}') Employer branding
   .medium-2.columns
     h6 Support
     ul
-      li 
-        a(href="") FAQ
+      //- li 
+      //-   a(href="") FAQ
+      //- li
+      //-   a(href="") Help center
       li
-        a(href="") Help center
-      li
-        a(href="") Developer documentation
+        a(href="https://flipbase.gitbooks.io/docs/content/" target="_blank") Developer documentation
   .medium-2.columns
     h6 About us
     ul
-      li 
-        a(href="") Our mission
       li
-        a(href="#{locals.path}/jobs.html") Jobs
+        a(href="#{locals.path}/jobs/") Jobs
       li
-        a(href='#{locals.path}/blog') Blog
+        a(href='#{locals.path}/blog/') Blog
       br.show-for-medium
       li
         a(href="#{locals.path}/privacy.html") Privacy Policy
@@ -61,5 +63,3 @@
           | KvK 59906960
           br
           | BTW NL853689970B01
-
-  

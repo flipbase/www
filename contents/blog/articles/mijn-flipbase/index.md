@@ -5,9 +5,14 @@ date: 2015-06-12 16:00
 template: article.jade
 ---
 
+
+<div class="first-paragraph">
 Wij hebben zojuist onze video sollicitatie tool gelanceerd! Hiermee kan je jezelf, middels de webcam, binnen 30 seconden presenteren. Met deze video verrijk je jouw sollicitatie en kan je jezelf onderscheiden van de rest. 
+</div>
 
 <span class="more"></span>
+
+<div class="small-10 medium-6 small-centered">
 
 Hoe werkt het? Via onderstaande link kan je gratis je video opnemen. Een video kan je zo vaak overdoen als je wilt. Zodra je tevreden bent met jouw video sla je de video op, vul je jouw e-mail adres in en klik je op versturen. De video verschijnt vervolgens automatisch in je inbox.
 
