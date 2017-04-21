@@ -5,7 +5,7 @@ extends layout
 block body
   section
     .full-screen-section
-      include partials/_covervideo
+      +coverVideo('https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/rick', 'https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/thumbs/f000000_1280x720.jpg')
       .row.vertical-centered-text
         .small-10.small-offset-1.small-centered
           h1.main-header= page.metadata.titles.header

@@ -1931,20 +1931,6 @@ footer ul a:hover {
   margin-top: 50px;
 }
 
-.flipbase-recorder {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  background-color: #f4f4f4;
-  margin-bottom: 70px;
-}
-
-#flipbase-recorder-0.flipbase-recorder .flipbase-custom-interface {
-  background-color: #f4f4f4 !important;
-}
-
-#flipbase-recorder-0.flipbase-recorder .flipbase-user-interface .flipbase-closed-button {
-  background-color: #6BA63F !important;
-}
-
 .contact {
   position: relative;
 }

@@ -81,9 +81,9 @@ block append footer-scripts
 
     var $social_top = $(".blog_article_social_top ul");
     $(window).scroll(function () {
-        if (252 < $(window).scrollTop()) {
-            $social_top.addClass("sticky-social");
-        } else {
-            $social_top.removeClass("sticky-social");
-        }
+      if (252 < $(window).scrollTop()) {
+          $social_top.addClass("sticky-social");
+      } else {
+          $social_top.removeClass("sticky-social");
+      }
     });

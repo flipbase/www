@@ -12,35 +12,78 @@ block body
             a(href="/jobs/accountmanager.html") Account manager, 
               span Amsterdam
           li
-            a(href="/jobs/stage-content-marketing.html") Stage content- en online marketing, 
+            a(href="/jobs/stage-content-marketing.html") Content marketing stage, 
               span Amsterdam
           li
-            a(href="/jobs/junior-front-end-developer.html") Front-end developer, 
+            a(href="/jobs/front-end-developer.html") Front-end developer, 
               span Amsterdam
-          li
-            a(href="/jobs/stage-sales.html") Stage acuiqisitie &amp; sales, 
+          li  
+            a(href="/jobs/nodejs-back-end-developer.html") Node.js back-end developer, 
               span Amsterdam
   
-  include partials/jobs/_who-we-are
-              
-  include partials/jobs/_video-section      
-       
-  include partials/jobs/_who-we-are-additional
+  section
+    .row.who_we_are(data-aos="fade-zoom-in")
+      .medium-10.large-6.columns
+        h4 #{page.metadata.who_we_are.title}
+        p #{page.metadata.who_we_are.text}
+      .medium-12.large-5.columns
+        img(src="#{locals.path}/assets/images/jobs/1.jpg" srcset="#{locals.path}/assets/images/jobs/1@2x.jpg 2x, #{locals.path}/assets/images/jobs/1@3x.jpg 3x")
+            
+  //- Video needs to be created
+  
+  //- include partials/jobs/_video-section      
+  +videoModal(1, 'test', 'https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/rick', 'https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/thumbs/f000000_1280x720.jpeg')
+
+  section
+    .row.who_we_are-additional(data-aos="fade-zoom-in")
+      .medium-8.large-6.column
+        h4 #{page.metadata.who_we_are_additional.title1}
+        p #{page.metadata.who_we_are_additional.text1}
+        p #{page.metadata.who_we_are_additional.text1_2}
+        br
+        h4 #{page.metadata.who_we_are_additional.title2}
+        p #{page.metadata.who_we_are_additional.text2}
     
   section(data-aos="fade-zoom-in")
     .expanded
       img(src="#{locals.path}/assets/images/jobs/2.jpg" srcset="#{locals.path}/assets/images/jobs/2@2x.jpg 2x" style="width: 100%")
-      
-  include partials/jobs/_what-we-offer
   
-  include partials/jobs/_application-section
-        
-        
-        
-        
-        
-        
-        
-          
-    
-    
+  //- In consideration to publish
+
+  //- section
+  //-   .row.what_we_offer(data-equalizer data-equalize-on="medium", data-aos="fade-zoom-in")
+  //-     .medium-6.medium-centered
+  //-       h2 What we offer
+  //-     .medium-9.large-12
+  //-       .row
+  //-         .large-5.columns
+  //-           h4 #{page.metadata.what_we_offer.header1}
+  //-           p #{page.metadata.what_we_offer.offer1}
+  //-         .large-5.columns
+  //-           h4 #{page.metadata.what_we_offer.header3}
+  //-           p #{page.metadata.what_we_offer.offer3}
+  //-     .medium-9.large-12
+  //-       .row
+  //-         .large-5.columns
+  //-           h4 #{page.metadata.what_we_offer.header2}
+  //-           p #{page.metadata.what_we_offer.offer2}
+  //-         .large-5.column
+  //-           h4 #{page.metadata.what_we_offer.header4}
+  //-           p #{page.metadata.what_we_offer.offer4}
+  //-     .medium-9.large-12
+  //-       .row
+  //-         .large-5.column
+  //-           h4 #{page.metadata.what_we_offer.header6}
+  //-           p #{page.metadata.what_we_offer.offer6}
+  //-         .large-5.columns
+  //-           h4 #{page.metadata.what_we_offer.header5}
+  //-           p #{page.metadata.what_we_offer.offer5}
+  
+  section
+    .expanded.send_application_section
+      .row
+        .medium-8.medium-centered
+          h2 #{page.metadata.application_section.header}
+          p #{page.metadata.application_section.text}
+          a(href="/jobs/open-application.html")
+            button #{page.metadata.application_section.button}

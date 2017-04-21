@@ -2,6 +2,8 @@
 template: job.jade
 title: Account manager
 city: Amsterdam
+video: https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/rick
+cover: https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/thumbs/f000000_1280x720.jpeg
 ---
 
 ## Wie zijn wij?

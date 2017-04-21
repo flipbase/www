@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
 
   var yeomanConfig = {
-    assets: 'public',
+    assets: 'contents/assets',
     dist: 'contents/assets'
   };
 
@@ -40,10 +40,6 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: {
-      dist: ['<%= yeoman.dist %>/*']
-    },
-
     uglify: {  
       options: {  
         compress: true  
@@ -58,16 +54,17 @@ module.exports = function(grunt) {
           '<%= yeoman.assets %>/components/covervid/covervid.min.js',
           '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.js',
           '<%= yeoman.assets %>/components/rrssb/js/rrssb.js',
-          '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.js'
+          '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.js',
+          '<%= yeoman.assets %>/components/vide/dist/jquery.vide.min.js'
         ],
-        dest: '<%= yeoman.dist %>/js/dependencies.js'
+        dest: '<%= yeoman.dist %>/js/dependencies.min.js'
       }, 
       page: {  
         src: [  
           '<%= yeoman.assets %>/js/form.js',
           '<%= yeoman.assets %>/js/page.js'
         ],  
-        dest: '<%= yeoman.dist %>/js/page.js'  
+        dest: '<%= yeoman.dist %>/js/page.min.js'  
       }
     },
 
@@ -107,37 +104,18 @@ module.exports = function(grunt) {
           '**/*'
         ]
       },
-      img: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.assets %>/images',
-          dest: '<%= yeoman.dist %>/images',
-          src: [
-            '**/*'
-          ]
-        }]
-      },
-      ionicons: {
-        expand: true,
-        dot: true,
-        cwd: '<%= yeoman.assets %>/fonts',
-        src: [  
-          '*'
-        ],  
-        dest: '<%= yeoman.dist %>/fonts'  
-      },
-      assets: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.assets %>/components',
-          dest: '<%= yeoman.dist %>/components',
-          src: [
-            'bxslider-4/dist/images/bx_loader.*'
-          ]
-        }]
-      },
+
+      // assets: {
+      //   files: [{
+      //     expand: true,
+      //     dot: true,
+      //     cwd: '<%= yeoman.assets %>/components',
+      //     dest: '<%= yeoman.dist %>/components',
+      //     src: [
+      //       'bxslider-4/dist/images/bx_loader.*'
+      //     ]
+      //   }]
+      // },
     },
 
     modernizr: {
@@ -181,13 +159,10 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', [
-    'clean',
     'modernizr',
     'sass',
     'cssmin',
-    'uglify',
-    'copy:img',
-    'copy:assets',
+    'uglify'
   ]);
 
 };

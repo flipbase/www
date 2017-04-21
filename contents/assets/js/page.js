@@ -1,1 +1,115 @@
-function whereToSendTo(){var a="qc0@g9ZCpkBL.wcu",b="IUM1TmvSfQsRz6YwaHniEuxjgdBbG54DkO0ZAr8hKeNploXW7JtyFqP32LVC9c",c=a.length,d="";for(i=0;i<a.length;i++)b.indexOf(a.charAt(i))==-1?(ltr=a.charAt(i),d+=ltr):(ltr=(b.indexOf(a.charAt(i))-c+b.length)%b.length,d+=b.charAt(ltr));return d}$(document).ready(function(){function a(){for(var a=0;a<fields.length;a++){var d=b(fields[a]),e=c(fields[a]);if(d||e)return d||e}}function b(a){var b=d(a);if(!b.value||b.value.length<=2)return err(errorMsg[a])}function c(a){var b=d(a);if("email"===a&&!e(b.value))return"Kan gebeuren: je hebt geen geldig e-mail adres ingevuld."}function d(a){return document.getElementById(a)}function e(a){var b=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;return b.test(a)}function f(a){a.success&&($(formID)[0].reset(),$("#errorMessage").hide(),$("#loadingProgress").hide(),$("#successMessage").fadeIn("fast").delay(5e3).fadeOut("fast"),$("form button").prop("disabled",!1))}$("form button").on("click",function(b){b.preventDefault(),$("form button").prop("disabled",!0);var c=a();return c?($("form button").prop("disabled",!1),$("#errorMessage").html("<span>"+c+"</span>").fadeIn("fast")):($("#loadingProgress").css("display","block"),void $.ajax({url:"//formspree.io/"+whereToSendTo(),method:"POST",data:getData(),dataType:"json",success:f}))})}),$(".animsition").animsition({inClass:"fade-in",outClass:"fade-out",inDuration:700,outDuration:600,linkElement:'a:not([target="_blank"]):not([href^="#"])',loading:!0,loadingParentElement:"body",loadingClass:"animsition-loading",timeout:!1,timeoutCountdown:3e3,onLoadEvent:!0,browser:["animation-duration","-webkit-animation-duration"],overlay:!1,overlayClass:"animsition-overlay-slide",overlayParentElement:"body",transition:function(a){window.location.href=a}}),$(document).ready(function(){$(document).foundation(),AOS.init({offset:100,duration:400,easing:"ease-in",delay:100});var a=$(".menu-mobile-icon"),b=$("#main_navigation"),c=$("#off-canvas-content");if(a.on("click",function(){b.toggleClass("push-right"),c.toggleClass("push-right")}),$(window).scroll(function(){0<$(window).scrollTop()?b.addClass("mobile-sticky"):b.removeClass("mobile-sticky")}),$(".cover-video").length&&setupCoverVideo(),$(".video-slider").length){var d=$(".video-slider").bxSlider({controls:!1,speed:200,pager:!1});$("#next-video").click(function(){return d.goToNextSlide(),!1}),$("#prev-video").click(function(){return d.goToPrevSlide(),!1})}if($(".bxslider").length){var e=$(".bxslider").bxSlider({controls:!1,speed:200});$("#next").click(function(){return e.goToNextSlide(),!1}),$("#prev").click(function(){return e.goToPrevSlide(),!1})}});
+/* Fade page-in animation */
+$(".animsition").animsition({
+  inClass: 'fade-in',
+  outClass: 'fade-out',
+  inDuration: 400,
+  outDuration: 400,
+  linkElement: 'a:not([target="_blank"]):not([href^="#"])',
+  // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+  loading: true,
+  loadingParentElement: 'body', //animsition wrapper element
+  loadingClass: 'animsition-loading',
+  loadingInner: '<img src="/assets/images/load-c.svg" />', // e.g '<img src="loading.svg" />'
+  timeout: false,
+  // timeoutCountdown: 3000,
+  onLoadEvent: true,
+  browser: [ 'animation-duration', '-webkit-animation-duration'],
+  // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+  // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+  overlay : false,
+  overlayClass : 'animsition-overlay-slide',
+  overlayParentElement : 'body',
+  transition: function(url){ window.location.href = url; }
+});      
+
+$(document).ready(function() {
+  
+  // Initialize foundation
+  $(document).foundation();
+  
+  // Animate on Scroll plguin
+  AOS.init({
+    offset: 100,
+    duration: 300,
+    easing: 'ease-in',
+    delay: 100,
+  });
+  
+  var $main_navigation = $("#main_navigation");
+  
+  // Show and hide the mobile menu
+  $(".menu-mobile-icon").on("click", function() {
+    $main_navigation.toggleClass("push-right");
+    $page_content.toggleClass("push-right");
+  })
+  
+  // Show dark navigation when we are on a page with the blog theme (/blog, /privacy, /blog/:post)
+  if ($(".blog_section").length) {
+    $("#main_navigation").addClass("dark-nav");
+  }
+  if ($(".jobs_section_header").length) {
+    $("#main_navigation").addClass("white-links");
+  }
+
+  // Make sure the main navigation enters the 'sticky' mode when entering the 
+  $(window).scroll(function () {
+    if (0 < $(window).scrollTop()) {
+      $main_navigation.addClass("mobile-sticky");
+    } else {
+      $main_navigation.removeClass("mobile-sticky");
+    }
+  });
+
+  // Video slider on the employer branding page
+  // if ($('.video-slider').length) {
+  //   var $video_slider = $('.video-slider').bxSlider({
+  //     controls: false,
+  //     speed: 200,
+  //     pager: false
+  //   });
+  //   $('#next-video').click(function(){
+  //     $video_slider.goToNextSlide();
+  //     return false;
+  //   });
+
+  //   $('#prev-video').click(function(){
+  //     $video_slider.goToPrevSlide();
+  //     return false;
+  //   });
+  // }
+  
+  // Testimonial slider
+  if ($('.bxslider').length) {
+    var slider = $('.bxslider').bxSlider({
+      controls: false,
+      speed: 200
+    });
+
+    $('#next').click(function(){
+      slider.goToNextSlide();
+      return false;
+    });
+
+    $('#prev').click(function(){
+      slider.goToPrevSlide();
+      return false;
+    });
+  }
+
+  // $('a .ion-social-linkedin').rrssb({
+  //   title: 'This is the email subject and/or tweet text',
+  //   url: 'http://rrssb.ml/',
+  //   description: 'Longer description used with some providers',
+  // })
+  
+  /** 
+   * Include the Google Analtyics snippet
+   */
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45440989-1', 'auto');
+  ga('send', 'pageview');
+});

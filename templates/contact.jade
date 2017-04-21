@@ -21,7 +21,28 @@ block body
         button(type="button" class="scrollto") #{page.metadata.contact.scroll}
 
   // Contact Form
-  include partials/_contact
+  .row.contact_form_section.clearfix
+  .small-10.medium-5.large-4.small-centered
+    h3= page.metadata.contact.title
+    form#contact_form
+      .small-12
+        input(placeholder="#{page.metadata.contact.name} *" id="name" type="text")
+      .small-12
+        input(placeholder="#{page.metadata.contact.email} *" id="email" type="email")
+      .small-12
+        textarea(placeholder="#{page.metadata.contact.msg} *" rows="4" id="message")
+      button(type="submit") #{page.metadata.contact.send}
+      #loadingProgress.loading
+        span
+          i.ion-ios-loop-strong
+          | Sending your message…
+      .clearfix
+      #successMessage.success
+        span 
+          i.ion-checkmark-round 
+          | #{page.metadata.contact.success}
+      #errorMessage.error
+        span #{page.metadata.contact.error}
 
 block append footer-scripts
   script.
@@ -46,8 +67,6 @@ block append footer-scripts
     // Form
     
     $('input, textarea').placeholder();
-
-    var formID = '#contact_form';
 
     //- Translate error message
     var errorMsg = {
