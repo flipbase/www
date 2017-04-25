@@ -2,6 +2,11 @@
 
 extends layout
 
+block logo
+  img(src="#{locals.path}/assets/images/logo-gray.png" srcset="#{locals.path}/assets/images/logo-gray@2x.png 2x, #{locals.path}/assets/images/logo-gray@3x.png 3x").logo-white
+  img(src="#{locals.path}/assets/images/logo-dark.png" srcset="#{locals.path}/assets/images/logo-dark@2x.png 2x, #{locals.path}/assets/images/logo-dark@3x.png 3x").logo-dark
+
+
 block body
   header.jobs_section_header
     .row.clearfix

@@ -375,6 +375,8 @@ nav.dark-nav .menu-mobile-icon:after, nav.dark-nav .menu-mobile-icon:before {
   }
   .top-bar ul li:first-child {
     float: left;
+    cursor: pointer;
+    display: block;
     position: relative;
     top: 16px;
     left: 10px;
@@ -406,6 +408,7 @@ nav.dark-nav .menu-mobile-icon:after, nav.dark-nav .menu-mobile-icon:before {
   .top-bar .menu-mobile-icon:after, .top-bar .menu-mobile-icon:before {
     content: '';
     background-color: #fff;
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1001,7 +1004,7 @@ footer ul a:hover {
   text-align: center;
 }
 .partners_section .partners_image {
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -1077,11 +1080,11 @@ footer ul a:hover {
 }
 
 .clients_section {
-  padding: 120px 0 100px 0;
+  padding: 100px 0 100px 0;
   background-color: #F8F8F8;
 }
 .clients_section .clients_image {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   text-align: center;
 }
 @media (max-width: 768px) {

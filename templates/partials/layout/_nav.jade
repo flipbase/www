@@ -17,8 +17,8 @@ nav#main_navigation(data-sticky-container)
             li.brand 
               a(href="#{locals.path}/")
                 block logo
-                  img(src="#{locals.path}/assets/images/logo_white_small.png").logo-white
-                  img(src="#{locals.path}/assets/images/logo_small.png").logo-dark
+                  img(src="#{locals.path}/assets/images/logo.png" srcset="#{locals.path}/assets/images/logo@2x.png 2x, #{locals.path}/assets/images/logo@3x.png 3x").logo-white
+                  img(src="#{locals.path}/assets/images/logo-dark.png" srcset="#{locals.path}/assets/images/logo-dark@2x.png 2x, #{locals.path}/assets/images/logo-dark@3x.png 3x").logo-dark
         .top-bar-right
           ul.menu.dropdown(data-responsive-menu='drilldown medium-dropdown', 
                            data-dropdown-menu, 
@@ -61,4 +61,3 @@ nav#main_navigation(data-sticky-container)
             li
               a.language(href='#{locales.lang_url}')
                 img(src="#{locals.path}/assets/images/#{locales.lang_flag}")
-              

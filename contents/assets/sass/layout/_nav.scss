@@ -173,6 +173,8 @@ nav.dark-nav {
       background-color: transparent;
       li:first-child {
         float: left;
+        cursor: pointer;
+        display: block;
         position: relative;
         top: 16px;
         left: 10px;
@@ -204,6 +206,7 @@ nav.dark-nav {
       &:after, &:before {
         content: '';
         background-color: #fff;
+        display: block;
         width: 100%;
         height: 100%;
         position: absolute;

@@ -7,7 +7,7 @@ block body
     div(style="background-image: url(#{locals.path}/assets/images/leidsegracht.jpg);" class="cover")
       .mask
       .contact-box
-        img.contact_logo(src="#{locals.path}/assets/images/logo_white_small.png")
+        img.contact_logo(src="#{locals.path}/assets/images/logo.png" srcset="#{locals.path}/assets/images/logo@2x.png 2x, #{locals.path}/assets/images/logo@3x.png 3x")
         .divider
         .details
           p 
@@ -31,18 +31,20 @@ block body
         input(placeholder="#{page.metadata.contact.email} *" id="email" type="email")
       .small-12
         textarea(placeholder="#{page.metadata.contact.msg} *" rows="4" id="message")
-      button(type="submit") #{page.metadata.contact.send}
-      #loadingProgress.loading
-        span
-          i.ion-ios-loop-strong
-          | Sending your message…
-      .clearfix
-      #successMessage.success
-        span 
-          i.ion-checkmark-round 
-          | #{page.metadata.contact.success}
-      #errorMessage.error
-        span #{page.metadata.contact.error}
+        button(type="submit" style="margin-bottom: 20px; background-color: #a62651; border-radius: 4px; padding: 20px 40px 20px 40px; color: white; font-weight: bold;") Versturen
+        #loadingProgress.loading
+          span
+            i.ion-ios-loop-strong
+            | Sending your application!
+        .clearfix
+        #successMessage.success
+          span
+            i.ion-checkmark-round
+            | All good! Je hoort zo snel mogelijk van ons!
+        #errorMessage.error
+          span
+        div(style="margin-bottom: 50px; clear: both; position: relative;")
+
 
 block append footer-scripts
   script.
@@ -53,6 +55,7 @@ block append footer-scripts
       }, 1000);
     });
 
+    //- fullscreen cover image
     fullscreen();
     $(window).resize(fullscreen);
     function fullscreen() {
@@ -67,18 +70,20 @@ block append footer-scripts
     // Form
     
     $('input, textarea').placeholder();
+    $('#successMessage, #errorMessage, #loadingProgress').hide();
+
+    var formID = '#contact_form';
 
     //- Translate error message
     var errorMsg = {
-      name: '#[+toLowerCase(page.metadata.contact.name)]',
-      email: '#[+toLowerCase(page.metadata.contact.email)]',
-      message: '#[+toLowerCase(page.metadata.contact.msg)]' 
+      name: 'naam',
+      email: 'email',
+      message: 'bericht' 
     };
     var fields = ['name', 'email', 'message'];
 
     function err(msg) {
-      var err = '#{page.metadata.contact.error}';
-      return err.replace(/___/, msg);
+      return 'Kan gebeuren: je hebt je ___ niet ingevuld.'.replace(/___/, msg);
     }
 
     function getData () {

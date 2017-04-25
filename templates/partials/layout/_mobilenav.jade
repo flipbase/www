@@ -1,0 +1,32 @@
+//- The locales for the navigation; since we cannot translate partials without repeating ourselves
+- var isEN = page && page.filepath.relative.indexOf('en/') > -1 ? true : false;
+- var locales = {"en": {"products": "Products", "sp_title": "Application process", "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter het CV", "eb_desc": "Strength your employer brand", "lang_flag": "flag_nl.png", "lang_url": "/", "sp_path": "/en/application-process.html", "eb_path": "/en/employer-branding.html" }, "nl": { "products": "Producten", "sp_title": "Sollicitatie proces", "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter het CV", "eb_desc": "Verrijk arbeidsmarktcommunicatie en geef een authentiek beeld van de werkomgeving", "lang_flag": "flag_uk.png", "lang_url": "/en", "sp_path": "/sollicitatie-proces.html", "eb_path": "/employer-branding.html"  }};
+- var locales = isEN ? locales['en'] : locales['nl'];
+
+// Menu
+ul.vertical.menu(data-accordion-menu='')
+  li
+    a(href='#') Products
+    ul.menu.vertical.nested
+      li
+        a(href='#{locals.path}#{locales.sp_path}') #{locales.sp_title}
+      li
+        a(href='#{locals.path}#{locales.eb_path}') Employer branding
+  li
+    a(href='#{locals.path}/jobs.html') Jobs
+  li
+    a(href='#{locals.path}/blog') Blog
+  //- li
+  //-   a(href='#') Help
+  //-   ul.menu.vertical.nested
+  //-     li
+  //-       a(href='#') Recruiters
+  //-     li
+  //-       a(href='#') Candidates
+  //-     li
+  //-       a(href='#') Developers
+  li
+    a(href='#{locals.path}/contact.html') Contact
+  li
+    a.language(href='#{locales.lang_url}')
+      img(src="#{locals.path}/assets/images/#{locales.lang_flag}")

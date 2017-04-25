@@ -57,33 +57,7 @@ html(lang='en')
       
         // Mobile Menu
         #offCanvas.off-canvas.position-left(data-off-canvas='', data-options, data-position="left", data-content-scroll="false")
-          // Menu
-          ul.vertical.menu(data-accordion-menu='')
-            li
-              a(href='#') Products
-              ul.menu.vertical.nested
-                li
-                  a(href='#{locals.path}/sollicitatie-proces.html') Application proces
-                li
-                  a(href='#{locals.path}/employer-branding.html') Employer branding
-            li
-              a(href='#{locals.path}/jobs.html') Jobs
-            li
-              a(href='#{locals.path}/blog') Blog
-            li
-              a(href='#') Help
-              ul.menu.vertical.nested
-                li
-                  a(href='#') Recruiters
-                li
-                  a(href='#') Candidates
-                li
-                  a(href='#') Developers
-            li
-              a(href='#{locals.path}/contact.html') Contact
-            li
-              a.language(href='#')
-                img(src="/assets/images/flag_uk.png")
+          include partials/layout/_mobilenav
       
         // There is the rest contect of the page
         .off-canvas-content(data-off-canvas-content)

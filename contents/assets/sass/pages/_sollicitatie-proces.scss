@@ -213,7 +213,7 @@
     text-align: center;
   }
   .partners_image {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     text-align: center;
   }
   @include breakpoint((max-width: 768px)) {
@@ -290,10 +290,10 @@
 
 // Clients_section
 .clients_section {
-  padding: 120px 0 100px 0;
+  padding: 100px 0 100px 0;
   background-color: $grey-background;
   .clients_image {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     text-align: center;
   }
   @include breakpoint((max-width: 768px)) {
