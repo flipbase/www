@@ -3,9 +3,10 @@ mixin toLowerCase(val)
   - var str = val.toLowerCase();
   | #{str}
   
-mixin videoModal(id, title, video, cover)
+mixin videoModal(id, title, video, cover, overlay)
+  - var css = !overlay ? 'half-screen-section no-overlay' : 'half-screen-section';
   section
-    .half-screen-section.no-overlay(style="background-image: url(#{cover}")
+    div(class="#{css}" style="background-image: url(#{cover}")
       .row.vertical-centered-text
         .small-10.small-centered.align-center
           button.open-video-btn(data-open="modalVideo#{id}")

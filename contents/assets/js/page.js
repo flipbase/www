@@ -2,8 +2,8 @@
 $(".animsition").animsition({
   inClass: 'fade-in',
   outClass: 'fade-out',
-  inDuration: 400,
-  outDuration: 400,
+  inDuration: 300,
+  outDuration: 300,
   linkElement: 'a:not([target="_blank"]):not([href^="#"])',
   // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
   loading: true,
@@ -30,7 +30,7 @@ $(document).ready(function() {
   // Animate on Scroll plguin
   AOS.init({
     offset: 100,
-    duration: 300,
+    duration: 200,
     easing: 'ease-in',
     delay: 100,
   });
