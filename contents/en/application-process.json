@@ -2,8 +2,8 @@
  "template": "sollicitatie-proces.jade",
 
   "titles": {
-    "header": "In 30 seconden een beeld van de persoon achter het C.V.",
-    "subheader": "Video opname, upload en afspeel functionaliteit direct beschikbaar in je eigen recruitment omgeving."
+    "header": "A first impression of the person behind the CV within 30 seconds",
+    "subheader": "Instantly accessible in your own recruitment environment"
   },
 
   "features_1": {
@@ -75,27 +75,27 @@
     },
     "quotes": [
       {
-        "quote": "Op basis van enkel het CV is het moeilijk in te schatten of iemand geschikt is voor de functie en past bij Unique. Met de Flipbase video introductie heb je een extra selectie middel waarmee deze twijfel bevestigd wordt, of juist onterecht blijkt.",
+        "quote": "Using solely a resume it is hard judge if a candidate fits the vacancy and company. Using Flipbase we have an extra tool that can confirm any doubt, or contrary, that can prove a good fit.",
         "name": "Esther Kuipers, Unique"
       },
       {
-        "quote": "De video functionaliteit van Flipbase heeft het selecteren van geschikte kandidaten effectiever en leuker gemaakt.",
+        "quote": "The Flipbase video applications has made the selection proces of candidates more effective and fun.",
         "name": "Kadriye Demirel, Schiphol"
       },
       {
-        "quote": "Bij de werving van potentials voor ons Agrifirm Traineeship programma geeft het motivatiefilmpje een uitstekende eerste indruk van de kandidaat. Het spreekt de sollicitant zelf ook aan. Het is vernieuwend en positief voor je employer brand.",
+        "quote": "The recruiting process for our Agrifirm Traineeship programme is strongly supported through the Flipbase video tool, as it gives a very good first impression of the candidates. This innovative  approach also appeals to the candidate itself and it has a positive impact on the employer brand.",
         "name": "Gert Jan Nagel, Agrifirm"
       },
       {
-        "quote": "Flipbase levert ons een behoorlijke tijdsbesparing op. Een C.V. geeft immer niet weer hoe iemand overkomt.",
+        "quote": "The Flipbase video tool creates a significant time efficiency during the recruitment process, as only a written CV does not get the candidate’s motivation and presentation across.",
         "name": "Maikel Boksteen, 2Trust"
       },
       {
-        "quote": "Mede dankzij het inzetten van Flipbase gaan er meer voorgestelde kandidaten op gesprek bij onze opdrachtgevers!",
+        "quote": "Thanks to the launch of  Flipbase video tool, more candidates are being presented at our clients",
         "name": "Richard Groeneveld, Someone"
       },
       {
-        "quote": "Met Flipbase kunnen we naast enkel het profiel en CV ook een video sturen zo dat de kandidaat zichzelf wat persoonlijker en op eigen creatieve manier kan voorstellen. Wij merken dat veel klanten en kandidaten waarde hechten aan deze nieuwe manier van voorstellen.",
+        "quote": "Using Flipbase we can send a video besides a regular candidate profile and CV. Candidates can introduce themselves in a personal and creative manner. Both customers and candidates value this new way of introducing.",
         "name": "Koen Buddenburg, Unique Hoofddorp"
       }
     ]

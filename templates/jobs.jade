@@ -14,16 +14,16 @@ block body
         h1 Current openings (4)
         ul
           li
-            a(href="/jobs/accountmanager.html") Account manager, 
+            a(href="#{locals.path}/jobs/accountmanager.html") Account manager, 
               span Amsterdam
           li
-            a(href="/jobs/stage-content-marketing.html") Content marketing stage, 
+            a(href="#{locals.path}/jobs/stage-content-marketing.html") Content marketing stage, 
               span Amsterdam
           li
-            a(href="/jobs/front-end-developer.html") Front-end developer, 
+            a(href="#{locals.path}/jobs/front-end-developer.html") Front-end developer, 
               span Amsterdam
           li  
-            a(href="/jobs/nodejs-back-end-developer.html") Node.js back-end developer, 
+            a(href="#{locals.path}/jobs/nodejs-back-end-developer.html") Node.js back-end developer, 
               span Amsterdam
   
   section
@@ -90,5 +90,5 @@ block body
         .medium-8.medium-centered
           h2 #{page.metadata.application_section.header}
           p #{page.metadata.application_section.text}
-          a(href="/jobs/open-application.html")
+          a(href="#{locals.path}/jobs/open-application.html")
             button #{page.metadata.application_section.button}

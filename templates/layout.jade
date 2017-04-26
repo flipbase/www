@@ -14,11 +14,11 @@ html(lang='en')
         title #{locals.name}
       
       block stylesheets
-        link(href="/assets/css/dependencies.min.css" type="text/css" rel="stylesheet")
-        link(href="/assets/css/style.css" type="text/css" rel="stylesheet")
+        link(href="#{locals.path}/assets/css/dependencies.min.css" type="text/css" rel="stylesheet")
+        link(href="#{locals.path}/assets/css/style.css" type="text/css" rel="stylesheet")
 
       block scripts
-        script(src='/assets/js/modernizr.custom.min.js')
+        script(src='#{locals.path}/assets/js/modernizr.custom.min.js')
         script.
           //- Alternative typekit loader that stores font in a session, which should lead to faster loading times
           (function(d) {
@@ -32,10 +32,9 @@ html(lang='en')
           })(document);
 
         <!--[if lt IE 9]>
-        script(src='/assets/components/html5shiv/dist/html5shiv.min.js')
+        script(src='#{locals.path}/assets/components/html5shiv/dist/html5shiv.min.js')
         <![endif]-->
-  body.animsition
-
+  body.animsition    
     <!--[if lt IE 9 ]>
     div(class="ie-warning")
       div(class="ie-warning-wrapper") 
@@ -69,5 +68,5 @@ html(lang='en')
 
     block footer-scripts
       script(src="https://app.flipbase.com/recorder.js")
-      script(src="/assets/js/dependencies.min.js")
-      script(src='/assets/js/page.min.js')
+      script(src="#{locals.path}/assets/js/dependencies.min.js")
+      script(src='#{locals.path}/assets/js/page.min.js')

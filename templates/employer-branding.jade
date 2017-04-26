@@ -6,7 +6,8 @@ extends layout
 
 block body
   section
-    .full-screen-section.no-overlay(style="background-image: url(#{locals.path}/assets/images/employer-branding/4.jpg")
+    .full-screen-section
+      +coverVideo('https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-vertidrive/upload_f07e385b544223a8ea551a8c34966879', 'https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-vertidrive/thumbs/cover.jpg')
       .row.vertical-centered-text
         .small-11.small-centered
           h1.main-header= page.metadata.titles.header
