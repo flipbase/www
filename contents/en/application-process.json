@@ -65,6 +65,14 @@
     "feature5_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan op automatisch op basis van de browser voorkeur worden aangepast. "
   },
 
+  "cta": {
+    "title": "Wil je meer weten of zien?",
+    "desc": "Hoi! Ik ben Bram, account manager bij Flipbase. Heb je vragen of wil je graag  zien hoe ons Flipbase werkt in jouw recruitment omgeving? Plan dan direct een demo in!",
+    "button": "Plan dan direct een demo in!",
+    "visual": "/assets/images/team/bram.png",
+    "calendly": "bramtierie"
+  },
+
   "testimonials": {
     "title": "You are not the first…",
     "statistics": {

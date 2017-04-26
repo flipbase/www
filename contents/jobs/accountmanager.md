@@ -2,8 +2,6 @@
 template: job.jade
 title: Account manager
 city: Amsterdam
-video: https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/rick
-cover: https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/thumbs/f000000_1280x720.jpeg
 ---
 
 ## Wie zijn wij?
@@ -29,3 +27,9 @@ Wat wij je echt bieden:
 De kans om jezelf te ontwikkelen en heel veel te leren binnen een start-up. Daarnaast krijg je veel vrijheid en daarmee dus ook verantwoordelijkheid. Je bent zelf verantwoordelijk voor jouw processen en methodes om nieuwe klanten te benaderen, uiteraard met advies van ons.
 
 Last but not least: je hebt een reële kans om door te groeien tot volwaardig lid van het Flipbase team.
+
+<video poster="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.jpg" preload="auto" controls="true" style="max-width: 100%;">
+  <source type="video/webm" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.webm"/>
+  <source type="video/mp4" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.mp4"/>
+  <source type="video/ogv" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.ogv"/>
+</video>

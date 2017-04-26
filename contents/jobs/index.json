@@ -1,28 +1,7 @@
 {
  "template": "jobs.jade",
-
-  "titles": {
-    "header": "In 30 seconden een beeld van de persoon achter het C.V.",
-    "subheader": "Video opname, upload en afspeel functionaliteit direct beschikbaar in je eigen recruitment omgeving."
-  },
   
-  "who_we_are": { 
-    
-    "title": "Who we are",
-    "text": "Flipbase was founded by Bram Tierie and Ron Jansen in 2013. Ron was most of time freelancing on both development and online marketing projects. Bram was occupied by his previous business called Recruitincloud. When Ron and Bram met and shared their thoughts about recruitment and technology, it became rapidly clear that they wanted to help both candidates and recruiters to enrich the application and selection process with video functionality."
-
-  },
-  
-  "who_we_are_additional": {
-    "title1": "What we try to achieve",
-    "text1": "Flipbase was founded with this single goal in mind: enable everybody involved in recruitment to ease to use and simplistic video functionality. Why? Since we could not believe that everybody has at least (!) one video camera in their pocket, but all were using to represent ourselves was just written text. Secondly, we do believe that the motivational letter has lost it’s value since everybody started using computers to write these things. Thirdly, we believe that recruiters can judge better to what extent a candidate will match with a certain vacancy, since a video reveals much more competencies than a piece of paper. And last but not least, soft competencies are becoming more and more important as opposed to hard competencies. ",
-    "text1_2": "And the best thing about our philosophy: you don’t have to use another platform to use video, it works in your current software provider! We believe video is a feature, not a platform on itself. Recruiters want to use video in the software they are already using to manage the application and selection process.",
-    
-    "title2": "Where we are now",
-    "text2": "Since we launched the initial product millions of candidate have encountered our applications somewhere in their application or selection process. Thousands of recruiters and assessors are using Flipbase today, across about 20 countries worldwide. From China to Turkey, from Australia to Belgium. And we are hoping you can help us to grow even further!"
-  },
-  
-  "what_we_offer": {
+ "what_we_offer": {
     "title": "What we offer",
     
     "header1": "Freedom & fun",
@@ -42,11 +21,5 @@
     
     "header6": "Macbook and phone",
     "offer6": "Since you spent about a quarter of your time at the office we believe it should be fun. So, we have a giant screen with PS4 and weekly drinks at the office. And as a bonus a yearly outing of at 5 working days to sunny places like Malta."
-  },
-  
-  "application_section": {
-    "header": "Interested, but no relevant opening?",
-    "text": "We are always happy to get a cup of coffee with talented people.",
-    "button": "Send us an open application"
   }
 }

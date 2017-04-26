@@ -1,0 +1,16 @@
+// You can find styles for this section in pages/_sollicitatie-proces.scss
+
+section
+  .row.request_section.clearfix
+    .small-10.medium-6.small-centered
+      h3 #{page.metadata.cta.title}
+      .row
+        .small-5.medium-4.large-3.columns
+          img(src="#{locals.path}#{page.metadata.cta.visual}")
+        .small-12.medium-8.large-9.columns
+          p #{page.metadata.cta.desc}
+    .small-10.medium-6.small-centered
+      a(href="https://calendly.com/#{page.metadata.cta.calendly}" target="_blank")
+        button.request_button
+          i.ion-ios-calendar
+          | #{page.metadata.cta.button}

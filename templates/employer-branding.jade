@@ -12,21 +12,176 @@ block body
         .small-11.small-centered
           h1.main-header= page.metadata.titles.header
           p.main-subheader= page.metadata.titles.subheader
-          
-  include partials/employer-branding/_whyvideo
-
-  include partials/employer-branding/_about
-  
-  include partials/employer-branding/_howdoesitworks
-  
-  //- include partials/sollicitatie-proces/_partners
     
-  //- include partials/employer-branding/_video-slider
   
-  //- include partials/employer-branding/_testimonials
+  //- ADVANTAGES OF VIDEO
+  //- STYLES FOR THIS SECTION YOU CAN FIND IN sollicitatie-proces.scss
+  section
+    .expanded.features_1_section
+      .row(data-aos="fade-zoom-in")
+        .medium-6.medium-centered.features_1_header_block
+          h2.features_1_title #{page.metadata.whyvideo.title}
+          p.features_1_subheader #{page.metadata.whyvideo.subtitle}
+        .medium-5.columns.features_1_content
+          .row
+            // Feature 1
+            .small-1.columns.features_1_icon
+              i.ion-person-add
+            .small-11.columns.features_1_text
+              p #{page.metadata.whyvideo.feature1}
+
+            // Feature 2
+            .small-1.columns.features_1_icon
+              i.ion-funnel
+            .small-11.columns.features_1_text
+              p  #{page.metadata.whyvideo.feature2}
+
+            // Feature 3  
+            .small-1.columns.features_1_icon
+              i.ion-search
+            .small-11.end.columns.features_1_text
+              p  #{page.metadata.whyvideo.feature3}
+
+        .medium-5.columns.features_1_content
+          .row
+            // Feature 4
+            .small-1.columns.features_1_icon
+              i.ion-thumbsup
+            .small-11.columns.features_1_text
+              p  #{page.metadata.whyvideo.feature4}
+
+            // Feature 5
+            .small-1.columns.features_1_icon
+              i.ion-forward
+            .small-11.columns.features_1_text
+              p  #{page.metadata.whyvideo.feature5}
+
+            // Feature 6 
+            .small-1.columns.features_1_icon
+              i.ion-ios-videocam
+            .small-11.end.columns.features_1_text
+              p  #{page.metadata.whyvideo.feature6}
+
+  //- WHAT IS EB?
+  section
+    .row.custom_text_section_1
+      .small-11.medium-7.large-6(data-aos="fade-zoom-in")
+        h3 #{page.metadata.about.header}
+        p !{page.metadata.about.text}
   
+  //- HOW DOES IT WORKS?
+  //- You can find styles for this section in pages/_employer-branding.scss
+  section
+    .expanded.features_6_section
+    
+      // Feature 1
+      
+      .row.split_section-right.row90(data-equalizer data-equalize-on="large", data-aos="fade-zoom-in")
+        .medium-4.medium-centered.features_6_header_block
+          h2.features_1_title #{page.metadata.howdoesitworks.title}
+
+        // Mobile Image
+        .small-12.columns.hide-for-large
+          img(src="#{locals.path}/assets/images/employer-branding/1.png" srcset="#{locals.path}/assets/images/employer-branding/1@2x.png 2x, #{locals.path}/assets/images/employer-branding/1@3x.png 3x" style="margin-bottom: 10px")
+
+        // Description
+        .small-11.large-4.large-push-1.columns.fix(data-equalizer-watch)
+          h4 #{page.metadata.howdoesitworks.header1}
+          p !{page.metadata.howdoesitworks.text1}
+
+        // Desktop Image
+        .medium-12.column52.columns.show-for-large.vertical_centered(data-equalizer-watch)
+          .vertical_centered_content
+            img(src="#{locals.path}/assets/images/employer-branding/1.png" srcset="#{locals.path}/assets/images/employer-branding/1@2x.png 2x, #{locals.path}/assets/images/employer-branding/1@3x.png 3x" width="100%")
+
+      //Feature 2    
+      .row.split_section-left.row90(data-equalizer data-equalize-on="medium", data-aos="fade-zoom-in")
+        .medium-12.column52.columns(data-equalizer-watch)
+          img.custom-padding(src="#{locals.path}/assets/images/visual.png" srcset="#{locals.path}/assets/images/visual@2x.png 2x, #{locals.path}/assets/images/visual@3x.png 3x" width="100%")
+        .small-11.medium-12.large-3.large-pull-2.columns.vertical_centered(data-equalizer-watch)
+          .vertical_centered_content
+            h4 #{page.metadata.howdoesitworks.header2}
+            p !{page.metadata.howdoesitworks.text2} 
+
+      // Feature 3
+      .row.split_section-left.row90(data-equalizer data-equalize-on="medium", data-aos="fade-zoom-in")
+
+        // Mobile image
+        .small-12.columns.hide-for-large
+          img(src="#{locals.path}/assets/images/employer-branding/3.png" srcset="#{locals.path}/assets/images/employer-branding/3@2x.png 2x, #{locals.path}/assets/images/employer-branding/3@3x.png 3x")
+
+        // Description
+        .small-11.medium-12.medium-uncentered.large-3.large-push-2.columns.vertical_centered(data-equalizer-watch)
+          .vertical_centered_content
+            h4 #{page.metadata.howdoesitworks.header3}
+            p !{page.metadata.howdoesitworks.text3}
+
+        // Desktop Image
+        .medium-6.column52.columns.show-for-large(data-equalizer-watch)
+          img(src="#{locals.path}/assets/images/employer-branding/3.png" srcset="#{locals.path}/assets/images/employer-branding/3@2x.png 2x, #{locals.path}/assets/images/employer-branding/3@3x.png 3x" width="100%")
+  
+  //- VIDEO SLIDER
+
+  //- You can find styles for this section in pages/_employer-branding.scss
+  //- section
+  //-   .expanded
+  //-     .large-12.small-centered.video_slider_section
+  //-       #prev-video.prev-video
+  //-         i(class="ion-ios-arrow-left")
+  //-       #next-video.next-video
+  //-         i(class="ion-ios-arrow-right")
+  //-       ul(class="video-slider")
+          
+  //-         // Slide
+  //-         li
+  //-           .half-screen-section.no-overlay(style="background-image: url(#{locals.path}/assets/images/jobs/video-bg.jpg")
+  //-             .row.vertical-centered-text
+  //-               .small-10.small-centered.align-center
+  //-                 button.open-video-btn(data-open="modalVideo1")
+  //-                   i.ion-play
+  //-                 h1 Stage content- & online marketing
+                  
+  //-         // Slide
+  //-         li
+  //-           .half-screen-section.no-overlay(style="background-image: url(#{locals.path}/assets/images/jobs/video-bg.jpg")
+  //-             .row.vertical-centered-text
+  //-               .small-10.small-centered.align-center
+  //-                 button.open-video-btn(data-open="modalVideo1")
+  //-                   i.ion-play
+  //-                 h1 Stage content- & online marketing
+
+
+  //- // Modal template for each video. Use this to create new ones. Then just put id of new modal in data-open (slide)
+
+  //- #modalVideo1.reveal.modal-video.large(data-reveal='', data-close-on-click='true', data-animation-in='fade-in', data-animation-out='fade-out')
+  //-   video(poster="#{locals.path}/assets/images/cover.jpg" preload="auto" autoplay="true" controls="true")
+  //-     source(type="video/webm" src="#{locals.path}/assets/images/video/rick.webm")
+  //-     source(type="video/mp4" src="#{locals.path}/assets/images/video/rick.mp4")
+  //-     source(type="video/ogv" src="#{locals.path}/assets/images/video/rick.ogv")
+  //-   button.close-button(data-close='', aria-label='Close modal', type='button')
+      span(aria-hidden='true') ×
+
+  //- TESTIMINIOLAS
+
+  //- STYLES FOR THIS SECTION YOU CAN FIND IN sollicitatie-proces.scss
+  //- section
+  //-   .expanded.testimonials_section.clearfix
+  //-     .row
+  //-       .small-10.medium-8.large-6.small-centered.testimonial_slider
+  //-         #prev.prev
+  //-           i(class="ion-ios-arrow-left")
+  //-         #next.next
+  //-           i(class="ion-ios-arrow-right")
+  //-         ul(class="bxslider")
+  //-           each quote in page.metadata.testimonials.quotes
+  //-             li
+  //-               div.quote-wrap
+  //-                 span.quote 
+  //-                   em &ldquo; #{quote.quote} &rdquo;
+  //-                 h5.quotee  #{quote.name}
+    
   include partials/sollicitatie-proces/_clients
   
-  include partials/sollicitatie-proces/_request
+  include partials/_cta
 
 
