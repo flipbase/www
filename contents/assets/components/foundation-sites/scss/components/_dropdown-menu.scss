@@ -73,11 +73,11 @@ $dropdownmenu-border-width: nth($dropdownmenu-border, 1);
         padding-#{$global-right}: 1.5rem;
       }
 
-      > li.is-dropdown-submenu-parent > a::after {
-        @include css-triangle($dropdownmenu-arrow-size, $dropdownmenu-arrow-color, down);
-        #{$global-right}: 5px;
-        margin-top: -1 * ($dropdownmenu-arrow-size / 2);
-      }
+//      > li.is-dropdown-submenu-parent > a::after {
+//        @include css-triangle($dropdownmenu-arrow-size, $dropdownmenu-arrow-color, down);
+//        #{$global-right}: 5px;
+//        margin-top: -1 * ($dropdownmenu-arrow-size / 2);
+//      }
     }
   }
   @else if $dir == vertical {
@@ -160,12 +160,12 @@ $dropdownmenu-border-width: nth($dropdownmenu-border, 1);
   .is-dropdown-submenu-parent {
     position: relative;
 
-    a::after {
-      position: absolute;
-      top: 50%;
-      #{$global-right}: 5px;
-      margin-top: -1 * $dropdownmenu-arrow-size;
-    }
+//    a::after {
+//      position: absolute;
+//      top: 50%;
+//      #{$global-right}: 5px;
+//      margin-top: -1 * $dropdownmenu-arrow-size;
+//    }
 
     &.opens-inner > .is-dropdown-submenu {
 
