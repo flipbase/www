@@ -2,7 +2,7 @@
 title: De Flipbase ervaring van Joëlle Souren van APG
 author: Bram
 date: 2016-01-10 15:00
-tags: Sollicitatie proces
+tags: Sollicitatie proces, Case studies
 ---
 
 <div class="first-paragraph">

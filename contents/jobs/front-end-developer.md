@@ -4,22 +4,32 @@ header: Jobs
 title: Front-end developer
 ---
 
-We are expanding!
+We build JavaScript plugins for a living. We like to be lightweight, performant and flexible. To be able to expand our product offerings and meet all (interational) customer feature requests we need to have more hands. 
 
-### Modern technologies
-Interested in using ES6 and ES7? Or using top notch frameworks like React.js? Want to use build tools like Webpack? Or create beautifull CSS using the SASS preprocessor? Hell yeah, that is how we roll at Flipbase. We are a young company, we iterate quickly, we build things fast. No scrum or agile work procedures.
-
-### Develop 
-We build JavaScript plugins for a living. We like to be lightweight, performant and flexible. However, even a solid plugin does not work without an environment. So, to showcase our cool plugins, we need a demo environment. You will be solely responsible for the front-end development of this demo development. 
-
-## You
-You dream in HTML5 and CSS3. You think in vanilla JavaScript and know your way around when it comes React.js and ES6. 
-Advanced level of English (or Dutch) is required. Communications are not always fun, but hell they are important.
+### What we are looking for
+- You are a practicale problem solver
+- Experienced using source code versioning tooling, like Github
+- Style preprocessing like SASS
+- Experienced with TDD
+- At least 2 years experience with JavaScript in production environments
+- Knowledge of ES6 and ES7
+- Knowledge of MVC frameworks (React is pre)
+- You dream in HTML5 and CSS3
+- Advanced level of English or Dutch
 
 ## You get
-a) Money
-b) As much freedom as you like (and with that comes... yes, responsibility). And yes heres the catch: as long as you deliver the goods. It's not even necessary to relocate. Just, propose us a plan how to communicate and how can build fellowship and commitment along the way.
-c) 25 days of paid leave
-d) To work a product that is seen daily by near 1.000.000 people worldwide. 
+- Money
+- 25 days of paid leave
+- Freedom to experiment with new technologies
+- To work a product that is seen daily by near 1.000.000 people worldwide. 
 
-Ow, and.. as a developer you at least need to know how our 'recorder' plugin works. So, please record a 5 second video and say electronically hi to us. We will hi you back :)
+### We offer
+
+- Customizable working setup
+- Team bonus arangements
+- Informal working atmosphere
+- Fast growing startup that uses modern technologies
+- 25 days of paid leave
+- To work a product that is seen daily by near 1.000.000 people worldwide. 
+
+Ow, and.. as a developer you at least need to know how our 'recorder' plugin works. So, please record a 5 second video using our recorder application in the form below and say electronically hi to us. We will hi you back :)

@@ -1735,9 +1735,6 @@ footer ul a:hover {
 .job_post_section {
   padding: 100px 15px 100px 15px;
 }
-.job_post_section p {
-  margin-bottom: 60px;
-}
 .job_post_section p:first-child {
   font-size: 1.125em;
 }

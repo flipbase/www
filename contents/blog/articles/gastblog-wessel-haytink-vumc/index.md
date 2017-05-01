@@ -3,7 +3,7 @@ title: Gastblog Wessel Haytink “Het recruitment van VUmc is volop in ontwikkel
 author: Kim
 date: 2017-01-15 16:00
 template: article.jade
-tags: Sollicitatie proces
+tags: Sollicitatie proces, Case studies
 ---
 
 <div class="first-paragraph">

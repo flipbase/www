@@ -3,7 +3,7 @@ title: "OiO over video in Emply: 'Gouden combinatie voor ons'"
 author: Ron
 date: 2016-07-15 16:00
 template: article.jade
-tags: Sollicitatie proces
+tags: Sollicitatie proces, Case studies
 ---
 
 <div class="first-paragraph">
