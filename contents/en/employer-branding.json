@@ -2,49 +2,44 @@
  "template": "employer-branding.jade",
 
   "titles": {
-    "header": "Geef een echt beeld van de werkomgeving en toekomstige collega’s",
-    "subheader": "Versterk de arbeidscommunicatie met video vanuit je huidige recruitment omgeving"
+    "header": "Give an authentic image of the work environment and future colleagues",
+    "subheader": "Strengthen your labour market communication with real video content"
   },
 
   "whyvideo": {
-    "title": "Voordelen van video",
-    "subtitle": "in arbeidsmarktcoummicatie",
-    "feature1": "Trek de aandacht van meer kandidaten door vacatures visueler te presenteren.",
-    "feature2": "Verhoog de kwaliteit van sollicitanten en voorkom mismatches later in het proces.",
-    "feature3": "Geef een authentiek van de werkomgeving en toekomstige collega’s aan sollicitanten.",
-    "feature4": "Verhoog het bereik social media berichten en maak berichte visueel aantrekkelijker.",
-    "feature5": "Personaliseer afwijzingen met een boodschap van de recruiter.",
-    "feature6": "Presenteer jezelf op onderscheidende wijze in de arbeidsmarktcommunicatie."
+    "title": "Benefits of video",
+    "subtitle": "In your labour market communication",
+    "feature1": "Get attention from more candidates by presenting vacancies more visually.",
+    "feature2": "Increase the quality of applicantions and prevent mismatches later in the process",
+    "feature3": "Give work seekers a real image of the work environment and future colleagues.",
+    "feature4": "Increase the reach of your social media messages and make campaigns visually more attractive.",
+    "feature5": "Personalize rejections and/or invitations with a message recorded by a recruiter",
+    "feature6": "Enrich the onboarding of new employees"
   },
   
   "about": {
-    "header1": "Samen met collega’s eenvoudig video’s opnemen, beheren en publiceren",
-    "text1_1": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Een vacature staat gemiddeld niet langer online dan 3 maanden. Wij helpen jouw om zelf eenvoudig video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunciatie op een",
-    "text1_2": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een standaard dure video productie. Het is toch gek dat iemand tijdens de eerste werkdag te zien krijgt waar en met wie je kkomt te werken?!"
+    "header": "Produce, manage and publish video content together with your colleagues",
+    "text": "Nowadays a vacancy text alone is not enough to interest work seekers. They miss an image of the work environment and future colleagues. <br/> <br/> Giving work seekers an authentic image, instead of a scripted video production, is key. Surely, it is rather strange that you do not know where and with whom you will work until you first working day! <br/> <br/> With the Flipbase employer branding module we give you a resource to easily record manage and publish real video content in your labour market communication"
   },
   
+  "integrated_in": "Flipbase is amongst others integrated in:",
+
   "howdoesitworks": {
-    "title": "Hoe werkt het?",
-    "subtitle": "in arbeidsmarktcoummicatie",
+    "title": "How does it work?",
+    "header1": "How does it work?",
+    "text1": "Invite one or more colleagues via the employer branding module to record a video. <br/><br/> Give your colleagues suggestions and if needed tips so all necessary things are covered in the video. <br/><br/> If needed also add an example video to the invitation to lower the threshold and let your colleagues know what is expected of them.",
     
-    "header1": "Hoe werkt het?",
-    "text1_1": "Nodig een of meerdere collega’s uit per e-mail om een video op te nemen voor de geselecteerde vacature of social media bericht.",
-    "text1_2": "Geef aan enkele tips of suggesties wat je collega eventueel kan benoemen in zijn of haar video.",
-    "text1_3": "Stuur een voorbeeld van een video mee zodat de collega een idee heeft wat van hem of haar verwacht wordt.",
+    "header2": "Receive and manage videos",
+    "text2": "You will receive an e-mail notification as soon as a video has been recorded. Within your dashboard you can view and manage all videos.",
     
-    
-    "header2": "Ontvang en beheer video’s",
-    "text2_1": "Op het moment dat een video is opgenomen ontvang je een e-mail notificatie. In het dashboard heb je een overzicht van alle video’s die eerder zijn opgenomen.",
-    "text2_2": "Verwijder video’s die je niet meer nodig hebt of waarvan je zeker.",
-    
-    "header3": "Publiceer video’s",
-    "text3_1": "‘Deel de video’ met een werkenbij website om deze toe te voegen aan een vacature of met Facebook, Twitter of LinkedIn om toe te voegen aan een post."
+    "header3": "Publish videos",
+    "text3": "Via your dashboard you can approve and directly publish videos. By using the embed code or social media link you can publish the video (player) directly on any website, vacancy page and/or social media campaign."
   },
 
   "cta": {
-    "title": "Wil je meer weten of zien?",
-    "desc": "Hoi! Ik ben Bram, account manager bij Flipbase. Heb je vragen of wil je graag  zien hoe ons Flipbase werkt in jouw recruitment omgeving? Plan dan direct een demo in!",
-    "button": "Plan dan direct een demo in!",
+    "title": "Want to know or see more?",
+    "desc": "Hi! I am Bram, account manager at Flipbase. Do you have questions or would you like to see how the Flipbase employer branding module works?",
+    "button": "Schedule a demo!",
     "visual": "/assets/images/team/bram.png",
     "calendly": "bramtierie"
   }

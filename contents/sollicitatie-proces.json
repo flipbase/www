@@ -24,7 +24,7 @@
     "feature2_header": "waar in de procedure",
     "feature2_desc": "Video kan je op meerdere plekken in het sollicitatieproces inzetten. Jij bepaald, per procedure, waar het voor jullie interessant is: in het sollicitatieformulier, direct na een sollicitatie, voor of na een eerste of tweede gesprek of bij de voordracht.",
     "feature3_header": "wat de kandidaat presenteert",
-    "feature3_desc": "Video kan je op meerdere manieren insteken. Je kan sollicitanten een vraag laten beantwoorden, ze een case of opdracht voorleggen of simpel weg laten motiveren waarom ze bij jullie willen komen werken."
+    "feature3_desc": "Video kan je op meerdere manieren insteken. Je kan sollicitanten een vraag laten beantwoorden, ze een case of opdracht voorleggen of simpelweg laten motiveren waarom ze bij jullie willen komen werken."
   },
   
   "features_3": {
@@ -57,15 +57,17 @@
     "feature2_header": "Op ieder apparaat",
     "feature2_desc": "Als gebruiker kan je op meerdere manieren een video versturen: via de webcam, de camera van een smartphone/tablet of door een video te uploaden.",
     "feature3_header": "Aanpasbare opname tijd",
-    "feature3_desc": "Verander de maximale opname tijd aan van 30 seconden tot maximaal 3 minuten. Wij vinden hoe korter hoe beter, maar we geven je wel de mogelijkheid.",
+    "feature3_desc": "Verander de maximale opname tijd van 30 seconden tot maximaal 3 minuten. Wij adviseren 30 seconden, maar geven je wel de mogelijkheid om dit aan te passen.",
     "feature4_header": "In iedere taal",
-    "feature4_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan op automatisch op basis van de browser voorkeur worden aangepast. "
+    "feature4_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan automatisch op basis van de browser voorkeur worden aangepast. "
   },
+
+  "integrated_in": "Flipbase is onder andere geïntegreerd in:",
 
   "cta": {
     "title": "Wil je meer weten of zien?",
-    "desc": "Hoi! Ik ben Tjarko, account manager bij Flipbase. Heb je vragen of wil je graag  zien hoe ons Flipbase werkt in jouw recruitment omgeving?",
-    "button": "Plan dan direct een demo in!",
+    "desc": "Hoi! Ik ben Tjarko, account manager bij Flipbase. Heb je vragen of wil je graag zien hoe Flipbase werkt in jouw recruitment omgeving?",
+    "button": "Plan een demo in!",
     "visual": "/assets/images/team/tjarko.png",
     "calendly": "bramtierie"
   },

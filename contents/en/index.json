@@ -1,14 +1,14 @@
 {
  "template": "index.jade",
  
-  "header": "Video fully integrated in your existing recruitment process",
+  "header": "Video completely integrated into your recruitment process",
 
-  "sp_title": "Enrich the application process",
-  "sp_desc": "Attract, recruit and select utilizing video to get a picture of the person behind the resume",
+  "sp_title": "Enrich your application process",
+  "sp_desc": "Get an impression of the person behind the resume",
   "sp_path": "/en/application-process.html",
 
-  "eb_title": "Strengthen your employer brand",
-  "eb_desc": "Share an authenticate image of the working environment and future collegeaus",
+  "eb_title": "Strengthen your labour market communication",
+  "eb_desc": "Give an authentic impression of the work environment and colleagues",
   "eb_path": "/en/employer-branding.html"
 
 }

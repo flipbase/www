@@ -9,12 +9,12 @@ block body
       .row(data-equalizer data-equalize-on="medium")
         h1.home-header.align-center #{page.metadata.header}
         .medium-6.medium-6.columns
-          a.home-link(href="#{page.metadata.sp_path}")
+          a.home-link(href="#{locals.path}#{page.metadata.sp_path}")
             .home-text-block(data-equalizer-watch)
               h3 #{page.metadata.sp_title}
               p #{page.metadata.sp_desc}
         .medium-6.medium-6.columns.end
-          a.home-link(href="#{page.metadata.eb_path}")
+          a.home-link(href="#{locals.path}#{page.metadata.eb_path}")
             .home-text-block(data-equalizer-watch href="#")
               h3 #{page.metadata.eb_title}
               p #{page.metadata.eb_desc}

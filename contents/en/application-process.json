@@ -2,73 +2,75 @@
  "template": "sollicitatie-proces.jade",
 
   "titles": {
-    "header": "A first impression of the person behind the CV within 30 seconds",
-    "subheader": "Instantly accessible in your own recruitment environment"
+    "header": "An image of the person behind the resume within 30 seconds",
+    "subheader": "Video recording and playback functionality completely integrated into your recruitment proces and system"
   },
 
   "features_1": {
-    "title": "Voordelen van video",
-    "subtitle": "in het sollicitatieproces",
-    "feature1": "Geef kandidaten de kans zich beter en rijker te presenteren.",
-    "feature2": "Creëer een extra ronde met video en toets motivatie van kandidaten.",
-    "feature3": "Krijg een beter beeld van de kandidaat achter het CV.",
-    "feature4": "Beoordeel kandidaten niet enkel op harde competenties, maar ook op soft skills.",
-    "feature5": "Neem twijfels weg door kandidaten een korte case te laten presenteren.",
-    "feature6": "Betrek lijnmanager en opdrachtgevers eerder in de procedure en laat hen een video vraag stellen.",
+    "title": "Benefits of video",
+    "subtitle": "in the recruitment process",
+    "feature1": "Receive a first impression of candidates early in the process",
+    "feature2": "Give candidates an extra resource to distinguish themselves",
+    "feature3": "Do not assess candidates solely based on hard criteria, but also on soft skills",
+    "feature4": "Recruit more efficiently by involving the vacancy-holder in the process",
+    "feature5": "Prevent unnecesary first acquaintances",
+    "feature6": "Increase the quality of first acquaintances",
     "feature7": "Presenteer kandidaten op een onderscheidende manier aan opdrachtgevers of lijnmanagers."
   },
 
   "features_2": {
-    "title": "Jij bepaalt waar, hoe en wanneer",
-    "feature1_header": "bij welke vacatures",
-    "feature1_desc": "Video is niet relevant voor iedere vacature. Jij bepaalt dus wanneer je video wél en wanneer niet in wilt zetten.",
-    "feature2_header": "waar in de procedure",
-    "feature2_desc": "Je kan een video opvragen door waar jij dit waarde vindt toeveogen. Dit kan het het sollicitatieformulier, direct na een sollicitatie, voor of na een eerste of tweede gesprek, of bij de voordracht.",
-    "feature3_header": "wat de kandidaat presenteert",
-    "feature3_desc": "Wil je dat kandidaten op video een case of probleem oplossen; een specifieke situatie of gebeurtenis omschrijven of wil je horen wat hen motiveert?"
+    "title": "You decide where, how and when",
+    "feature1_header": "With which vacancies",
+    "feature1_desc": "Video is an effective resource for a lot of procedures, yet not relevant for every vacancy. You decide for which procedure you want to use video.",
+    "feature2_header": "Where in the process",
+    "feature2_desc": "Video can be used in several stages of the application process.  You can decide, per vacancy, where it has the most value: in the application form, instantly after an application, before or after a first acquaintance or in addition to the presentation to a vacancy-holder.",
+    "feature3_header": "What the candidate presents",
+    "feature3_desc": "You can apply video in different ways. You can ask candidates one or several questions, present them a case or simply ask them to motivate why they want to work with you."
   },
   
   "features_3": {
-    "title": "Waar past video in jouw recruitment proces?",
-    "feature1_header": "Bij de sollicitatie",
-    "feature1_desc": "Geef kandidaten de mogelijkheid om zich te onderscheiden van de rest.",
-    "feature2_header": "Direct na de sollicitatie",
-    "feature2_desc": "Automatisch iedere sollicitatie uitnodigen.",
-    "feature3_header": "Na een eerste selectie",
-    "feature3_desc": "CV selectie kandidaten utinodigen voor video.",
-    "feature4_header": "In de voordracht aan vacaturehouder",
-    "feature4_desc": "In de voordracht aan vacaturehouder Deel een kandidaat profiel mét video."
+    "title": "Where does video fit in your recruitment process?",
+    "feature1_header": "Part of the application",
+    "feature1_desc": "Give applicants the possibility to distinguish themselves from others",
+    "feature2_header": "Instantly after the application",
+    "feature2_desc": "Automatically invite every applicant",
+    "feature3_header": "After a first selection",
+    "feature3_desc": "xxx",
+    "feature4_header": "In the presentation to a vacancy-holder",
+    "feature4_desc": "Present the best candidates to the vacancy-holder via video"
   },
   
   "features_4": {
-    "title": "Waarom Flipbase?",
-    "feature1_header": "Geen extra login nodig",
-    "feature1_desc": "Zowel het opnemen als afspelen van video’s is geïntegreerd in je huidige recruitment systeem. Je hoeft dus niet in te loggen in een ander systeem waar je video’s kan bekijken.",
-    "feature2_header": "Vanuit je systeem kandidaten uitnodigen",
-    "feature2_desc": "Met een klik kan je een of meerdere kandidaten uitnodigen per e-mail om een video op te nemen. Stel een concrete vraag of leg ze bijvoorbeeld een case voor.",
-    "feature3_header": "Video direct afspelen in het kandidaat profiel",
-    "feature3_desc": "Je ontvangt video’s in het kandidaat profiel binnen je huidige recruitment omgeving. Je kan kan ze direct afspelen en delen met collega’s; je hoeft niet naar een andere omgeving. ",
-    "feature4_header": "Geen extra data opslag",
-    "feature4_desc": "Flipbase verzorgt alle video- en data opslag, je hebt geen groter (data) pakket nodig bij je huidige recruitment software leverancier."
+    "title": "Why Flipbase?",
+    "feature1_header": "No extra login needed",
+    "feature1_desc": "Both video recording and playback are fully integrated into your current recruitment environment. You do not need to login to another system to use Flipbase.",
+    "feature2_header": "Use video within your current workflow",
+    "feature2_desc": "With one click you can invite one or several candidates to record a video. In this process you can ask them a specific question or give them an assignment.",
+    "feature3_header": "Directly accessible within your recruitment system",
+    "feature3_desc": "The recorded videos will automatically end up in the correct candidate profile within your current recruitment environment. In the candidate profile you can directly playback the video and if applicable, share it with colleagues",
+    "feature4_header": "No download needed",
+    "feature4_desc": "Candidates and recruiters do not need to download software or apps to record or playback videos. Both the Flipbase recording and playback functionality are accessible online in every (online) browser."
   },
   
   "features_5": {
-    "feature1_header": "Geen app",
-    "feature1_desc": "Kandidaten en recruiters hoeven geen software of apps te downloaden om een video op te nemen of af te spelen. Zowel de recorder als de player module zijn te gebruiken in iedere (mobiele) browser.",
-    "feature2_header": "Volledig responsive",
-    "feature2_desc": "Volledig responsive Zowel de recorder als de player zijn volledig responsive en zijn dus ook makkelijk te gebruiken op een smartphone of tabelt.",
-    "feature3_header": "Op ieder apparaat",
-    "feature3_desc": "Gebruik een webcam, camera van een smartphone of tablet of upload een video bestand. Als gebruiker kan je op alle manieren een video versturen",
-    "feature4_header": "Aanpasbare opname tijd",
-    "feature4_desc": "Verander de maximale opname tijd aan van 30 seconden tot maximaal 3 minuten. Wij vinden hoe korter hoe beter, maar we geven je wel de mogelijkheid.",
-    "feature5_header": "In iedere taal",
-    "feature5_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan op automatisch op basis van de browser voorkeur worden aangepast. "
+    "feature1_header": "",
+    "feature1_desc": "",
+    "feature2_header": "Fully responsive",
+    "feature2_desc": "Both the recording and playback functionality are fully responsive and thus easy to access and use on a smartphone or tablet.",
+    "feature3_header": "On every device",
+    "feature3_desc": "Users have several options to send their video: via webcam, by using the camera on a smartphone/tablet or by uploading a video.",
+    "feature4_header": "Adjustable recording time",
+    "feature4_desc": "Change the maximum recording time from 30 seconds to a maximum of 3 minutes. We advice 30 seconds, but give you the possibility to adjust it.",
+    "feature5_header": "In every language",
+    "feature5_desc": "Ranging from Dutch to Chinese, we support every language. The language can automatically be adjusted based on the browser settings."
   },
 
+  "integrated_in": "Flipbase is amongst others integrated in:",
+
   "cta": {
-    "title": "Wil je meer weten of zien?",
-    "desc": "Hoi! Ik ben Bram, account manager bij Flipbase. Heb je vragen of wil je graag  zien hoe ons Flipbase werkt in jouw recruitment omgeving? Plan dan direct een demo in!",
-    "button": "Plan dan direct een demo in!",
+    "title": "Want to know or see more?",
+    "desc": "Hi! I am Tjarko, accountmanager at Flipbase. Do you have questions or would you like to see how Flipbase works within your recruitment environment?",
+    "button": "Schedule a demo!",
     "visual": "/assets/images/team/bram.png",
     "calendly": "bramtierie"
   },
