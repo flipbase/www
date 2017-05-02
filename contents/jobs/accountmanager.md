@@ -4,10 +4,6 @@ title: Account manager
 city: Amsterdam
 ---
 
-## Wie zijn wij?
-
-Wij zijn een ambitieuze start-up die zich specialiseert in het ontwikkelen van web-based video applicaties voor de Recruitment en Human Resource-markt. Wij groeien snel, daarom zijn we op zoek naar versterking. Ben jij een commercieel talent die ons helpt verder te groeien?
-
 ## Wie zoeken wij?
 
 Wij zoeken iemand die niet bang is om fouten te maken. Iemand die liever eerst doet, iemand die geloofd in "no is an answer, but no answer is unacceptable" en toch een 'nee' niet zomaar accepteert. Als je die eigenschappen bezit én je kunt ook nog eens mensen enthousiasmeren...
@@ -18,18 +14,28 @@ Dan zoeken wij jou!
 
 In eerste instantie ben je verantwoordelijk voor ‘lead generation’. Dit betekent dat jij continue op zoek bent naar nieuwe leads en kansen. Zowel in nieuwe, als bestaande markten, in binnen- en buitenland. Daarnaast zal je ook het initiële contact met potentiële klanten gaan leggen.
 
-## Wat bieden wij je?
+### Wat wij je bieden?
 
-Wij bieden je een informele werksfeer, op een inspirerende locatie. Je krijgt een markt conform salaris, vakantiedagen, vakantietoeslag, en… ach je kent het wel: het standaard verkoop verhaal.
+- een informele werksfeer, op een inspirerende locatie. 
+- een markt conform salaris met bonus regeling
+- 25 vakantiedagen
+- de kans om jezelf te ontwikkelen als comercieel proffesioneel
+- veel vrijheid in hoe je je dagelijkse werkzaamheden gaat invullen
 
-Wat wij je echt bieden:
+### Wie zijn wij?
 
-De kans om jezelf te ontwikkelen en heel veel te leren binnen een start-up. Daarnaast krijg je veel vrijheid en daarmee dus ook verantwoordelijkheid. Je bent zelf verantwoordelijk voor jouw processen en methodes om nieuwe klanten te benaderen, uiteraard met advies van ons.
+Wij zijn Flipbase. Een snelgroeiende startup in Amsterdam die zich specialiseert in software waarmee wij bedrijven de mogelijkheid geven om video toe te voegen aan het sollicitatieproces (waar jij ook aan zal moeten geloven).
 
-Last but not least: je hebt een reële kans om door te groeien tot volwaardig lid van het Flipbase team.
+Met onze software zorgen wij ervoor dat bedrijven als Friesland Campina Accenture, Randstad, VUmc en Heinz sollicitanten niet enkel beoordelen op basis van harde criteria (het CV). 
+
+De persoon achter het CV is immers veel belangrijker, toch?
+
+Wij willen dan ook niet direct alles van je weten. Je voornaam, achternaam en e-mail adres is voldoende, aangevuld met een video. Voor jouw video geven wij je wel een opdracht mee:
 
 <video poster="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.jpg" preload="auto" controls="true" style="max-width: 100%;">
   <source type="video/webm" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.webm"/>
   <source type="video/mp4" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.mp4"/>
   <source type="video/ogv" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.ogv"/>
 </video>
+
+Succes!

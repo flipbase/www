@@ -6,13 +6,30 @@ city: Amsterdam
 
 ## Geen relevante vacatures?
 
-Als er geen relevante vacatures voor jou online staan, maar je wilt toch graag met ons in gesprek? Dat kan! Voor getalenteerde mensen maken we altijd een tijd vrij om. Laat een 
-En onder het motto 'eat your own dog food' ontvangen we graag een video van jouw!
+Als er geen relevante vacatures voor jou online staan, maar je wilt toch graag met ons in gesprek? Dat kan! Voor getalenteerde en gepassioneerde mensen maken we altijd een tijd vrij!
 
-## Wie zijn wij?
+### Wat bieden wij?
 
-Wij zijn een ambitieuze start-up die zich specialiseert in het ontwikkelen van web-based video applicaties voor de Recruitment en Human Resource-markt. Wij groeien snel, daarom zijn we op zoek naar versterking. Ben jij een commercieel talent die ons helpt verder te groeien?
+- Competitief salaris en team bonus regeling
+- Flexibele werktijden
+- Op maat gemaakte werkplek, inclusief laptop en smartphone naar keuze
+- Informele werksfeer en veel vrijheid (en dus verantwoordelijkheid)
+- Een plek waar je alles kan leren wat je zou willen binnen het bedrijfsleven
 
-## Wat bieden wij je?
+### Wie zijn wij?
 
-Wij bieden je een informele werksfeer, op een inspirerende locatie. Je krijgt een markt conform salaris, vakantiedagen, vakantietoeslag, en… ach je kent het wel: het standaard verkoop verhaal.
+Wij zijn Flipbase. Een snelgroeiende startup in Amsterdam die zich specialiseert in software waarmee wij bedrijven de mogelijkheid geven om video toe te voegen aan het sollicitatieproces (waar jij ook aan zal moeten geloven).
+
+Met onze software zorgen wij ervoor dat bedrijven als Friesland Campina Accenture, Randstad, VUmc en Heinz sollicitanten niet enkel beoordelen op basis van harde criteria (het CV). 
+
+De persoon achter het CV is immers veel belangrijker, toch?
+
+Wij willen dan ook niet direct alles van je weten. Je voornaam, achternaam en e-mail adres is voldoende, aangevuld met een video. Voor jouw video geven wij je wel een opdracht mee:
+
+<video poster="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.jpg" preload="auto" controls="true" style="max-width: 100%;">
+  <source type="video/webm" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.webm"/>
+  <source type="video/mp4" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.mp4"/>
+  <source type="video/ogv" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.ogv"/>
+</video>
+
+Succes!

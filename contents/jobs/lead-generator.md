@@ -18,9 +18,11 @@ De functie is in eerste instantie voor een periode van minimaal 7 maanden, waarb
 
 ### Wie zoeken wij?
 
-Een ambitieuze, enthousiaste en vooral leuke aanvulling op ons team, met:
-- HBO/WO werk- en denkniveau;
-- Uitstekende schriftelijke en mondelinge communicatieve vaardigheden;
+Een ambitieuze en enthousiaste aanvulling op ons team, met:
+
+- Zeer pragmatisch instelling
+- HBO/WO werk- en denkniveau
+- Uitstekende schriftelijke en mondelinge communicatieve vaardigheden
 - Doortastende en optimistische persoonlijkheid
 - Je hebt in een eerdere bijbaan commerciële/verkoop ervaring opgedaan
 - Je kickt erop om die ene deal toch nog binnen te halen
@@ -28,13 +30,12 @@ Een ambitieuze, enthousiaste en vooral leuke aanvulling op ons team, met:
 
 ### Wat bieden wij?
 
- - Bonus regeling
- - Laptop en smartphone
- - Competitief salaris
- - Informele werksfeer en veel vrijheid (en dus verantwoordelijkheid)
- - Flexibele werktijden/dagen
- - Doorgroeimogelijkheden naar een vaste aanstelling
-
+- Competitief salaris en team bonus regeling
+- Flexibele werktijden
+- Op maat gemaakte werkplek, inclusief laptop en smartphone naar keuze
+- Informele werksfeer en veel vrijheid (en dus verantwoordelijkheid)
+- Een plek waar je alles kan leren wat je zou willen binnen het bedrijfsleven
+ 
 ### Wie zijn wij?
 
 Wij zijn Flipbase. Een snelgroeiende startup in Amsterdam die zich specialiseert in software waarmee wij bedrijven de mogelijkheid geven om video toe te voegen aan het sollicitatieproces (waar jij ook aan zal moeten geloven).

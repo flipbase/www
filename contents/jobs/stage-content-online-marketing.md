@@ -19,23 +19,23 @@ Deze stage biedt jouw de kans om ervaring op te doen in een snelgroeiende startu
 De stage is voor een periode van minimaal 6 maanden, waarbij jij minimaal 3 dagen per week fulltime zal meedraaien met de werkzaamheden.
 
 * Je gaat samen met onze accountmanager op pad om te leren hoe klanten de Flipbase producten precies inzetten en je vertaalt dat naar een artikel dat we kunnen delen met andere klanten en gebruikers;
-* Up to date houden van het blog en schrijven van nieuwsbrieven over klant- en product updates;
-* Experimenteren met online marketing campagnes, waaronder re-targeting en direct mailings;
-* Optimaliseren van de website middels A/B testing;
+* Je bent verantwoordelijk voor het up to date houden van het blog; en het schrijven van nieuwsbrieven over klant- en product updates;
+* Je gaat experimenteren met online marketing campagnes, waaronder re-targeting en direct mailings;
+* Je draagt ideeen aan over het optimaliseren van de website middels A/B testing;
 * Je bent verantwoordelijk voor rapportage over websiteverkeer, conversies en verkeersbronnen naar het management.
 
-#### Wie zoeken wij?
+#### Wie zoeken een stagiair...
 
-- HBO/WO werk- en denkniveau, bij voorkeur een commerciële of journalistieke opleiding
-- Iemand die zich erg goed kan verwoorden, zowel mondeling als in schrift;
-- Je bent breed geïnteresseerd, onderzoekend en nieuwsgierig
-- Niet bang om zich zelf te presenteren op (video) camera
-- ‘Hands on’ mentaliteit, initiatiefrijk en erg zelfstandig;
-- Affiniteit met software en/of HR;
-- het leuk vind om in een klein, maar snelgroeiend bedrijf te werken;
-- ervaring met online marketing tools (zoals Google Analytics en Optimizely) is een pre
+- met HBO/WO werk- en denkniveau, bij voorkeur een commerciële of journalistieke opleiding
+- die zich erg goed kan verwoorden, zowel mondeling als in schrift;
+- die breed geïnteresseerd, onderzoekend en nieuwsgierig is
+- niet bang is om zichzelf te presenteren op (video) camera
+- een ‘hands on’ mentaliteit heeft en initiatiefrijk en zelfstandig is
+- affiniteit heeft met software en/of HR;
+- het leuk vindt om in een klein, maar snelgroeiend bedrijf te werken;
+- en eventueel ervaring heeft met online marketing tools (zoals Google Analytics en Optimizely)
 
-#### Wij bieden
+#### Wij bieden:
 
 * een stage vergoeding;
 * laptop;
