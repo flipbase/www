@@ -10,6 +10,17 @@ html(lang='en')
       meta(name='viewport', content='width=device-width')
       link(rel="shortcut icon" href="#{locals.path}/assets/images/favicon.ico")
 
+      block metatags
+        if page && page.metadata && page.metadata.socialmedia && page.metadata.socialmedia.title
+          +OpenGraphMetaTags(page.metadata.socialmedia.title,
+            page.metadata.socialmedia.desc,
+            page.metadata.socialmedia.embed_url,
+            page.metadata.socialmedia.image,
+            page.metadata.socialmedia.video,
+            page.metadata.socialmedia.video_type,
+            page.metadata.socialmedia.width,
+            page.metadata.socialmedia.height)
+
       block title 
         title #{locals.name}
       
@@ -19,6 +30,7 @@ html(lang='en')
 
       block scripts
         script(src='#{locals.path}/assets/js/modernizr.custom.min.js')
+        script(src="https://app.flipbase.com/player.js")
         script.
           //- Alternative typekit loader that stores font in a session, which should lead to faster loading times
           (function(d) {
@@ -34,7 +46,7 @@ html(lang='en')
         <!--[if lt IE 9]>
         script(src='#{locals.path}/assets/components/html5shiv/dist/html5shiv.min.js')
         <![endif]-->
-  body.animsition    
+  body    
     <!--[if lt IE 9 ]>
     div(class="ie-warning")
       div(class="ie-warning-wrapper") 
@@ -50,7 +62,7 @@ html(lang='en')
     <![endif]-->
     
     include partials/layout/_nav
-    
+
     #main.main
       .off-canvas-wrapper-inner(data-off-canvas-wrapper)
       

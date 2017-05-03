@@ -2,25 +2,47 @@
 template: job.jade
 title: Account manager
 city: Amsterdam
+socialmedia:
+  title: Wat voor verkoper ben jij?
+  desc: Bij Flipbase zoeken we altijd getalenteerde verkopers. Heb jij een passie voor verkoop? Check dan de vacature
+  embed_url: https://wwwcontent.flipbase.com/embed/787af9b6-d38c-49d4-a148-7dd26836aaf9
+  image: https://flipbasemedia.com/787af9b6-d38c-49d4-a148-7dd26836aaf9.jpg?player=ODk0YjhlNWUtM2ZjMy00NGNlLTg0YWUtODc4NzE4NDE5NDNk
+  video: https://flipbasemedia.com/787af9b6-d38c-49d4-a148-7dd26836aaf9.mp4?player=ODk0YjhlNWUtM2ZjMy00NGNlLTg0YWUtODc4NzE4NDE5NDNk
+  video_type: video/mp4
+  width: 720
+  height: 360
 ---
-
-## Wie zoeken wij?
-
-Wij zoeken iemand die niet bang is om fouten te maken. Iemand die liever eerst doet, iemand die geloofd in "no is an answer, but no answer is unacceptable" en toch een 'nee' niet zomaar accepteert. Als je die eigenschappen bezit én je kunt ook nog eens mensen enthousiasmeren...
-
-Dan zoeken wij jou!
 
 ## Wat ga je doen?
 
-In eerste instantie ben je verantwoordelijk voor ‘lead generation’. Dit betekent dat jij continue op zoek bent naar nieuwe leads en kansen. Zowel in nieuwe, als bestaande markten, in binnen- en buitenland. Daarnaast zal je ook het initiële contact met potentiële klanten gaan leggen.
+Jij bent verantwoordelijk voor de gehele sales cycle (van initieel contact tot een akkoord op de offerte). Jij zal zorgen dat bedrijven Flipbase gaan gebruiken. Van een naam op de leadlijst tot een enthousiaste klant. Daarnaast ben je constant op zoek naar nieuwe kansen. Dit betekent dat jij continue je oren en ogen open hebt en niet schroomt om de telefoon op te pakken. 
+
+<strong>Je zal beginnen met Nederland en België, maar schrik niet van internationale leads!</strong>
+
+### Wie zoeken wij
+
+Een ambitieuze en enthousiaste aanvulling op ons team, met:
+
+- Een zeer pragmatische instelling;
+- HBO/WO werk- en denkniveau;
+- Uitstekende schriftelijke en mondelinge communicatieve vaardigheden (zowel Engels als Nederlands);
+- Doortastende en optimistische persoonlijkheid;
+- Ervaring in commercie/verkoop is een pre.
+
+Daarnaast ben je niet bang om te bellen en kick je erop om een nieuwe klant binnen te halen!
 
 ### Wat wij je bieden?
 
-- een informele werksfeer, op een inspirerende locatie. 
+Standaard bieden we je het volgende:
+
+- een informele werksfeer, op een inspirerende locatie met leuke collega’s
 - een markt conform salaris met bonus regeling
-- 25 vakantiedagen
-- de kans om jezelf te ontwikkelen als comercieel proffesioneel
-- veel vrijheid in hoe je je dagelijkse werkzaamheden gaat invullen
+- competitief salaris, een team bonus regeling en 25 vakantiedagen
+- de kans om jezelf te ontwikkelen 
+- veel vrijheid en verantwoordelijkheid
+
+Aanvullingen?
+<strong>Wij geloven er echter in dat iedereen andere behoeftes heeft. Wat vind jij belangrijk? Wij staan open voor suggesties.</strong>
 
 ### Wie zijn wij?
 

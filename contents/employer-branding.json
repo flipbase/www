@@ -8,7 +8,7 @@
 
   "whyvideo": {
     "title": "Voordelen van video",
-    "subtitle": "in je arbeidsmarktcoummicatie",
+    "subtitle": "in je arbeidsmarktcommunicatie",
     "feature1": "Trek de aandacht van meer kandidaten door vacatures visueler te presenteren.",
     "feature2": "Verhoog de kwaliteit van sollicitanten en voorkom mismatches later in het proces.",
     "feature3": "Geef werkzoekenden een authentiek beeld van de werkomgeving en toekomstige collega’s.",
@@ -19,7 +19,7 @@
   
   "about": {
     "header": "Samen met collega’s video content opnemen, beheren en publiceren ",
-    "text": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Daarnaast staat een vacature gemiddeld niet langer dan een paar maanden online. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Dat is de kern behoefte. <br/><br/> Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een gescripte video productie. Het is immers vreemd dat je tijdens de eerste werkdag pas weet, waar en met wie je komt te werken! <br/><br/> Wij geven je met de Flipbase employer branding module een middel om zelf video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunicatie."
+    "text": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Dat is de kern behoefte. <br/><br/> Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een gescripte video productie. Het is immers vreemd dat je tijdens de eerste werkdag pas weet, waar en met wie je komt te werken! <br/><br/> Wij geven je met de Flipbase employer branding module een middel om zelf video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunicatie."
   },
 
   "integrated_in": "Flipbase is onder andere geïntegreerd in:",
@@ -28,7 +28,7 @@
     "title": "Hoe werkt het?",
     "subtitle": "in arbeidsmarktcoummicatie",
     
-    "header1": "Hoe werkt het?",
+    "header1": "",
     "text1": "Nodig een of meerdere collega’s via de employer branding module uit om een video op te nemen. <br/><br/> Geef je collega suggesties en eventueel tips zodat de juiste onderwerpen aan bod komen in de video. <br/><br/> Stuur eventueel een voorbeeld video mee om de drempel te verlagen en om te zorgen dat je collega weet wat er verwacht wordt.",
     
     "header2": "Ontvang en beheer video’s",
@@ -40,7 +40,7 @@
 
   "cta": {
     "title": "Wil je meer weten of zien?",
-    "desc": "Hoi! Ik ben Bram, account manager bij Flipbase. Heb je vragen of wil je graag  zien hoe Flipbase werkt in jouw recruitment omgeving? Plan dan direct een demo in!",
+    "desc": "Hoi! Ik ben Bram, account manager bij Flipbase. Heb je vragen of wil je graag zien hoe Flipbase werkt?",
     "button": "Plan een demo in!",
     "visual": "/assets/images/team/bram.png",
     "calendly": "bramtierie"

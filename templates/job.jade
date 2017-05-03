@@ -15,7 +15,7 @@ block body
     header.header.jobs_section_header
       .row.clearfix
         .medium-6
-          h1 #{page.metadata.title}
+          h1 !{page.metadata.title}
  
   article
     .row.job_post_section
@@ -28,7 +28,7 @@ block body
     .row
       .medium-10.large-7.medium-centered
         .large-push-3
-          h3 Interested? Apply below!
+          h3 Geïnteresseerd? Solliciteer dan hieronder!
         form#applicationform
             .row
               .medium-3.large-3.columns.padding-0
@@ -61,12 +61,12 @@ block body
                 #loadingProgress.loading
                   span
                     i.ion-ios-loop-strong
-                    | Sending your application!
+                    | Je sollicitatie wordt verstuurd!
                 .clearfix
                 #successMessage.success
                   span
                     i.ion-checkmark-round
-                    | All good! Je hoort zo snel mogelijk van ons!
+                    | Je sollicitatie is verstuurd! Je hoort zo snel mogelijk van ons!
                 #errorMessage.error
                   span
   

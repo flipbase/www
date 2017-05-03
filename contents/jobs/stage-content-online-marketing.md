@@ -16,18 +16,18 @@ Jij onderzoekt daarnaast het online gedrag van de doelgroep(en) en ontdekt waar 
 
 Deze stage biedt jouw de kans om ervaring op te doen in een snelgroeiende startup en direct bij te dragen aan deze groei. Daarnaast heb je kans om door te groeien in een vast rol! 
 
-De stage is voor een periode van minimaal 6 maanden, waarbij jij minimaal 3 dagen per week fulltime zal meedraaien met de werkzaamheden.
+De stage is voor een periode van 6 maanden, waarbij jij minimaal 3 dagen per week fulltime zal meedraaien met de werkzaamheden.
 
-* Je gaat samen met onze accountmanager op pad om te leren hoe klanten de Flipbase producten precies inzetten en je vertaalt dat naar een artikel dat we kunnen delen met andere klanten en gebruikers;
-* Je bent verantwoordelijk voor het up to date houden van het blog; en het schrijven van nieuwsbrieven over klant- en product updates;
-* Je gaat experimenteren met online marketing campagnes, waaronder re-targeting en direct mailings;
-* Je draagt ideeen aan over het optimaliseren van de website middels A/B testing;
-* Je bent verantwoordelijk voor rapportage over websiteverkeer, conversies en verkeersbronnen naar het management.
+- Je gaat samen met onze accountmanager op pad om te leren hoe klanten de Flipbase producten precies inzetten en je vertaalt dit naar artikelen die we kunnen delen met andere klanten, gebruikers en potentiële klanten;
+- Je bent verantwoordelijk voor het up to date houden van het blog; en het schrijven van nieuwsbrieven over klant- en product updates;
+- Je gaat experimenteren met online marketing campagnes, waaronder re-targeting en direct mailings;
+- Je draagt ideeën aan over het optimaliseren van de website middels A/B testing;
+- Je bent verantwoordelijk voor rapportage over websiteverkeer, conversies en verkeersbronnen naar het management.
 
 #### Wie zoeken een stagiair...
 
 - met HBO/WO werk- en denkniveau, bij voorkeur een commerciële of journalistieke opleiding
-- die zich erg goed kan verwoorden, zowel mondeling als in schrift;
+- die zich erg goed kan verwoorden, zowel mondeling als in schrift (Engels en Nederlands)
 - die breed geïnteresseerd, onderzoekend en nieuwsgierig is
 - niet bang is om zichzelf te presenteren op (video) camera
 - een ‘hands on’ mentaliteit heeft en initiatiefrijk en zelfstandig is
@@ -37,12 +37,14 @@ De stage is voor een periode van minimaal 6 maanden, waarbij jij minimaal 3 dage
 
 #### Wij bieden:
 
-* een stage vergoeding;
-* laptop;
-* veel vrijheid (en dus verantwoordelijkheid)
-* gezellige collega's en informele werksfeer
-* gezonde en verse lunches;
-* en… borrels!
+- een stage vergoeding;
+- flexibele werktijden;
+- ruime werkplek, inclusief Apple laptop en smartphone;
+- informele werksfeer en veel vrijheid (en dus verantwoordelijkheid);
+- de kans om vast onderdeel te worden van een snelgroeiende startup, waarin je alles kan leren wat je zou willen binnen het bedrijfsleven;
+- gezonde en verse lunches;
+- en… borrels!
+
 
 ### Wie zijn wij?
 
@@ -55,11 +57,6 @@ De persoon achter het CV is immers veel belangrijker, toch?
 Wij willen dan ook niet direct alles van je weten. Je voornaam, achternaam en e-mail adres is voldoende, aangevuld met een video. Voor jouw video geven wij je wel een opdracht mee:
 
 
-
-<video poster="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.jpg" preload="auto" controls="true" style="max-width: 100%;">
-  <source type="video/webm" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.webm"/>
-  <source type="video/mp4" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.mp4"/>
-  <source type="video/ogv" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.ogv"/>
-</video>
+<video controls="true" type="flipbase" data-video-id="787af9b6-d38c-49d4-a148-7dd26836aaf9" data-player-cid="1" style="width: 100%; height: 100%;" width="auto" height="auto" poster="https://flipbasemedia.com/787af9b6-d38c-49d4-a148-7dd26836aaf9.jpg?player=ODk0YjhlNWUtM2ZjMy00NGNlLTg0YWUtODc4NzE4NDE5NDNk"><source src="https://flipbasemedia.com/787af9b6-d38c-49d4-a148-7dd26836aaf9.mp4?player=ODk0YjhlNWUtM2ZjMy00NGNlLTg0YWUtODc4NzE4NDE5NDNk" type="video/mp4"><source src="https://flipbasemedia.com/787af9b6-d38c-49d4-a148-7dd26836aaf9.webm?player=ODk0YjhlNWUtM2ZjMy00NGNlLTg0YWUtODc4NzE4NDE5NDNk" type="video/webm"><source src="https://flipbasemedia.com/787af9b6-d38c-49d4-a148-7dd26836aaf9.ogv?player=ODk0YjhlNWUtM2ZjMy00NGNlLTg0YWUtODc4NzE4NDE5NDNk" type="video/ogv"></video>
 
 Succes!

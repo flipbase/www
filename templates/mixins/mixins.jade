@@ -25,3 +25,34 @@ mixin coverVideo(video, cover)
     data-vide-bg="mp4: #{video}.mp4, webm: #{video}.webm, ogv: #{video}.ogv, poster: #{cover}"
     data-vide-options="posterType: jpeg")
   div.cover-overlay
+
+mixin OpenGraphMetaTags(title, desc, embed_url, image, video, video_type, vWidth, vHeight)
+  meta(property="fb:app_id" content="163225023747865")
+
+  meta(property="og:site_name" content="Flipbase")
+  meta(property="og:title" content="#{title}")
+  meta(property="og:description" content="#{desc}")
+  meta(property="og:url" content="#{locals.url}")
+  meta(property="og:image" content="#{image}")
+
+  //- Facebook
+  meta(property="og:type" content="video")
+  meta(property="og:video:url" content="#{video}")
+  meta(property="og:video:secure_url" content="#{video}")
+  meta(property="og:video:type" content="#{video_type}")
+  meta(property="og:video:width" content="#{vWidth}")
+  meta(property="og:video:height" content="#{vHeight}")
+
+  //- Twitter
+  meta(name="twitter:card" content="player")
+  meta(name="twitter:site" content="@flipbase")
+  meta(name="twitter:title" content="#{title}")
+  meta(name="twitter:description" content="#{desc}")
+  meta(name="twitter:image" content="#{image}")
+  meta(name="twitter:player" content="#{embed_url}")
+  meta(name="twitter:player:stream" content="#{video}")
+  meta(name="twitter:player:stream:content_type" content="#{video_type}")
+  meta(name="twitter:player:width" content="#{vWidth}")
+  meta(name="twitter:player:height" content="#{viHeight}")
+  meta(name="twitter:creator" content="flipbase")
+  meta(name="twitter:creator:id" content="440062771")

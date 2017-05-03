@@ -26,7 +26,7 @@
 
   "howdoesitworks": {
     "title": "How does it work?",
-    "header1": "How does it work?",
+    "header1": "",
     "text1": "Invite one or more colleagues via the employer branding module to record a video. <br/><br/> Give your colleagues suggestions and if needed tips so all necessary things are covered in the video. <br/><br/> If needed also add an example video to the invitation to lower the threshold and let your colleagues know what is expected of them.",
     
     "header2": "Receive and manage videos",
@@ -38,7 +38,7 @@
 
   "cta": {
     "title": "Want to know or see more?",
-    "desc": "Hi! I am Bram, account manager at Flipbase. Do you have questions or would you like to see how the Flipbase employer branding module works?",
+    "desc": "Hi! I am Bram, accountmanager at Flipbase. Do you have questions or would you like to see how Flipbase works?",
     "button": "Schedule a demo!",
     "visual": "/assets/images/team/bram.png",
     "calendly": "bramtierie"

@@ -226,9 +226,7 @@
   padding: 0 15px 20px 15px;
   @include breakpoint((max-width: 640px)) {
     .partners_title {
-      text-align: left;
-      width: 80%;
-      padding-left: 10px;
+      padding: 10px;
       margin-bottom: 60px;
     }
   }
