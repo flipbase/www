@@ -12,13 +12,17 @@ Flipbase is onlangs de samenwerking met Kamernet aangegaan. Zij hebben de techno
 
 <span class="more"></span>
 
+<div class="small-11 medium-8 small-centered">
+  <img src="../../../../assets/images/blog/kamernet.gif" style="max-width: 100%; width: 100%;" />
+  <p class="image-caption">Een foto zegt meer dan 1000 woorden. Hoeveel zegt een video dan wel niet?</p>
+</div>
+
 <div class="small-10 medium-6 small-centered">
 Video is als middel natuurlijk niet alleen geschikt om jezelf als sollicitant of werkgever te presenteren. Door deze integratie kun je binnen je Kamernet profiel een video opnemen of uploaden en direct toevoegen aan een advertentie. 
 </div>
 
 <div class="small-11 medium-8 small-centered">
   <img src="../../../../assets/images/blog/kamernet1.png" />
-  <p class="image-caption">Een foto zegt meer dan 1000 woorden. Hoeveel zegt een video dan wel niet?</p>
 </div>
 
 <div class="small-10 medium-6 small-centered">
