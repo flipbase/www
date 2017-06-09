@@ -51,7 +51,6 @@ module.exports = function(grunt) {
           '<%= yeoman.assets %>/components/foundation-sites/dist/js/foundation.js',
           '<%= yeoman.assets %>/components/aos/dist/aos.js',
           '<%= yeoman.assets %>/components/jquery-placeholder/jquery.placeholder.min.js',
-          '<%= yeoman.assets %>/components/covervid/covervid.min.js',
           '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.js',
           '<%= yeoman.assets %>/components/rrssb/js/rrssb.js',
           '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.js',

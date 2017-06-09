@@ -13,7 +13,8 @@
   bottom: 0;
 }
 
-.full-screen-section, .half-screen-section {
+.full-screen-section,
+.half-screen-section {
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -32,7 +33,7 @@
     .row.vertical-centered-text {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      // transform: translateY(-50%);
     }
   }
   &.no-overlay {
