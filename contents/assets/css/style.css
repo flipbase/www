@@ -575,6 +575,10 @@ footer ul a:hover {
   bottom: 0;
 }
 
+.full-screen-section {
+  display: table;
+}
+
 .full-screen-section,
 .half-screen-section {
   background-size: cover;
@@ -621,10 +625,9 @@ footer ul a:hover {
 }
 @media (min-width: 640px) {
   .full-screen-section .row, .half-screen-section .row {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 1200px !important;
     margin: auto;
     width: 100%;
     padding: 0 20px 0 20px;

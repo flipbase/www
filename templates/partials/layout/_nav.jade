@@ -6,7 +6,7 @@
 - var locales = isEN ? locales['en'] : locales['nl'];
 
 //- Mobile Menu is located in layout.jade
-nav#main_navigation(data-sticky-container)
+nav#main_navigation.sticky-container(data-sticky-container)
   .expanded.row(data-sticky data-options="marginTop:0;", data-top-anchor="4", data-sticky-on="large")
     .row
       #main-menu.top-bar
