@@ -64,19 +64,22 @@ html(lang='en')
     include partials/layout/_nav
 
     #main.main
-      .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+      //.off-canvas-wrapper-inner(data-off-canvas-wrapper)
       
-        // Mobile Menu
-        #offCanvas.off-canvas.position-left(data-off-canvas='' data-position="left" data-content-scroll="false")
-            include partials/layout/_mobilenav
+      // Mobile Menu
+      //#offCanvas.off-canvas.position-left(data-off-canvas='' data-position="left" data-content-scroll="false")
       
-        // There is the rest contect of the page
-        .off-canvas-content(data-off-canvas-content)
+      .f__mob--nav
+        include partials/layout/_mobilenav
+    
+      // There is the rest contect of the page
+      .off-canvas-content
+        //(data-off-canvas-content)
 
-          block body
+        block body
 
-          footer
-            include partials/layout/_footer
+        footer
+          include partials/layout/_footer
 
     block footer-scripts
       script(src="https://app.flipbase.com/recorder.js")

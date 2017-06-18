@@ -1,4 +1,5 @@
 /* Fade page-in animation */
+
 $(".animsition").animsition({
   inClass: 'fade-in',
   outClass: 'fade-out',
@@ -23,7 +24,8 @@ $(".animsition").animsition({
 });      
 
 $(document).ready(function() {
-  
+
+
   // Initialize foundation
   $(document).foundation();
   
@@ -33,14 +35,27 @@ $(document).ready(function() {
     duration: 200,
     easing: 'ease-in',
     delay: 100,
+    disable: function() {
+      return $('html').hasClass('no-cssall');
+    }
   });
   
   var $main_navigation = $("#main_navigation");
   
+  // Onscroll sticky nav
+  $(window).on("scroll", function() {
+    if(window.pageYOffset > 0) {
+      $("#main_navigation .nav-wrap").addClass("is-stuck");
+    } else {
+      $("#main_navigation .nav-wrap").removeClass("is-stuck");
+    }
+  })
+
   // Show and hide the mobile menu
-  $(".menu-mobile-icon").on("click", function() {
-    $main_navigation.toggleClass("push-right");
-    $page_content.toggleClass("push-right");
+  $(".mobile-toggle-wrap").on("click", function() {
+    // $("#main_navigation").toggleClass("push-right");
+    // $(".off-canvas-content").toggleClass("push-right");
+    $("body").toggleClass("mob__nav--opened");
   })
   
   // Show dark navigation when we are on a page with the blog theme (/blog, /privacy, /blog/:post)
@@ -50,6 +65,12 @@ $(document).ready(function() {
   if ($(".jobs_section_header").length) {
     $("#main_navigation").addClass("white-links");
   }
+
+  // IE 9 FIX FOR DARK NAV
+  if(window.location.href.indexOf("blog") > -1) {
+    $("#main_navigation").addClass("dark-nav");
+  }
+
 
   // Make sure the main navigation enters the 'sticky' mode when entering the 
   $(window).scroll(function () {
@@ -102,6 +123,13 @@ $(document).ready(function() {
   //   description: 'Longer description used with some providers',
   // })
   
+  // FIX Fullscreen secion for firefox
+  var FIREFOX = /Firefox/i.test(navigator.userAgent);
+
+  if (FIREFOX) {
+    $(".full-screen-section").height(window.innerHeight);
+  }
+
   /** 
    * Include the Google Analtyics snippet
    */

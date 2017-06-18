@@ -14,23 +14,30 @@
   display: none !important;
 }
 
+.off-canvas-content {
+  transition: margin .3s ease;
+}
+
 .logo-dark {
   display: none !important;
 }
 
 // Sticky Navbar
 nav.sticky-container {
-  top: 0 !important;
-  position: absolute;
   width: 100%;
-  transition: all .4s ease;
+  transition: all .3s ease;
   z-index: 9999;
+  .nav-wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   .sticky {
-    transition: all .4s ease;
+    transition: all .3s ease;
   }
   .is-stuck {
     width: 100%;
-    transition: all .4s ease;
+    transition: all .3s ease;
     background-color: white;
     box-shadow: 0px 1px 6px -1px rgba(0, 0, 0, 0.15);
     .logo-white {
@@ -41,7 +48,7 @@ nav.sticky-container {
     }
     .top-bar {
       padding: 10px 0 !important;
-      transition: all .4s ease;
+      transition: all .3s ease;
       li a {
         color: $dark-purple;
         font-weight: 500;
@@ -98,7 +105,7 @@ nav.dark-nav {
   
   .push-right {
     transform: translateX(250px);
-    transition: transform .5s ease !important;
+    transition: margin .3s ease;
     position: fixed;
   }
   
@@ -127,8 +134,14 @@ nav.dark-nav {
       top: 0 !important;
     }
   }
-  .off-canvas {
+  .f__mob--nav {
+    position: fixed;
+    width: 250px;
+    z-index: 9999;
+    height: 100vh;
+    margin-left: -250px;
     background-color: $dark-purple;
+    transition: margin .3s ease;
     ul {
       padding: 20px 42px 20px 24px;
       li {
@@ -151,7 +164,9 @@ nav.dark-nav {
     .is-accordion-submenu-parent[aria-expanded=true]>a:after {
       content: "\f3d8";
       font-family: "Ionicons";
-      transform: none;
+      -webkit-transform: none !important;
+      transform: none !important; 
+      top: 40%;
     }
     a {
       color: $border-tags-color;
@@ -236,7 +251,7 @@ nav.dark-nav {
 
 // Desktop Navbar Styles
 @include breakpoint((min-width 1024px)) {
-  .off-canvas {
+  .f__mob--nav {
     display: none;
   }
   .position-left.is-open~.off-canvas-content {
@@ -324,4 +339,13 @@ nav.dark-nav {
   }
 }
 
+.mob__nav--opened {
+  .f__mob--nav {
+    margin-left: 0;
+  }
+  .off-canvas-content, #main_navigation {
+    margin-left: 250px;
+    margin-right: -250px;
+  }
+}
 

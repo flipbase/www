@@ -6,14 +6,13 @@ mixin toLowerCase(val)
 mixin videoModal(id, title, video, cover, overlay)
   - var css = !overlay ? 'half-screen-section no-overlay' : 'half-screen-section';
   section
-    div(class="#{css}" style="background-image: url(#{cover}")
-      .row.vertical-centered-text
-        .small-10.small-centered.align-center
-          button.open-video-btn(data-open="modalVideo#{id}")
-            i.ion-play
-          h1 #{title}
+    div(class="#{css} display-table" style="background-image: url(#{cover}")
+      .play-btn-wrap
+        button.open-video-btn(data-open="modalVideo#{id}")
+          i.ion-play
+        //h1 #{title}
   div.reveal.modal-video.large(id='modalVideo#{id}' data-reveal='', data-close-on-click='true', data-animation-in='fade-in', data-animation-out='fade-out')
-    video(poster="#{cover}" preload="auto" autoplay="true" controls="true")
+    video(poster="#{cover}" preload="auto" controls="true")
       source(type="video/webm" src="#{video}.webm")
       source(type="video/mp4" src="#{video}.mp4")
       source(type="video/ogv" src="#{video}.ogv")

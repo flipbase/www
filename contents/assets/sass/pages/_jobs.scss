@@ -270,10 +270,28 @@
   }
 }
 
+.display-table {
+  display: table;
+}
+
+.play-btn-wrap {
+  position: relative;
+  z-index: 2;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
 /* IE 9 and 10 fix */
 .no-flexbox .file-upload-button {
   padding: 2px 20px 3px 20px !important;
 }
 .no-flexbox .submit-section {
   margin-top: 50px;
+}
+
+#loadingProgress {
+  display: none;
 }
