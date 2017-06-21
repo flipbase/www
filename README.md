@@ -17,4 +17,6 @@ Repo uses wintersmith, bower, npm and the Ruby gems SASS, susy, compass and Brea
 
 ## Deploy
 
-Just upload the /www directory using SFTP
+Deployment is based on s3cmd to sync the /www directory with AWS S3
+
+    npm run deploy

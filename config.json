@@ -3,7 +3,8 @@
     "name": "Flipbase",
     "owner": "Ron Jansen <ron@flipbase.com>",
     "description": "Flipbase",
-    "path": ""
+    "path": "",
+    "version": "2.0.0"
   },
   "output": "./www",
   "plugins": [

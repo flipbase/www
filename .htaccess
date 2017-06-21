@@ -18,4 +18,6 @@ Redirect 301 /author/ron /blog
 Redirect 301 /hireserve /
 Redirect 301 /connexys /
 
+Redirect 301 /wp-content/uploads/2015/04/Algemene-voorwaarden-1.0-bijlage-bewerkersovereenkomst.pdf /assets/algemene-voorwaarden-bijlage-bewerkersovereenkomst.pdf
+
 ErrorDocument 404 /404.html

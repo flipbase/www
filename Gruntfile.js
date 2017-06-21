@@ -4,7 +4,8 @@ module.exports = function(grunt) {
 
   var yeomanConfig = {
     assets: 'contents/assets',
-    dist: 'contents/assets'
+    dist: 'contents/assets',
+    version: require('./package.json').version
   };
 
   grunt.initConfig({
@@ -35,7 +36,7 @@ module.exports = function(grunt) {
           cwd: "<%= yeoman.assets %>/sass", // The startup directory
           src: ["style.scss"], // Source files
           dest: "<%= yeoman.dist %>/css", // Destination
-          ext: ".css" // File extension 
+          ext: ".<%= yeoman.version %>.css" // File extension 
         }]
       }
     },
@@ -56,14 +57,14 @@ module.exports = function(grunt) {
           '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.js',
           '<%= yeoman.assets %>/components/vide/dist/jquery.vide.min.js'
         ],
-        dest: '<%= yeoman.dist %>/js/dependencies.min.js'
+        dest: '<%= yeoman.dist %>/js/dependencies.min.<%= yeoman.version %>.js'
       }, 
       page: {  
         src: [  
           '<%= yeoman.assets %>/js/form.js',
           '<%= yeoman.assets %>/js/page.js'
         ],  
-        dest: '<%= yeoman.dist %>/js/page.min.js'  
+        dest: '<%= yeoman.dist %>/js/page.min.<%= yeoman.version %>.js'  
       }
     },
 
@@ -79,7 +80,7 @@ module.exports = function(grunt) {
             '<%= yeoman.assets %>/components/bxslider-4/dist/jquery.bxslider.min.css',
             '<%= yeoman.assets %>/components/motion-ui/dist/motion-ui.css'
           ],
-          dest: '<%= yeoman.dist %>/css/dependencies.min.css'
+          dest: '<%= yeoman.dist %>/css/dependencies.min.<%= yeoman.version %>.css'
         }]
       }
     },
@@ -94,6 +95,15 @@ module.exports = function(grunt) {
           '.htaccess'
         ]
       },
+      terms: {
+        expand: true,
+        dot: true,
+        cwd: './',
+        dest: 'www/assets',
+        src: [
+          'algemene-voorwaarden-bijlage-bewerkersovereenkomst.pdf'
+        ]
+      },
       html: {
         expand: true,
         dot: true,
@@ -102,26 +112,14 @@ module.exports = function(grunt) {
         src: [
           '**/*'
         ]
-      },
-
-      // assets: {
-      //   files: [{
-      //     expand: true,
-      //     dot: true,
-      //     cwd: '<%= yeoman.assets %>/components',
-      //     dest: '<%= yeoman.dist %>/components',
-      //     src: [
-      //       'bxslider-4/dist/images/bx_loader.*'
-      //     ]
-      //   }]
-      // },
+      }
     },
 
     modernizr: {
       dist: {
         "crawl": false,
         "customTests": [],
-        "dest": "contents/assets/js/modernizr.custom.min.js",
+        "dest": "contents/assets/js/modernizr.custom.min.<%= yeoman.version %>.js",
         "tests": [
           "cssall",
           // "video",
@@ -161,7 +159,8 @@ module.exports = function(grunt) {
     'modernizr',
     'sass',
     'cssmin',
-    'uglify'
+    'uglify',
+    'copy'
   ]);
 
 };
