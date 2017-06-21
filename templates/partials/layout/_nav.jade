@@ -6,7 +6,7 @@
 - var locales = isEN ? locales['en'] : locales['nl'];
 
 //- Mobile Menu is located in layout.jade
-nav#main_navigation.sticky-container(data-sticky-container)
+//-nav#main_navigation.sticky-container(data-sticky-container)
   .expanded.row(data-sticky data-options="marginTop:0;", data-top-anchor="4", data-sticky-on="large")
     .row
       #main-menu.top-bar
@@ -56,6 +56,44 @@ nav#main_navigation.sticky-container(data-sticky-container)
             //-       a(href='#') Developers
             //-         p.
             //-           API documentation and integration guides
+            li
+              a(href='#{locals.path}/contact.html') Contact
+            li
+              a.language(href='#{locales.lang_url}')
+                img(src="#{locals.path}/assets/images/#{locales.lang_flag}")
+
+nav#main_navigation.sticky-container
+  .nav-wrap
+    .row.top-bar
+      .top-bar-left
+        ul.menu
+          li.mobile-toggle-wrap
+            button.menu-mobile-icon(type='button', data-toggle="offCanvas")
+          li.brand 
+            a(href="#{locals.path}/")
+              block logo
+                img(src="#{locals.path}/assets/images/logo.png" srcset="#{locals.path}/assets/images/logo@2x.png 2x, #{locals.path}/assets/images/logo@3x.png 3x").logo-white
+                img(src="#{locals.path}/assets/images/logo-dark.png" srcset="#{locals.path}/assets/images/logo-dark@2x.png 2x, #{locals.path}/assets/images/logo-dark@3x.png 3x").logo-dark
+      .top-bar-right
+        ul.menu.dropdown(data-responsive-menu='drilldown medium-dropdown', 
+             data-dropdown-menu, 
+             data-options="closingTime: 140")
+            li.has-submenu.opens-right
+              a(href='#').
+                #[i.ion-ios-arrow-down] #{locales.products}
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#{locals.path}#{locales.sp_path}') #{locales.sp_title}
+                    p.
+                      #{locales.sp_desc}
+                li
+                  a(href='#{locals.path}#{locales.eb_path}') Employer branding
+                    p.
+                      #{locales.eb_desc}
+            li
+              a(href='#{locals.path}/jobs/') Jobs
+            li
+              a(href='#{locals.path}/blog/') Blog
             li
               a(href='#{locals.path}/contact.html') Contact
             li
