@@ -25,6 +25,14 @@ $(".animsition").animsition({
 
 $(document).ready(function() {
 
+  // Onscroll sticky nav
+  $(window).on("scroll", function() {
+    if(window.pageYOffset > 0) {
+      $("#main_navigation .nav-wrap").addClass("is-stuck");
+    } else {
+      $("#main_navigation .nav-wrap").removeClass("is-stuck");
+    }
+  })
 
   // Initialize foundation
   $(document).foundation();
@@ -41,15 +49,7 @@ $(document).ready(function() {
   });
   
   var $main_navigation = $("#main_navigation");
-  
-  // Onscroll sticky nav
-  $(window).on("scroll", function() {
-    if(window.pageYOffset > 0) {
-      $("#main_navigation .nav-wrap").addClass("is-stuck");
-    } else {
-      $("#main_navigation .nav-wrap").removeClass("is-stuck");
-    }
-  })
+
 
   // Show and hide the mobile menu
   $(".mobile-toggle-wrap").on("click", function() {
