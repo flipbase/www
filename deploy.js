@@ -26,9 +26,9 @@ var uploader = client.uploadDir(params);
 uploader.on('error', function(err) {
   log.error("unable to sync:", err.stack);
 });
-uploader.on('progress', function() {
-  log.info("progress " + Math.round((uploader.progressAmount / uploader.progressTotal) * 100)) + '%';
-});
+// uploader.on('progress', function() {
+//   log.info("progress " + Math.round((uploader.progressAmount / uploader.progressTotal) * 100)) + '%';
+// });
 uploader.on('end', function() {
   log.info("done uploading");
   process.exit();
