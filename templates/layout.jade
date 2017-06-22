@@ -1,5 +1,8 @@
 include mixins/mixins
 
+- var blog = false
+block variables
+
 doctype html
 html(lang='en')
   head
@@ -61,7 +64,10 @@ html(lang='en')
             button(class="download-browser" onclick="location.href='http://windows.microsoft.com/en-us/internet-explorer/download-ie'") Download IE 11
     <![endif]-->
     
-    include partials/layout/_nav
+    if blog
+      include partials/layout/_darknav
+    else
+      include partials/layout/_nav
 
     #main.main
       //.off-canvas-wrapper-inner(data-off-canvas-wrapper)
