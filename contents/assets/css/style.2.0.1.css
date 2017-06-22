@@ -599,7 +599,6 @@ footer ul a:hover {
 }
 
 .rick-poster {
-  background-image: url("https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-cover-rick/thumbs/f000000_1280x720.jpeg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2204,4 +2203,4 @@ footer ul a:hover {
   background: url("../components/bxslider-4/dist/images/bx_loader.gif") center center no-repeat #ffffff;
 }
 
-/*# sourceMappingURL=style.2.0.0.css.map */
+/*# sourceMappingURL=style.2.0.1.css.map */

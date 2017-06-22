@@ -35,7 +35,8 @@ $(document).ready(function() {
 
   // Destroy video background plugin for mobile devices
   if ($("body").hasClass("body--mobile")) {
-    $("#background-video").addClass("rick-poster").data("vide").destroy();
+    var url = $("#background-video").attr('data-bg-image');
+    $("#background-video").addClass("rick-poster").css({"background-image": "url("+url+")"}).data("vide").destroy();
     $(".full-screen-section").css({"height": window.innerHeight, "min-height": window.innerHeight});
   }
 

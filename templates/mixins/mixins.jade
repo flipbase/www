@@ -22,7 +22,7 @@ mixin videoModal(id, title, video, cover, overlay)
 mixin coverVideo(video, cover)
   div(class="cover-container"
     data-vide-bg="mp4: #{video}.mp4, webm: #{video}.webm, ogv: #{video}.ogv, poster: #{cover}"
-    data-vide-options="posterType: jpeg" id="background-video")
+    data-vide-options="posterType: jpeg" id="background-video" data-bg-image="#{cover}")
   div.cover-overlay
 
 mixin OpenGraphMetaTags(title, desc, embed_url, image, video, video_type, vWidth, vHeight)

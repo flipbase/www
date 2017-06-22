@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "scripts": {
     "setup": "npm install && bower install",
     "build": "grunt build && wintersmith build --clean -c config.json && grunt copy:htaccess && grunt copy:html",
