@@ -25,6 +25,20 @@ $(".animsition").animsition({
 
 $(document).ready(function() {
 
+  // Check if device is mobile or desktop
+  function e() {
+        return /Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent || navigator.vendor || window.opera)
+    }
+    !function() {
+        e() ? $("body").addClass("body--mobile") : $("body").addClass("body--desktop")
+    }();
+
+  // Destroy video background plugin for mobile devices
+  if ($("body").hasClass("body--mobile")) {
+    $("#background-video").addClass("rick-poster").data("vide").destroy();
+    $(".full-screen-section").css({"height": window.innerHeight, "min-height": window.innerHeight});
+  }
+
   // Onscroll sticky nav
   $(window).on("scroll", function() {
     if(window.pageYOffset > 0) {
@@ -44,7 +58,7 @@ $(document).ready(function() {
     easing: 'ease-in',
     delay: 100,
     disable: function() {
-      return $('html').hasClass('no-cssall');
+      return $("body").hasClass("body--mobile");
     }
   });
   
