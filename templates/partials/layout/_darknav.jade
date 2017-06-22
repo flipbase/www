@@ -1,0 +1,44 @@
+//- You can find styles for this section in layout/_nav.scss
+
+//- The locales for the navigation; since we cannot translate partials without repeating ourselves
+- var isEN = page && page.filepath.relative.indexOf('en/') > -1 ? true : false;
+- var locales = {"en": {"products": "Products", "sp_title": "Application process", "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter het CV", "eb_desc": "Strength your employer brand", "lang_flag": "flag_nl.png", "lang_url": "/", "sp_path": "/en/application-process.html", "eb_path": "/en/employer-branding.html" }, "nl": { "products": "Producten", "sp_title": "Sollicitatie proces", "sp_desc": "Werf en selecteer met video, ontvang een beeld van de persoon achter het CV", "eb_desc": "Verrijk arbeidsmarktcommunicatie en geef een authentiek beeld van de werkomgeving", "lang_flag": "flag_uk.png", "lang_url": "/en", "sp_path": "/sollicitatie-proces.html", "eb_path": "/employer-branding.html"  }};
+- var locales = isEN ? locales['en'] : locales['nl'];
+
+nav#main_navigation.sticky-container.dark-nav
+  .nav-wrap
+    .row.top-bar
+      .top-bar-left
+        ul.menu
+          li.mobile-toggle-wrap
+            button.menu-mobile-icon(type='button', data-toggle="offCanvas")
+          li.brand 
+            a(href="#{locals.path}/")
+              block logo
+                img(src="#{locals.path}/assets/images/logo.png" srcset="#{locals.path}/assets/images/logo@2x.png 2x, #{locals.path}/assets/images/logo@3x.png 3x").logo-white
+                img(src="#{locals.path}/assets/images/logo-dark.png" srcset="#{locals.path}/assets/images/logo-dark@2x.png 2x, #{locals.path}/assets/images/logo-dark@3x.png 3x").logo-dark
+      .top-bar-right
+        ul.menu.dropdown(data-responsive-menu='drilldown medium-dropdown', 
+             data-dropdown-menu, 
+             data-options="closingTime: 140")
+            li.has-submenu.opens-right
+              a(href='#').
+                #[i.ion-ios-arrow-down] #{locales.products}
+              ul.submenu.menu.vertical(data-submenu='')
+                li
+                  a(href='#{locals.path}#{locales.sp_path}') #{locales.sp_title}
+                    p.
+                      #{locales.sp_desc}
+                li
+                  a(href='#{locals.path}#{locales.eb_path}') Employer branding
+                    p.
+                      #{locales.eb_desc}
+            li
+              a(href='#{locals.path}/jobs/') Jobs
+            li
+              a(href='#{locals.path}/blog/index.html') Blog
+            li
+              a(href='#{locals.path}/contact.html') Contact
+            li
+              a.language(href='#{locales.lang_url}')
+                img(src="#{locals.path}/assets/images/#{locales.lang_flag}")
