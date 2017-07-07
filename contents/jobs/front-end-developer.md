@@ -17,11 +17,11 @@ We build JavaScript plugins for a living. We like to be lightweight, performant 
 
 ### We offer
 
+- Flexible working hours
+- 25 days of paid leave
 - Customizable working setup
 - Competitive salary and a team bonus arangements
 - Informal working atmosphere
-- Flexible working hours
-- 25 days of paid leave
 - To work a product that is seen daily by near 1.000.000 people worldwide. 
 - Time to experiment with modern technologies
 

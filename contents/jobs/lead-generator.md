@@ -10,9 +10,9 @@ city: Amsterdam
 
 Jij bent constant op zoek naar nieuwe leads, personen binnen bedrijven die de moeite waarde zijn om te benaderen.
 
-Zowel in nieuwe, als bestaande markten, in binnen- en buitenland zal jij het initiële contact met potentiele klanten gaan leggen Je zet online kanalen en offline kanalen in, om je doel (demo’s inplannen) te halen.
+Zowel in nieuwe, als bestaande markten, in binnen- en buitenland zal jij het initiële contact met potentiële klanten gaan leggen. Je zet alle benodigde media in om je doel (demo’s inplannen) te halen.
 
-Deze functie biedt jouw de kans om ervaring op te doen in een snelgroeiende start-up en direct bij te dragen aan deze groei. Daarnaast heb je kans om door te groeien in een vaste (sales) rol!
+Deze functie biedt jou de kans om ervaring op te doen in een snelgroeiende start-up en direct bij te dragen aan deze groei. Daarnaast heb je kans om door te groeien in een vaste (sales) rol!
 
 De functie is in eerste instantie voor een periode van minimaal 7 maanden, waarbij jij 2 dagen per week fulltime zal meedraaien in het Flipbase team.
 
@@ -24,7 +24,6 @@ Een ambitieuze en enthousiaste aanvulling op ons team, met:
 - HBO/WO werk- en denkniveau;
 - Uitstekende schriftelijke en mondelinge communicatieve vaardigheden (zowel Engels als Nederlands);
 - Doortastende en optimistische persoonlijkheid;
-- Je hebt in een eerdere bijbaan commerciële/verkoop ervaring opgedaan;
 - Je kickt erop om die ene deal toch nog binnen te halen;
 - Je bent niet bang om te bellen;
 - Je hebt ervaring in de commercie en/of verkoop;
@@ -39,13 +38,12 @@ Een ambitieuze en enthousiaste aanvulling op ons team, met:
 
 ### Wie zijn wij?
 
-Wij zijn Flipbase. Een snelgroeiende startup in Amsterdam die zich specialiseert in software waarmee wij bedrijven de mogelijkheid geven om video toe te voegen aan het sollicitatieproces (waar jij ook aan zal moeten geloven).
+Wij zijn Flipbase. Een snel groeiende startup in Amsterdam die zich specialiseert in software waarmee wij bedrijven de mogelijkheid geven om video toe te voegen aan het sollicitatieproces (waar jij ook aan zal moeten geloven).
 
-Met onze software zorgen wij ervoor dat bedrijven als Friesland Campina Accenture, Randstad, VUmc en Heinz sollicitanten niet enkel beoordelen op basis van harde criteria (het CV). 
+Met onze software zorgen wij ervoor dat bedrijven als Friesland Campina Accenture, Randstad, VUmc en Heinz sollicitanten niet enkel beoordelen op basis van harde criteria (het CV).
 
 De persoon achter het CV is immers veel belangrijker, toch?
-
-Wij willen dan ook niet direct alles van je weten. Je voornaam, achternaam en e-mail adres is voldoende, aangevuld met een video. Voor jouw video geven wij je wel een opdracht mee:
+Wij willen dan ook niet direct alles van je weten. Je voornaam, achternaam en e-mailadres is voldoende, aangevuld met een video. Voor je video geven wij je wel een opdracht mee:
 
 <video poster="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.jpg" preload="auto" controls="true" style="max-width: 100%;">
   <source type="video/webm" src="https://s3.eu-central-1.amazonaws.com/videos.flipbase.com/www-jobs/sales.webm"/>
