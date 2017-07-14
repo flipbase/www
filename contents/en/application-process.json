@@ -21,11 +21,11 @@
   "features_2": {
     "title": "You decide where, how and when",
     "feature1_header": "With which vacancies",
-    "feature1_desc": "Video is an effective resource for a lot of procedures, yet not relevant for every vacancy. You decide for which procedure you want to use video.",
-    "feature2_header": "Where in the process",
-    "feature2_desc": "Video can be used in several stages of the application process.  You can decide, per vacancy, where it has the most value: in the application form, instantly after an application, before or after a first acquaintance or in addition to the presentation to a vacancy-holder.",
-    "feature3_header": "What the candidate presents",
-    "feature3_desc": "You can apply video in different ways. You can ask candidates one or several questions, present them a case or simply ask them to motivate why they want to work with you."
+    "feature1_desc": "Video is an effective resource for a lot of vacancies, yet not relevant in every situation.",
+    "feature3_header": "Where in the process",
+    "feature3_desc": "Video can be used in several stages of the application process. You can decide, per vacancy, where it has the most value for you.",
+    "feature2_header": "What the candidate presents",
+    "feature2_desc": "You can apply video in different ways. You can ask candidates one or several questions or present them a case/assignment for example."
   },
   
   "features_3": {
@@ -44,12 +44,12 @@
     "title": "Why Flipbase?",
     "feature1_header": "No extra login needed",
     "feature1_desc": "Both video recording and playback are fully integrated into your current recruitment environment. You do not need to login to another system to use Flipbase.",
-    "feature2_header": "Use video within your current workflow",
-    "feature2_desc": "With one click you can invite one or several candidates to record a video. In this process you can ask them a specific question or give them an assignment.",
+    "feature2_header": "Within your current workflow",
+    "feature2_desc": "With one click you can invite one or several candidates to record a video or add the video recording possibility to your application forms. ",
     "feature3_header": "Directly accessible within your recruitment system",
     "feature3_desc": "The recorded videos will automatically end up in the correct candidate profile within your current recruitment environment. In the candidate profile you can directly playback the video and if applicable, share it with colleagues",
-    "feature4_header": "No download needed",
-    "feature4_desc": "Candidates and recruiters do not need to download software or apps to record or playback videos. Both the Flipbase recording and playback functionality are accessible online in every (online) browser."
+    "feature4_header": "No new software",
+    "feature4_desc": "Candidates and recruiters do not need to download software or apps to record or playback videos."
   },
   
   "features_5": {
@@ -59,8 +59,8 @@
     "feature2_desc": "Both the recording and playback functionality are fully responsive and thus easy to access and use on a smartphone or tablet.",
     "feature3_header": "On every device",
     "feature3_desc": "Users have several options to send their video: via webcam, by using the camera on a smartphone/tablet or by uploading a video.",
-    "feature4_header": "Adjustable recording time",
-    "feature4_desc": "Change the maximum recording time from 30 seconds to a maximum of 3 minutes. We advice 30 seconds, but give you the possibility to adjust it.",
+    "feature4_header": "Recording time",
+    "feature4_desc": "You have the possibility to change the maximum recording time per procedure.",
     "feature5_header": "In every language",
     "feature5_desc": "Ranging from Dutch to Chinese, we support every language. The language can automatically be adjusted based on the browser settings."
   },
@@ -72,7 +72,7 @@
     "desc": "Hi! I am Tjarko, accountmanager at Flipbase. Do you have questions or would you like to see how Flipbase works?",
     "button": "Schedule a demo!",
     "visual": "/assets/images/team/tjarko.png",
-    "calendly": "tjarko"
+    "calendly": "bramtierie"
   },
 
   "testimonials": {

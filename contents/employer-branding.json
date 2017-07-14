@@ -2,7 +2,7 @@
  "template": "employer-branding.jade",
 
   "titles": {
-    "header": "Geef een authentiek beeld van de werkomgeving en toekomstige collega’s",
+    "header": "Geef een authentiek beeld van de werkomgeving en collega’s",
     "subheader": "Versterk je arbeidscommunicatie met échte video content"
   },
 
@@ -19,7 +19,7 @@
   
   "about": {
     "header": "Samen met collega’s video content opnemen, beheren en publiceren ",
-    "text": "Tegenwoordig is een vacature tekst alleen niet meer genoeg om kandidaten te interesseren. Werkzoekenden missen een beeld van de werkomgeving en toekomstige collega’s. Dat is de kern behoefte. <br/><br/> Hierbij is het belangrijk om een authentiek beeld te geven, in plaats van een gescripte video productie. Het is immers vreemd dat je tijdens de eerste werkdag pas weet, waar en met wie je komt te werken! <br/><br/> Wij geven je met de Flipbase employer branding module een middel om zelf video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunicatie."
+    "text": "Door video toe te voegen aan je arbeidscommunicatie geef je (potentiële) werknemers een authentiek beeld van je organisatie, de werkomgeving en toekomstig collega's.<br/>Het is belangrijk om een echt beeld te geven, in plaats van een gescripte corporate video.<br/><br/>Het is immers vreemd dat je tijdens de eerste werkdag pas weet, waar en met wie je komt te werken!<br/><br/>Wij geven je met de Flipbase employer branding module een middel om zelf video’s op te nemen, te beheren en te publiceren in je arbeidsmarktcommunicatie."
   },
 
   "integrated_in": "Flipbase is onder andere geïntegreerd in:",
@@ -29,13 +29,13 @@
     "subtitle": "in arbeidsmarktcoummicatie",
     
     "header1": "Nodig collega’s uit",
-    "text1": "Nodig een of meerdere collega’s via de employer branding module uit om een video op te nemen. <br/><br/> Geef je collega suggesties en eventueel tips zodat de juiste onderwerpen aan bod komen in de video. <br/><br/> Stuur eventueel een voorbeeld video mee om de drempel te verlagen en om te zorgen dat je collega weet wat er verwacht wordt.",
+    "text1": "Nodig een of meerdere collega’s via de employer branding module uit om een video op te nemen. <br/><br/> Geef je collega suggesties en eventueel tips zodat de juiste onderwerpen aan bod komen in de video.",
     
     "header2": "Ontvang en beheer video’s",
     "text2": "Op het moment dat een video is opgenomen ontvang je een e-mail notificatie. Binnen het dashboard kan je alle video's bekijken en beheren.",
     
     "header3": "Publiceer video’s",
-    "text3": "Via het dashboard kan je de goedgekeurde video's direct delen. Middels de embed code en social media link kan je de video (player) direct plaatsen op een website, vacaturepagina en/of social media campagne."
+    "text3": "Via het dashboard kan je de goedgekeurde video's direct delen."
   },
 
   "cta": {

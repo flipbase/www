@@ -9,9 +9,9 @@
   "features_1": {
     "title": "Voordelen van video",
     "subtitle": "in het sollicitatieproces",
-    "feature1": "Ontvang vroegtijdig in het proces een eerste indruk van kandidaten.",
+    "feature1": "Ontvang eerder in het proces een eerste indruk van kandidaten.",
     "feature2": "Geef kandidaten een extra middel om zichzelf te onderscheiden.",
-    "feature3": "Beoordeel kandidaten niet enkel op harde competenties, maar ook op soft skills.",
+    "feature3": "Beoordeel kandidaten niet enkel op harde criteria, maar ook op soft skills.",
     "feature4": "Werf en selecteer efficiënter door de vacaturehouder te betrekken in het proces.",
     "feature5": "Voorkom twijfelgevallen en onnodige kennismakingsgesprekken",
     "feature6": "Verhoog de kwaliteit van de kennismakingsgesprekken."
@@ -20,11 +20,11 @@
   "features_2": {
     "title": "Jij bepaalt waar, hoe en wanneer",
     "feature1_header": "bij welke vacatures",
-    "feature1_desc": "Video is een effectief middel voor veel procedures, echter niet relevant voor iedere vacature. Jij bepaalt voor welke procedures je video in wilt zetten.",
-    "feature2_header": "waar in de procedure",
-    "feature2_desc": "Video kan je op meerdere plekken in het sollicitatieproces inzetten. Jij bepaald, per procedure, waar het voor jullie interessant is: in het sollicitatieformulier, direct na een sollicitatie, voor of na een eerste of tweede gesprek of bij de voordracht.",
-    "feature3_header": "wat de kandidaat presenteert",
-    "feature3_desc": "Video kan je op meerdere manieren insteken. Je kan sollicitanten een vraag laten beantwoorden, ze een case of opdracht voorleggen of simpelweg laten motiveren waarom ze bij jullie willen komen werken."
+    "feature1_desc": "Video is een effectief middel voor veel vacatures, echter niet relevant in iedere situatie. Jij bepaalt voor welke procedures je video in wilt zetten.",
+    "feature2_header": "wat de kandidaat presenteert",
+    "feature2_desc": "Video kan je op meerdere manieren insteken. Je kan sollicitanten bijvoorbeeld een vraag laten beantwoorden of ze een case/opdracht voorleggen.",
+    "feature3_header": "waar in de procedure",
+    "feature3_desc": "Video kan je op meerdere plekken in het sollicitatieproces inzetten. Jij bepaalt, per procedure, waar het voor jullie interessant is: in het sollicitatieformulier, direct na een sollicitatie, voor of na een eerste of tweede gesprek of bij de voordracht."
   },
   
   "features_3": {
@@ -43,23 +43,21 @@
     "title": "Waarom Flipbase?",
     "feature1_header": "Geen extra login nodig",
     "feature1_desc": "Zowel het opnemen als afspelen van de video’s is volledig geïntegreerd in je huidige recruitment systeem. Je hoeft niet in te loggen in een ander systeem om video te kunnen gebruiken.",
-    "feature2_header": "Vanuit je huidige workflow video inzetten",
-    "feature2_desc": "Met een klik kan je een of meerdere kandidaten uitnodigen om een video op te nemen. Hierbij kan je ze een concrete vraag stellen of opdracht voorleggen.",
-    "feature3_header": "Direct afspeelbaar in je recruitment systeem",
+    "feature2_header": "Vanuit je huidige workflow",
+    "feature2_desc": "Met een klik kan je vanuit je huidige recruitment omgeving meerdere kandidaten uitnodigen om een video op te nemen en/of de video opname mogelijkheid toevoegen aan het sollicitatieformulier.",
+    "feature3_header": "Direct afspeelbaar",
     "feature3_desc": "De opgenomen video's komen automatisch binnen in het juiste kandidaat dossier in je huidige recruitment omgeving. Je kan de video's direct afspelen en eventueel delen met collega’s.",
-    "feature4_header": "Downloaden is niet nodig",
-    "feature4_desc": "Kandidaten en recruiters hoeven geen software of apps te downloaden om een video op te nemen of af te spelen. Zowel de Flipbase opname als afspeel module zijn online te gebruiken in iedere (mobiele) browser."
+    "feature4_header": "Geen nieuwe software",
+    "feature4_desc": "Kandidaten en recruiters hoeven geen software of apps te downloaden om een video op te nemen of af te spelen."
   },
   
   "features_5": {
-    "feature1_header": "Volledig responsive",
-    "feature1_desc": "Zowel de recorder als de player zijn volledig responsive en dus gemakkelijk te gebruiken op een smartphone of tablet.",
-    "feature2_header": "Op ieder apparaat",
-    "feature2_desc": "Als gebruiker kan je op meerdere manieren een video versturen: via de webcam, de camera van een smartphone/tablet of door een video te uploaden.",
-    "feature3_header": "Aanpasbare opname tijd",
-    "feature3_desc": "Verander de maximale opname tijd van 30 seconden tot maximaal 3 minuten. Wij adviseren 30 seconden, maar geven je wel de mogelijkheid om dit aan te passen.",
-    "feature4_header": "In iedere taal",
-    "feature4_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan automatisch op basis van de browser voorkeur worden aangepast. "
+    "feature1_header": "Op ieder apparaat",
+    "feature1_desc": "Als gebruiker kan je op meerdere manieren een video versturen: via de webcam, de camera van een smartphone/tablet of door een video te uploaden.",
+    "feature2_header": "Opname tijd",
+    "feature2_desc": "Je hebt de mogelijkheid om de maximale opname tijd per procedure aan te passen.",
+    "feature3_header": "In iedere taal",
+    "feature3_desc": "Van Nederlands tot Chinees, we ondersteunen iedere taal. De taal kan automatisch op basis van de browser voorkeur worden aangepast. "
   },
 
   "integrated_in": "Flipbase is onder andere geïntegreerd in:",
@@ -69,7 +67,7 @@
     "desc": "Hoi! Ik ben Tjarko, account manager bij Flipbase. Heb je vragen of wil je graag zien hoe Flipbase werkt?",
     "button": "Plan een demo in!",
     "visual": "/assets/images/team/tjarko.png",
-    "calendly": "tjarko"
+    "calendly": "bramtierie"
   },
 
   "testimonials": {

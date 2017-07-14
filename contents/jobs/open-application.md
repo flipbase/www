@@ -4,19 +4,9 @@ title: Open application
 city: Amsterdam
 ---
 
-## Geen relevante vacatures?
+## Geen relevante vacature die bij jou past?
 
-Als er geen relevante vacatures voor jou online staan, maar je wilt toch graag met ons in gesprek? Dat kan! Voor getalenteerde en gepassioneerde mensen maken we altijd een tijd vrij!
-
-### Wat bieden wij?
-
-- Competitief salaris en team bonus regeling
-- flexibele werktijden;
-- ruime werkplek, inclusief Apple laptop en smartphone;
-- informele werksfeer en veel vrijheid (en dus verantwoordelijkheid);
-- de kans om vast onderdeel te worden van een snelgroeiende startup, waarin je alles kan leren wat je zou willen binnen het bedrijfsleven;
-- gezonde en verse lunches;
-- en… borrels!
+Er staat geen relevante vacature voor jou online, maar je wilt toch graag met ons in gesprek? Dat kan! Voor getalenteerde en gepassioneerde mensen maken we altijd een tijd vrij!
 
 ### Wie zijn wij?
 

@@ -2,7 +2,7 @@
  "template": "employer-branding.jade",
 
   "titles": {
-    "header": "Give an authentic image of the work environment and future colleagues",
+    "header": "Give an authentic image of the work environment and colleagues",
     "subheader": "Strengthen your labour market communication with real video content"
   },
 
@@ -19,7 +19,7 @@
   
   "about": {
     "header": "Produce, manage and publish video content together with your colleagues",
-    "text": "Nowadays a vacancy text alone is not enough to interest work seekers. They miss an image of the work environment and future colleagues. <br/> <br/> Giving work seekers an authentic image, instead of a scripted video production, is key. Surely, it is rather strange that you do not know where and with whom you will work until you first working day! <br/> <br/> With the Flipbase employer branding module we give you a resource to easily record manage and publish real video content in your labour market communication"
+    "text": "By adding video to your labour market communication you will give workseekers an authentic impression of the organization, the work environment and future colleagues.<br/><br/> It is important to give a real impression, in stead of a corporate scripted video.<br/> Surely, it is rather strange that you do not know where and with whom you will work until you first working day!<br/><br/>With the Flipbase employer branding module we give you a resource to easily record manage and publish real video content in your labour market communication"
   },
   
   "integrated_in": "Flipbase is amongst others integrated in:",
@@ -27,13 +27,13 @@
   "howdoesitworks": {
     "title": "How does it work?",
     "header1": "Invite colleagues",
-    "text1": "Invite one or more colleagues via the employer branding module to record a video. <br/><br/> Give your colleagues suggestions and if needed tips so all necessary things are covered in the video. <br/><br/> If needed also add an example video to the invitation to lower the threshold and let your colleagues know what is expected of them.",
+    "text1": "Invite one or more colleagues via the employer branding module to record a video. <br/><br/> Give your colleagues suggestions and if needed tips so all necessary things are covered in the video.",
     
     "header2": "Receive and manage videos",
     "text2": "You will receive an e-mail notification as soon as a video has been recorded. Within your dashboard you can view and manage all videos.",
     
     "header3": "Publish videos",
-    "text3": "Via your dashboard you can approve and directly publish videos. By using the embed code or social media link you can publish the video (player) directly on any website, vacancy page and/or social media campaign."
+    "text3": "Via your dashboard you can approve and directly publish videos. Via an embed code or social media link you can publish the video (player) directly in your labour market communication."
   },
 
   "cta": {
